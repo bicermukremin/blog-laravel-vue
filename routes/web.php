@@ -13,10 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::any('/{any?}', function ($any=null) {
+    if($any==null && $any!='madmin'&& $any!='signin' && $any!='signup'){
+
+        return view('home');
+
+    }else if($any=='signin'){
+        
+        return view('admin');
+
+    }else if($any=='signup'){
+        
+        return view('admin');
+    }else if($any=='madmin'){
+        
+        return view('admin');
+    }else{
+       return view('home'); 
+    }
+})->where('any', '^(?!api\/)[\/\w\.-]*')
+->where('any', '^(?!madmin\/)[\/\w\.-]*')
+->where('any', '^(?!signin\/)[\/\w\.-]*')
+->where('any', '^(?!signup\/)[\/\w\.-]*');
