@@ -1862,7 +1862,1274 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      isActive: false,
+      Active1: false,
+      Active2: false,
+      Active3: false,
+      searched: ""
+    };
+  },
+  methods: {
+    showDropdown: function showDropdown() {
+      this.isActive = !this.isActive;
+    },
+    showLink1: function showLink1() {
+      this.Active1 = !this.Active1;
+    },
+    showLink2: function showLink2() {
+      this.Active2 = !this.Active2;
+    },
+    showLink3: function showLink3() {
+      this.Active3 = !this.Active3;
+    }
+  },
+  beforeCreate: function beforeCreate() {
+    var jQueryAppearA = document.createElement("script");
+    jQueryAppearA.setAttribute("src", "admin/vendor/jquery/jquery.js");
+    document.body.appendChild(jQueryAppearA);
+    var jQueryAppearC = document.createElement("script");
+    jQueryAppearC.setAttribute("src", "admin/vendor/jquery-browser-mobile/jquery.browser.mobile.js");
+    document.body.appendChild(jQueryAppearC);
+    var jQueryAppearD = document.createElement("script");
+    jQueryAppearD.setAttribute("src", "admin/vendor/jquery-cookie/jquery.cookie.js");
+    document.body.appendChild(jQueryAppearD);
+    var jQueryAppearB = document.createElement("script");
+    jQueryAppearB.setAttribute("src", "admin/master/style-switcher/style.switcher.js");
+    document.body.appendChild(jQueryAppearB);
+    var jQueryAppearE = document.createElement("script");
+    jQueryAppearE.setAttribute("src", "admin/vendor/popper/umd/popper.min.js");
+    document.body.appendChild(jQueryAppearE);
+    var jQueryAppearF = document.createElement("script");
+    jQueryAppearF.setAttribute("src", "admin/vendor/bootstrap/js/bootstrap.js");
+    document.body.appendChild(jQueryAppearF);
+    var jQueryAppearG = document.createElement("script");
+    jQueryAppearG.setAttribute("src", "admin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js");
+    document.body.appendChild(jQueryAppearG);
+    var jQueryAppearH = document.createElement("script");
+    jQueryAppearH.setAttribute("src", "admin/vendor/common/common.js");
+    document.body.appendChild(jQueryAppearH);
+    var jQueryAppearI = document.createElement("script");
+    jQueryAppearI.setAttribute("src", "admin/vendor/nanoscroller/nanoscroller.js");
+    document.body.appendChild(jQueryAppearI);
+    var jQueryAppearK = document.createElement("script");
+    jQueryAppearK.setAttribute("src", "admin/vendor/magnific-popup/jquery.magnific-popup.js");
+    document.body.appendChild(jQueryAppearK);
+    var jQueryAppearL = document.createElement("script");
+    jQueryAppearL.setAttribute("src", "admin/vendor/jquery-placeholder/jquery.placeholder.js");
+    document.body.appendChild(jQueryAppearL);
+    var jQueryAppearN = document.createElement("script");
+    jQueryAppearN.setAttribute("src", "admin/js/theme.js");
+    document.body.appendChild(jQueryAppearN);
+    var jQueryAppearM = document.createElement("script");
+    jQueryAppearM.setAttribute("src", "admin/vendor/modernizr/modernizr.js");
+    document.head.appendChild(jQueryAppearM);
+    /*     var jQueryAppearO = document.createElement("script");
+    jQueryAppearO.setAttribute("src", "admin/js/theme.init.js");
+    document.body.appendChild(jQueryAppearO); */
+
+    var jQueryAppearP = document.createElement("script");
+    jQueryAppearP.setAttribute("src", "admin/master/style-switcher/style.switcher.localstorage.js");
+    document.head.appendChild(jQueryAppearP);
+  }
+});
 
 /***/ }),
 
@@ -42110,9 +43377,2880 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    ADMİN\n")])
+  return _c("section", { staticClass: "body" }, [
+    _c("header", { staticClass: "header" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "header-right" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("span", { staticClass: "separator" }),
+        _vm._v(" "),
+        _c("ul", { staticClass: "notifications" }, [
+          _c("li", { class: { show: _vm.Active1 } }, [
+            _c(
+              "a",
+              {
+                staticClass: "dropdown-toggle notification-icon",
+                attrs: { href: "#", "data-toggle": "dropdown" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.showLink1($event)
+                  }
+                }
+              },
+              [
+                _c("i", { staticClass: "bx bx-list-ol" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge" }, [_vm._v("3")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "dropdown-menu notification-menu large",
+                class: { show: _vm.Active1 }
+              },
+              [_vm._m(2), _vm._v(" "), _vm._m(3)]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", { class: { show: _vm.Active2 } }, [
+            _c(
+              "a",
+              {
+                staticClass: "dropdown-toggle notification-icon",
+                attrs: { href: "#", "data-toggle": "dropdown" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.showLink2($event)
+                  }
+                }
+              },
+              [
+                _c("i", { staticClass: "bx bx-envelope" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge" }, [_vm._v("4")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "dropdown-menu notification-menu",
+                class: { show: _vm.Active2 }
+              },
+              [_vm._m(4), _vm._v(" "), _vm._m(5)]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", { class: { show: _vm.Active3 } }, [
+            _c(
+              "a",
+              {
+                staticClass: "dropdown-toggle notification-icon",
+                attrs: { href: "#", "data-toggle": "dropdown" },
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.showLink3($event)
+                  }
+                }
+              },
+              [
+                _c("i", { staticClass: "bx bx-bell" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge" }, [_vm._v("3")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "dropdown-menu notification-menu",
+                class: { show: _vm.Active3 }
+              },
+              [_vm._m(6), _vm._v(" "), _vm._m(7)]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "separator" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "userbox",
+            class: { show: _vm.isActive },
+            attrs: { id: "userbox" }
+          },
+          [
+            _c("a", { attrs: { href: "#", "data-toggle": "dropdown" } }, [
+              _vm._m(8),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "profile-info",
+                  attrs: {
+                    "data-lock-name": "John Doe",
+                    "data-lock-email": "johndoe@okler.com"
+                  },
+                  on: { click: _vm.showDropdown }
+                },
+                [
+                  _c("span", { staticClass: "name" }, [
+                    _vm._v("John Doe Junior")
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "role" }, [_vm._v("Administrator")])
+                ]
+              ),
+              _vm._v(" "),
+              _c("i", { staticClass: "fa custom-caret" })
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "dropdown-menu", class: { show: _vm.isActive } },
+              [
+                _c("ul", { staticClass: "list-unstyled mb-2" }, [
+                  _c("li", { staticClass: "divider" }),
+                  _vm._v(" "),
+                  _vm._m(9),
+                  _vm._v(" "),
+                  _vm._m(10),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: { cursor: "pointer" },
+                        attrs: { role: "menuitem", tabindex: "-1" },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.logout($event)
+                          }
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "bx bx-power-off" }),
+                        _vm._v(" Logout\n              ")
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            )
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(11),
+    _vm._v(" "),
+    _vm._m(12)
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo-container" }, [
+      _c("a", { staticClass: "logo", attrs: { href: "../3.1.0" } }, [
+        _c("img", {
+          attrs: {
+            src: "img/logo.png",
+            width: "75",
+            height: "35",
+            alt: "Porto Admin"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "d-md-none toggle-sidebar-left",
+          attrs: {
+            "data-toggle-class": "sidebar-left-opened",
+            "data-target": "html",
+            "data-fire-event": "sidebar-left-opened"
+          }
+        },
+        [
+          _c("i", {
+            staticClass: "fas fa-bars",
+            attrs: { "aria-label": "Toggle sidebar" }
+          })
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "form",
+      {
+        staticClass: "search nav-form",
+        attrs: { action: "pages-search-results.html" }
+      },
+      [
+        _c("div", { staticClass: "input-group" }, [
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              name: "q",
+              id: "q",
+              placeholder: "Search..."
+            }
+          }),
+          _vm._v(" "),
+          _c("span", { staticClass: "input-group-append" }, [
+            _c(
+              "button",
+              { staticClass: "btn btn-default", attrs: { type: "submit" } },
+              [_c("i", { staticClass: "bx bx-search" })]
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "notification-title" }, [
+      _c("span", { staticClass: "float-right badge badge-default" }, [
+        _vm._v("3")
+      ]),
+      _vm._v("\n              Tasks\n            ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("ul", [
+        _c("li", [
+          _c("p", { staticClass: "clearfix mb-1" }, [
+            _c("span", { staticClass: "message float-left" }, [
+              _vm._v("Generating Sales Report")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message float-right text-dark" }, [
+              _vm._v("60%")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "progress progress-xs light" }, [
+            _c("div", {
+              staticClass: "progress-bar",
+              staticStyle: { width: "60%" },
+              attrs: {
+                role: "progressbar",
+                "aria-valuenow": "60",
+                "aria-valuemin": "0",
+                "aria-valuemax": "100"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", { staticClass: "clearfix mb-1" }, [
+            _c("span", { staticClass: "message float-left" }, [
+              _vm._v("Importing Contacts")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message float-right text-dark" }, [
+              _vm._v("98%")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "progress progress-xs light" }, [
+            _c("div", {
+              staticClass: "progress-bar",
+              staticStyle: { width: "98%" },
+              attrs: {
+                role: "progressbar",
+                "aria-valuenow": "98",
+                "aria-valuemin": "0",
+                "aria-valuemax": "100"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("p", { staticClass: "clearfix mb-1" }, [
+            _c("span", { staticClass: "message float-left" }, [
+              _vm._v("Uploading something big")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message float-right text-dark" }, [
+              _vm._v("33%")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "progress progress-xs light mb-1" }, [
+            _c("div", {
+              staticClass: "progress-bar",
+              staticStyle: { width: "33%" },
+              attrs: {
+                role: "progressbar",
+                "aria-valuenow": "33",
+                "aria-valuemin": "0",
+                "aria-valuemax": "100"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "notification-title" }, [
+      _c("span", { staticClass: "float-right badge badge-default" }, [
+        _vm._v("230")
+      ]),
+      _vm._v("\n              Messages\n            ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("ul", [
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                staticClass: "rounded-circle",
+                attrs: {
+                  src:
+                    "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png",
+                  alt: "Joseph Doe Junior",
+                  width: "50px",
+                  height: "50px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("Joseph Doe")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [
+              _vm._v("Lorem ipsum dolor sit.")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                staticClass: "rounded-circle",
+                attrs: {
+                  src:
+                    "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png",
+                  alt: "Joseph Junior",
+                  width: "50px",
+                  height: "50px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("Joseph Junior")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message truncate" }, [
+              _vm._v(
+                "Truncated message. Lorem ipsum dolor sit amet, consectetur\n                      adipiscing elit. Donec sit amet lacinia orci. Proin vestibulum eget\n                      risus non luctus. Nunc cursus lacinia lacinia. Nulla molestie\n                      malesuada est ac tincidunt. Quisque eget convallis diam, nec\n                      venenatis risus. Vestibulum blandit faucibus est et malesuada. Sed\n                      interdum cursus dui nec venenatis. Pellentesque non nisi lobortis,\n                      rutrum eros ut, convallis nisi. Sed tellus turpis, dignissim sit\n                      amet tristique quis, pretium id est. Sed aliquam diam diam, sit amet\n                      faucibus tellus ultricies eu. Aliquam lacinia nibh a metus bibendum,\n                      eu commodo eros commodo. Sed commodo molestie elit, a molestie lacus\n                      porttitor id. Donec facilisis varius sapien, ac fringilla velit\n                      porttitor et. Nam tincidunt gravida dui, sed pharetra odio pharetra\n                      nec. Duis consectetur venenatis pharetra. Vestibulum egestas nisi\n                      quis elementum elementum."
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                staticClass: "rounded-circle",
+                attrs: {
+                  src:
+                    "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png",
+                  alt: "Joe Junior",
+                  width: "50px",
+                  height: "50px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("Joe Junior")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [
+              _vm._v("Lorem ipsum dolor sit.")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                staticClass: "rounded-circle",
+                attrs: {
+                  src:
+                    "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png",
+                  alt: "Joseph Junior",
+                  width: "50px",
+                  height: "50px"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("Joseph Junior")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [
+              _vm._v(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit\n                      amet lacinia orci. Proin vestibulum eget risus non luctus. Nunc\n                      cursus lacinia lacinia. Nulla molestie malesuada est ac tincidunt.\n                      Quisque eget convallis diam."
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-right" }, [
+        _c("a", { staticClass: "view-more", attrs: { href: "#" } }, [
+          _vm._v("View All")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "notification-title" }, [
+      _c("span", { staticClass: "float-right badge badge-default" }, [
+        _vm._v("3")
+      ]),
+      _vm._v("\n              Alerts\n            ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("ul", [
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("div", { staticClass: "image" }, [
+              _c("i", {
+                staticClass: "fas fa-thumbs-down bg-danger text-light"
+              })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("Server is Down!")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [_vm._v("Just now")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("div", { staticClass: "image" }, [
+              _c("i", { staticClass: "bx bx-lock bg-warning text-light" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [_vm._v("User Locked")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [_vm._v("15 minutes ago")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "clearfix", attrs: { href: "#" } }, [
+            _c("div", { staticClass: "image" }, [
+              _c("i", { staticClass: "fas fa-signal bg-success text-light" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "title" }, [
+              _vm._v("Connection Restaured")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "message" }, [_vm._v("10/10/2017")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-right" }, [
+        _c("a", { staticClass: "view-more", attrs: { href: "#" } }, [
+          _vm._v("View All")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("figure", { staticClass: "profile-picture" }, [
+      _c("img", {
+        staticClass: "rounded-circle",
+        attrs: {
+          src:
+            "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png",
+          alt: "Joseph Doe",
+          height: "35px",
+          width: "35px",
+          "data-lock-picture":
+            "http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c(
+        "a",
+        {
+          attrs: {
+            role: "menuitem",
+            tabindex: "-1",
+            href: "pages-user-profile.html"
+          }
+        },
+        [_c("i", { staticClass: "bx bx-user-circle" }), _vm._v(" My Profile")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", [
+      _c(
+        "a",
+        {
+          attrs: {
+            role: "menuitem",
+            tabindex: "-1",
+            href: "#",
+            "data-lock-screen": "true"
+          }
+        },
+        [_c("i", { staticClass: "bx bx-lock" }), _vm._v(" Lock Screen")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "inner-wrapper" }, [
+      _c(
+        "aside",
+        { staticClass: "sidebar-left", attrs: { id: "sidebar-left" } },
+        [
+          _c("div", { staticClass: "sidebar-header" }, [
+            _c("div", { staticClass: "sidebar-title" }, [
+              _vm._v("\n\t\t\t\t\t\tNavigation\n\t\t\t\t\t")
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "sidebar-toggle d-none d-md-block",
+                attrs: {
+                  "data-toggle-class": "sidebar-left-collapsed",
+                  "data-target": "html",
+                  "data-fire-event": "sidebar-left-toggle"
+                }
+              },
+              [
+                _c("i", {
+                  staticClass: "fas fa-bars",
+                  attrs: { "aria-label": "Toggle sidebar" }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "nano" }, [
+            _c("div", { staticClass: "nano-content" }, [
+              _c(
+                "nav",
+                {
+                  staticClass: "nav-main",
+                  attrs: { id: "menu", role: "navigation" }
+                },
+                [
+                  _c("ul", { staticClass: "nav nav-main" }, [
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "layouts-default.html" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-home-alt",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Dashboard")])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-cart-alt",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("eCommerce")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-dashboard.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tDashboard\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-products-list.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tProducts List\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-products-form.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tProducts Form\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-category-list.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCategories List\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-category-form.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCategory Form\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-coupons-list.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCoupons List\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-coupons-form.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCoupons Form\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-orders-list.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tOrders List\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-orders-detail.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tOrders Detail\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-customers-list.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCustomers List\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ecommerce-customers-form.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCustomers Form\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "mailbox-folder.html" }
+                        },
+                        [
+                          _c(
+                            "span",
+                            { staticClass: "float-right badge badge-primary" },
+                            [_vm._v("182")]
+                          ),
+                          _vm._v(" "),
+                          _c("i", {
+                            staticClass: "bx bx-envelope",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Mailbox")])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-layout",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Layouts")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "index.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLanding Page\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-default.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tDefault\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-modern.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tModern\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tBoxed\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { href: "layouts-boxed.html" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tStatic Header\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-boxed-fixed-header.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFixed Header\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tHorizontal Menu Header\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { href: "layouts-header-menu.html" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tPills\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-header-menu-stripe.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tStripe\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-header-menu-top-line.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Line\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-dark.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tDark\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-dark-header.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tDark Header\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-two-navigations.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tTwo Navigations\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tTab Navigation\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-tab-navigation-dark.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTab Navigation Dark\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { href: "layouts-tab-navigation.html" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTab Navigation Light\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-tab-navigation-boxed.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTab Navigation Boxed\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-light-sidebar.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLight Sidebar\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "layouts-left-sidebar-collapsed.html"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Collapsed\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                href: "layouts-left-sidebar-scroll.html"
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Scroll\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Big Icons\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-left-sidebar-big-icons.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Big Icons Dark\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href:
+                                      "layouts-left-sidebar-big-icons-light.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Big Icons Light\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Panel\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-left-sidebar-panel.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Panel Dark\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href:
+                                      "layouts-left-sidebar-panel-light.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Panel Light\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar Sizes\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-sidebar-sizes-xs.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar XS\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-sidebar-sizes-sm.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar SM\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "layouts-sidebar-sizes-md.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLeft Sidebar MD\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "layouts-square-borders.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tSquare Borders\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      { staticClass: "nav-parent nav-expanded nav-active" },
+                      [
+                        _c(
+                          "a",
+                          { staticClass: "nav-link", attrs: { href: "#" } },
+                          [
+                            _c("i", {
+                              staticClass: "bx bx-file",
+                              attrs: { "aria-hidden": "true" }
+                            }),
+                            _vm._v(" "),
+                            _c("span", [_vm._v("Pages")])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "nav nav-children" }, [
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-signup.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tSign Up\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-signin.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tSign In\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-recover-password.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tRecover Password\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-lock-screen.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tLocked Screen\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-user-profile.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tUser Profile\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-session-timeout.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tSession Timeout\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-calendar.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tCalendar\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-timeline.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tTimeline\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-media-gallery.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tMedia Gallery\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-invoice.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tInvoice\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "nav-active" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-blank.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tBlank Page\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-404.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t404\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-500.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t500\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-log-viewer.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tLog Viewer\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link",
+                                attrs: { href: "pages-search-results.html" }
+                              },
+                              [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\tSearch Results\n\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ]
+                            )
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-cube",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("UI Elements")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-typography.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tTypography\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [
+                              _vm._v("\n\t\t\t\t\t\t\t\t\t\t\t\tIcons "),
+                              _c("span", {
+                                staticClass:
+                                  "mega-sub-nav-toggle toggled float-right",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  "data-target": ".mega-sub-nav-sub-menu-1"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-icons-elusive.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tElusive\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-icons-font-awesome.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tFont Awesome\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-icons-line-icons.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tLine Icons\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-icons-meteocons.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeteocons\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-icons-box-icons.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tBox Icons\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-tabs.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tTabs\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-cards.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCards\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-widgets.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tWidgets\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-portlets.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tPortlets\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-buttons.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tButtons\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-alerts.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tAlerts\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-notifications.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tNotifications\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-modals.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tModals\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-lightbox.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLightbox\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-progressbars.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tProgress Bars\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-sliders.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tSliders\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-carousels.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCarousels\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-accordions.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tAccordions\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-toggles.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tToggles\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-nestable.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tNestable\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-tree-view.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tTree View\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-scrollable.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tScrollable\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-grid-system.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tGrid System\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-charts.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCharts\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [
+                              _vm._v("\n\t\t\t\t\t\t\t\t\t\t\t\tAnimations "),
+                              _c("span", {
+                                staticClass:
+                                  "mega-sub-nav-toggle toggled float-right",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  "data-target": ".mega-sub-nav-sub-menu-2"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-animations-appear.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tAppear\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-animations-hover.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tHover\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [
+                              _vm._v("\n\t\t\t\t\t\t\t\t\t\t\t\tLoading "),
+                              _c("span", {
+                                staticClass:
+                                  "mega-sub-nav-toggle toggled float-right",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  "data-target": ".mega-sub-nav-sub-menu-3"
+                                }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-loading-overlay.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tOverlay\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: {
+                                    href: "ui-elements-loading-progress.html"
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tProgress\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "ui-elements-extra.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tExtra\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-map",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Maps")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "maps-google-maps.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tBasic\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "maps-google-maps-builder.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tMap Builder\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "maps-vector.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tVector\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "extra-ajax-made-easy.html" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-loader-circle",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Ajax")])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-detail",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Forms")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-basic.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tBasic\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-advanced.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tAdvanced\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-validation.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tValidation\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-layouts.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tLayouts\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-wizard.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tWizard\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "forms-code-editor.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tCode Editor\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-table",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Tables")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-basic.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tBasic\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-advanced.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tAdvanced\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-responsive.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tResponsive\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-editable.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tEditable\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-ajax.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tAjax\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: { href: "tables-pricing.html" }
+                            },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tPricing\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "nav-parent" }, [
+                      _c(
+                        "a",
+                        { staticClass: "nav-link", attrs: { href: "#" } },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-collection",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Menu Levels")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "nav nav-children" }, [
+                        _c("li", [
+                          _c("a", [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\t\tFirst Level\n\t\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("li", { staticClass: "nav-parent" }, [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "#" } },
+                            [
+                              _vm._v(
+                                "\n\t\t\t\t\t\t\t\t\t\t\t\tSecond Level\n\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("ul", { staticClass: "nav nav-children" }, [
+                            _c("li", [
+                              _c("a", [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tSecond Level Link #1\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c("a", [
+                                _vm._v(
+                                  "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tSecond Level Link #2\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("li", { staticClass: "nav-parent" }, [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "nav-link",
+                                  attrs: { href: "#" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tThird Level\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("ul", { staticClass: "nav nav-children" }, [
+                                _c("li", [
+                                  _c("a", [
+                                    _vm._v(
+                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThird Level Link #1\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                    )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c("a", [
+                                    _vm._v(
+                                      "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThird Level Link #2\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                    )
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: {
+                            href:
+                              "http://themeforest.net/item/porto-responsive-html5-template/4106987?ref=Okler"
+                          }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-window-alt",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v("Front-End "),
+                            _c("em", { staticClass: "not-included" }, [
+                              _vm._v("(Not Included)")
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "nav-link",
+                          attrs: { href: "extra-changelog.html" }
+                        },
+                        [
+                          _c("i", {
+                            staticClass: "bx bx-book-alt",
+                            attrs: { "aria-hidden": "true" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v("Changelog")])
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("hr", { staticClass: "separator" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "sidebar-widget widget-tasks" }, [
+                _c("div", { staticClass: "widget-header" }, [
+                  _c("h6", [_vm._v("Projects")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "widget-toggle" }, [_vm._v("+")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "widget-content" }, [
+                  _c("ul", { staticClass: "list-unstyled m-0" }, [
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _vm._v("Porto HTML5 Template")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _vm._v("Tucson Template")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Porto Admin")])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("hr", { staticClass: "separator" }),
+              _vm._v(" "),
+              _c("div", { staticClass: "sidebar-widget widget-stats" }, [
+                _c("div", { staticClass: "widget-header" }, [
+                  _c("h6", [_vm._v("Company Stats")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "widget-toggle" }, [_vm._v("+")])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "widget-content" }, [
+                  _c("ul", [
+                    _c("li", [
+                      _c("span", { staticClass: "stats-title" }, [
+                        _vm._v("Stat 1")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "stats-complete" }, [
+                        _vm._v("85%")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "progress" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "progress-bar progress-bar-primary progress-without-number",
+                            staticStyle: { width: "85%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "85",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          },
+                          [
+                            _c("span", { staticClass: "sr-only" }, [
+                              _vm._v("85% Complete")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "stats-title" }, [
+                        _vm._v("Stat 2")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "stats-complete" }, [
+                        _vm._v("70%")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "progress" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "progress-bar progress-bar-primary progress-without-number",
+                            staticStyle: { width: "70%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "70",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          },
+                          [
+                            _c("span", { staticClass: "sr-only" }, [
+                              _vm._v("70% Complete")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("span", { staticClass: "stats-title" }, [
+                        _vm._v("Stat 3")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "stats-complete" }, [
+                        _vm._v("2%")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "progress" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "progress-bar progress-bar-primary progress-without-number",
+                            staticStyle: { width: "2%" },
+                            attrs: {
+                              role: "progressbar",
+                              "aria-valuenow": "2",
+                              "aria-valuemin": "0",
+                              "aria-valuemax": "100"
+                            }
+                          },
+                          [
+                            _c("span", { staticClass: "sr-only" }, [
+                              _vm._v("2% Complete")
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "content-body", attrs: { role: "main" } }, [
+        _c("header", { staticClass: "page-header" }, [
+          _c("h2", [_vm._v("Blank Page")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "right-wrapper text-right" }, [
+            _c("ol", { staticClass: "breadcrumbs" }, [
+              _c("li", [
+                _c("a", { attrs: { href: "index.html" } }, [
+                  _c("i", { staticClass: "bx bx-home-alt" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", [_c("span", [_vm._v("Pages")])]),
+              _vm._v(" "),
+              _c("li", [_c("span", [_vm._v("Blank Page")])])
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "sidebar-right-toggle",
+                attrs: { "data-open": "sidebar-right" }
+              },
+              [_c("i", { staticClass: "fas fa-chevron-left" })]
+            )
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "aside",
+      { staticClass: "sidebar-right", attrs: { id: "sidebar-right" } },
+      [
+        _c("div", { staticClass: "nano" }, [
+          _c("div", { staticClass: "nano-content" }, [
+            _c(
+              "a",
+              { staticClass: "mobile-close d-md-none", attrs: { href: "#" } },
+              [
+                _vm._v("\n\t\t\t\t\t\tCollapse "),
+                _c("i", { staticClass: "fas fa-chevron-right" })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "sidebar-right-wrapper" }, [
+              _c("div", { staticClass: "sidebar-widget widget-calendar" }, [
+                _c("h6", [_vm._v("Upcoming Tasks")]),
+                _vm._v(" "),
+                _c("div", {
+                  attrs: {
+                    "data-plugin-datepicker": "",
+                    "data-plugin-skin": "dark"
+                  }
+                }),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _c(
+                      "time",
+                      { attrs: { datetime: "2017-04-19T00:00+00:00" } },
+                      [_vm._v("04/19/2017")]
+                    ),
+                    _vm._v(" "),
+                    _c("span", [_vm._v("Company Meeting")])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "sidebar-widget widget-friends" }, [
+                _c("h6", [_vm._v("Friends")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", { staticClass: "status-online" }, [
+                    _c("figure", { staticClass: "profile-picture" }, [
+                      _c("img", {
+                        staticClass: "rounded-circle",
+                        attrs: {
+                          src: "img/!sample-user.jpg",
+                          alt: "Joseph Doe"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "profile-info" }, [
+                      _c("span", { staticClass: "name" }, [
+                        _vm._v("Joseph Doe Junior")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "title" }, [
+                        _vm._v("Hey, how are you?")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "status-online" }, [
+                    _c("figure", { staticClass: "profile-picture" }, [
+                      _c("img", {
+                        staticClass: "rounded-circle",
+                        attrs: {
+                          src: "img/!sample-user.jpg",
+                          alt: "Joseph Doe"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "profile-info" }, [
+                      _c("span", { staticClass: "name" }, [
+                        _vm._v("Joseph Doe Junior")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "title" }, [
+                        _vm._v("Hey, how are you?")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "status-offline" }, [
+                    _c("figure", { staticClass: "profile-picture" }, [
+                      _c("img", {
+                        staticClass: "rounded-circle",
+                        attrs: {
+                          src: "img/!sample-user.jpg",
+                          alt: "Joseph Doe"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "profile-info" }, [
+                      _c("span", { staticClass: "name" }, [
+                        _vm._v("Joseph Doe Junior")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "title" }, [
+                        _vm._v("Hey, how are you?")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "status-offline" }, [
+                    _c("figure", { staticClass: "profile-picture" }, [
+                      _c("img", {
+                        staticClass: "rounded-circle",
+                        attrs: {
+                          src: "img/!sample-user.jpg",
+                          alt: "Joseph Doe"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "profile-info" }, [
+                      _c("span", { staticClass: "name" }, [
+                        _vm._v("Joseph Doe Junior")
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "title" }, [
+                        _vm._v("Hey, how are you?")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
