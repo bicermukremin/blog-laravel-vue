@@ -180,7 +180,7 @@ export default {
             logIn();
             this.$store.dispatch("loadUser");
           }
-          this.$router.replace({ name: "admin" });
+          this.$router.push({ name: "admin" });
         })
         .catch((error) => {
           this.errors = error.response && error.response.data.errors;

@@ -23,7 +23,7 @@ class SoftwareFactory extends Factory
     {
         return [
             
-            'images' => '["software\/BJBVVpgZDSAoHAIfdxuhZ6FkpDXKPvG44LNS3pxh.png","software\/gwetwYsbX2dtyGeCKEDw1jLhvYmqPIhiXeerEBDS.png","software\/oDPuRdtVqL6UtfxTC3cgXSQPFfR9trHjgdk9AbQp.jpg","software\/xdFqtX7Jc75YvMAKkz4645NYv4rbrtJY6C6X9ZPE.jpg","software\/K5BEds5n0yWG5fn1y1tyiUcQnNU26NMQyezj6nS5.jpg","software\/F2WMdvfWoqZKuGPkYPCidixdYObfKcHN1oaC6o3N.jpg"]',
+            'images' => '["initialImage\/first.png","initialImage\/logo-construction.png",initialImage\/first.png","initialImage\/PmdesY.png","initialImage\/web-designing - Kopya.jpg,initialImage\/first.png"]',
         ];
     }
 }

@@ -26,7 +26,7 @@ class BlogFactory extends Factory
             'title' => $this->faker->name,
             'author_description' => $this->faker->text,
             'description' => $this->faker->text,
-            'image' => $this->faker->text,
+            'image' => "initialImage/first.png",
             'slug'=>Str::slug($this->faker->name),
             'author_id'=>1,
            

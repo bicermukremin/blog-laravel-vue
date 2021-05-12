@@ -22,7 +22,7 @@ class ProfileFactory extends Factory
     public function definition()
     {
         return [
-            'avatar' =>'/avatars/icon-256x256.png',
+            'avatar' =>'initialImage/icon-256x256.png',
             'about' => $this->faker->text,
             'user_id' => rand(1,10),
              'facebook' => 'https://www.facebook.com/',

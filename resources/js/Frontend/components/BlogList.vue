@@ -79,7 +79,9 @@ export default {
   computed: {
     ...mapGetters(["getBlogs", "getFrontendSoftware"]),
   },
-  beforeCreate() {},
+  async created() {
+    this.$store.dispatch("getFrontSoftware");
+  },
 };
 </script>
 

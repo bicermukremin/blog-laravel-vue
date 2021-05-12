@@ -1,34 +1,32 @@
 <template>
-    	<section class="body">
+  <section class="body">
+    <!-- start: header -->
+    <Header @search="search"></Header>
+    <!-- end: header -->
 
-		<!-- start: header -->
-		 <Header @search="search"></Header>
-		<!-- end: header -->
+    <div class="inner-wrapper">
+      <!-- start: sidebar -->
+      <Sidebar></Sidebar>
+      <!-- end: sidebar -->
 
-		<div class="inner-wrapper">
-			<!-- start: sidebar -->
-			 <Sidebar></Sidebar>
-			<!-- end: sidebar -->
-
-			<section role="main" class="content-body">
-			 <PageHeader></PageHeader>
-
-				<!-- start: page -->
-				<transition name="fade" mode="out-in">
+      <section role="main" class="content-body">
+        <PageHeader></PageHeader>
+        <!-- start: page -->
+        <transition name="fade" mode="out-in">
           <router-view :searched="searched"></router-view>
         </transition>
-				<!-- end: page -->
-			</section>
-		</div>
+        <!-- end: page -->
+      </section>
+    </div>
 
-		<aside id="sidebar-right" class="sidebar-right">
-			 <RightBar></RightBar>
-		</aside>
-	</section>
+    <aside id="sidebar-right" class="sidebar-right">
+      <RightBar></RightBar>
+    </aside>
+  </section>
 </template>
 
 <script>
-    import Header from "./components/Header";
+import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import PageHeader from "./components/PageHeader";
 import RightBar from "./components/RightBar";
@@ -50,8 +48,52 @@ export default {
       this.searched = payload;
     },
   },
-        beforeCreate(){
-             var jQueryAppearA = document.createElement("script");
+
+
+  async beforeCreate() {
+    this.$store.dispatch("loadUser");
+    this.$store.dispatch("indexSetting");
+    /* $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "admin/vendor/bootstrap/css/bootstrap.css"
+      )
+    );
+    $("head").append(
+      $('<link rel="stylesheet">').attr("href", "admin/vendor/animate/animate.compat.css")
+    );
+    $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "admin/vendor/font-awesome/css/all.min.css"
+      )
+    );
+    $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "admin/vendor/boxicons/css/boxicons.min.css"
+      )
+    );
+    $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "admin/vendor/magnific-popup/magnific-popup.css"
+      )
+    );
+    $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "admin/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css"
+      )
+    ); */
+    /*   $("head").append(
+      $('<link rel="stylesheet">').attr(
+        "href",
+        "http://127.0.0.1:8000/admin/css/theme.css"
+      )
+    ); */
+
+    var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "admin/vendor/jquery/jquery.js");
     document.body.appendChild(jQueryAppearA);
 
@@ -66,9 +108,9 @@ export default {
     jQueryAppearD.setAttribute("src", "admin/vendor/jquery-cookie/jquery.cookie.js");
     document.body.appendChild(jQueryAppearD);
 
-       var jQueryAppearB = document.createElement("script");
+    /*    var jQueryAppearB = document.createElement("script");
     jQueryAppearB.setAttribute("src", "admin/master/style-switcher/style.switcher.js");
-    document.body.appendChild(jQueryAppearB);
+    document.body.appendChild(jQueryAppearB); */
 
     var jQueryAppearE = document.createElement("script");
     jQueryAppearE.setAttribute("src", "admin/vendor/popper/umd/popper.min.js");
@@ -85,9 +127,9 @@ export default {
     );
     document.body.appendChild(jQueryAppearG);
 
-        var jQueryAppearH = document.createElement("script");
+    /*     var jQueryAppearH = document.createElement("script");
     jQueryAppearH.setAttribute("src", "admin/vendor/common/common.js");
-    document.body.appendChild(jQueryAppearH);
+    document.body.appendChild(jQueryAppearH); */
 
     var jQueryAppearI = document.createElement("script");
     jQueryAppearI.setAttribute("src", "admin/vendor/nanoscroller/nanoscroller.js");
@@ -126,10 +168,31 @@ export default {
     );
     document.head.appendChild(jQueryAppearP);
 
-        }
+    // Maintain Scroll Position
+  },
+  /* beforeDestroy() {
+    var scripts = $("script[src^='admin/']");
+    var filteredScripts = [];
+    for (let i = 1; i < 10; i++) {
+      filteredScripts.push(scripts[i]);
     }
+    for (let i = 0; i < filteredScripts.length; i++) {
+      document.body.removeChild(filteredScripts[i]);
+    }
+  }, */
+};
 </script>
-
-<style lang="scss" scoped>
-
+<style>
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.5s ease-out;
+}
+.fade-leave {
+}
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+}
 </style>

@@ -193,7 +193,7 @@ export default {
   },
   methods: {
     async login() {
-      debugger;
+     
       this.loading = true;
       this.errors = null;
 

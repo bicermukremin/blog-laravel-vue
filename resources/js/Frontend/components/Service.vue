@@ -74,7 +74,7 @@ export default {
       return this.columns - this.servicesInRow(row).length;
     },
   },
-  created() {
+  beforeCreate() {
     axios.get("/api/services").then((res) => {
       this.services = res.data.data;
       this.serviceCount = res.data.data.length;

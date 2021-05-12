@@ -121,9 +121,9 @@ class MailController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Email $mail)
+    public function destroy(Email $email)
     { 
-        $delete=$mail->delete();
+        $delete=$email->delete();
         if($delete){
            
            return response(['message'=>'Deleted successfully!']);

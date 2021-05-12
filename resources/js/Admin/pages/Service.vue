@@ -29,7 +29,7 @@
           <tbody class="mb-5">
             <tr data-item-id="1" v-for="(service, i) in getServices" :key="i">
               <td>
-               <!--  <img
+                <img
                   width="50px"
                   height="50px"
                   :src="
@@ -38,7 +38,7 @@
                       : null
                   "
                   :alt="service.title"
-                /> -->
+                />
               </td>
               <td>{{ service.title }}</td>
               <td v-html="service.content.substring(0, 50)"></td>

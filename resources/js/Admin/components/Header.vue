@@ -1,14 +1,14 @@
 <template>
   <header class="header">
     <div class="logo-container">
-      <a href="../3.1.0" class="logo">
+      <router-link :to="{name:'admin'}" class="logo">
         <img
-          src="http://127.0.0.1:8000/admin/img/logo.png"
+          :src="`/storage/${getSetting.logo2}` "
           width="75"
           height="35"
           alt="Porto Admin"
         />
-      </a>
+      </router-link>
       <div
         class="d-md-none toggle-sidebar-left"
         data-toggle-class="sidebar-left-opened"
@@ -288,14 +288,14 @@
       <div id="userbox" class="userbox" :class="{ show: isActive }">
         <a href="#" data-toggle="dropdown">
           <figure class="profile-picture">
-            <img
-              src="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
-              alt="Joseph Doe"
+           <!--  <img
+              :src="getUser.profile.avatar"
+              :alt="getUser.name"
               class="rounded-circle"
               height="35px"
               width="35px"
-              data-lock-picture="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
-            />
+              :data-lock-picture="getUser.profile.avatar"
+            /> -->
           </figure>
           <div
             class="profile-info"
@@ -303,7 +303,7 @@
             data-lock-email="johndoe@okler.com"
             @click="showDropdown"
           >
-            <span class="name">John Doe Junior</span>
+            <span class="name">{{ getUser.name }}</span>
             <span class="role">Administrator</span>
           </div>
 
@@ -314,17 +314,22 @@
           <ul class="list-unstyled mb-2">
             <li class="divider"></li>
             <li>
-              <a role="menuitem" tabindex="-1" href="pages-user-profile.html"
-                ><i class="bx bx-user-circle"></i> My Profile</a
+              <a v-if="auth" role="menuitem" tabindex="-1" href="#"
+                ><i class="bx bx-user-circle"></i> Profilim</a
               >
             </li>
             <li>
-              <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"
-                ><i class="bx bx-lock"></i> Lock Screen</a
+              <router-link :to="{name:'login'}"  v-if="!auth"  role="menuitem" tabindex="-1" href="#" 
+                ><i class="bx bx-lock"></i> Giriş</router-link
+              >
+            </li><li>
+              <router-link :to="{name:'register'}"  v-if="!auth"  role="menuitem" tabindex="-1" href="#"
+                ><i class="bx bx-lock"></i> Register</router-link
               >
             </li>
             <li>
               <a
+                v-if="auth"
                 role="menuitem"
                 tabindex="-1"
                 @click.prevent="logout"
@@ -342,6 +347,7 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
@@ -351,6 +357,12 @@ export default {
       Active3: false,
       searched: "",
     };
+  },
+   computed: {
+    ...mapGetters(["getSetting", "isLoggedIn", "getUser"]),
+    auth() {
+      return this.isLoggedIn && localStorage.getItem("isLoggedIn");
+    },
   },
   methods: {
     search() {
@@ -375,6 +387,7 @@ export default {
       this.Active3 = !this.Active3;
     },
   },
+  
 };
 </script>
 

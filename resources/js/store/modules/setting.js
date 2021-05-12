@@ -30,6 +30,7 @@ const mutations = {
 
 const actions = {
     async indexSetting({ commit }) {
+        debugger
         await axios.get("/api/settings").then(res => {
             commit("updateSetting", res.data.data);
         });

@@ -24,7 +24,7 @@ class AboutFactory extends Factory
          return [
             'title' => $this->faker->name,
             'description' => $this->faker->text,
-            'images' => '["about\/G9x7PNNlOpjrRwGF8x3bssl54aP84xiuzlJCQWvt.png","about\/Txft6TMjnrgdzVhUOy6gUCdf46G7Tz6XhGwMf45v.jpg","about\/EHPX2mfJbFS5z9dhyyL4fuTrcJ46Mk3elpnSHbJI.jpg","about\/fAWvDYBq55qDbx5Bq6gk27zHcFE0UETs3ffk1FV0.jpg"]',
+            'images' => '["initialImage\/first.png","initialImage\/logo-construction.png","initialImage\/PmdesY.png","initialImage\/web-designing - Kopya.jpg"]',
             'mission' => $this->faker->text,
             'vision' => $this->faker->text,
             'history_content' => $this->faker->text,

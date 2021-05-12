@@ -22,7 +22,6 @@ export const inputError = function(errors = []) {
         for (let key = 0; key < errors[index].length; key++) {
             Vue.$toast.error(errors[index][key]);
         }
-        /*  console.log("Ana Error" + errors[index]);
-        Vue.$toast.warning(errors[index][0]); */
+
     }
 };

@@ -23,7 +23,7 @@ class BannerFactory extends Factory
     {
         return [
           'content' => $this->faker->text,
-            'image' => $this->faker->text,
+            'image' => "initialImage/web-designing - Kopya.jpg",
         ];
     }
 }

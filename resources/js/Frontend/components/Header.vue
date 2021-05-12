@@ -205,7 +205,7 @@ export default {
       });
     },
   },
-  created() {
+  beforeCreate() {
     this.$store.dispatch("initService", { filter: null });
   },
 };

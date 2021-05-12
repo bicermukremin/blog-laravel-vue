@@ -40,7 +40,7 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-          protected function authenticated(LoginRequest $request, $user)
+          protected function authenticated(Request $request, $user)
     {
         if ($request->isXmlHttpRequest()) {
             return response(null, 204);

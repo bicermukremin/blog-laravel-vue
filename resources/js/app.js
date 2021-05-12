@@ -1,10 +1,10 @@
-require('./bootstrap');
+require("./bootstrap");
 
-import router from "./routes1";
-
+import router from "./routes.js";
 
 import Vue from "vue";
 import VueRouter from "vue-router";
+
 
 import Vuex from "vuex";
 import Vuelidate from "vuelidate";
@@ -12,7 +12,6 @@ import Vuelidate from "vuelidate";
 import CkEditor from "ckeditor4-vue/dist/ckeditor.js";
 import swal from "sweetalert2";
 import VueToast from "vue-toast-notification";
-import moment from "moment";
 import vue2Dropzone from "vue2-dropzone";
 import "vue-progress-path/dist/vue-progress-path.css";
 import VueProgress from "vue-progress-path";
@@ -24,7 +23,6 @@ Vue.use(VueProgress, {
 });
 
 window.Swal = swal;
-
 
 import { store } from "./store/store";
 Vue.use(Vuex);
@@ -39,7 +37,8 @@ Vue.use(VueToast, {
 });
 
 
-Vue.use(Vuelidate);
+
+import Ana from './Ana.vue'
 import FatalError from "./shared/components/FatalError";
 import Success from "./shared/components/Success";
 import ValidationErrors from "./shared/components/ValidationErrors";
@@ -48,29 +47,33 @@ Vue.component("vueDropzone", vue2Dropzone);
 Vue.component("fatal-error", FatalError);
 Vue.component("success", Success);
 Vue.component("v-errors", ValidationErrors);
+window.axios.interceptors.response.use(
+    response => {
+        return response;
+    },
+    error => {
+        if (401 === error.response.status) {
+            store.dispatch("logout");
+        }
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-Vue.component('Ana', require('./Ana.vue').default);
-
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+        return Promise.reject(error);
+    }
+);
+/* Vue.filter("fromNow", value => moment(value).fromNow());
+Vue.filter("day", value => value.substring(0, 2));
+Vue.filter("month", value => value.substring(3, 3)); */
 
 const app = new Vue({
-    el: '#app',
+    el: "#app",
     router,
     store,
+    components: {
+        Ana
+    },
+    async created() {
+        this.$store.dispatch("loadUser");
+
+
+        /*  this.$store.dispatch("initBlog", { filter: this.filter }); */
+    }
 });

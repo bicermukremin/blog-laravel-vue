@@ -67,12 +67,12 @@
               </router-link>
             </li>
 
-         <!--    <li>
+            <li>
               <router-link :to="{ name: 'blog' }" class="nav-link">
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Blog</span>
               </router-link>
-            </li> -->
+            </li>
             <li>
               <router-link :to="{ name: 'project' }" class="nav-link">
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
@@ -103,7 +103,7 @@
                 <span>Blog Kategorileri</span>
               </router-link>
             </li>
-           <!--  <li>
+            <li>
               <router-link :to="{ name: 'comment' }" class="nav-link">
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Blog Yorumlar</span>
@@ -114,7 +114,7 @@
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Blog Yorum Cevapları</span>
               </router-link>
-            </li> -->
+            </li>
           </ul>
         </nav>
 

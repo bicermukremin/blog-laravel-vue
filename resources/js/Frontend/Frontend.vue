@@ -1,30 +1,30 @@
 <template>
-   <div class="body">
-		<Header></Header>
+  <div class="body">
+    <Header></Header>
+    <div role="main" class="main">
+      <div
+        class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-style-diamond custom-nav-with-transparency nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
+        data-plugin-options="{'autoplayTimeout': 7000}"
+        data-dynamic-height="['700px','700px','700px','550px','500px']"
+        style="height: 700px"
+      >
+        <Slider></Slider>
+        <div class="owl-nav">
+          <button type="button" role="presentation" class="owl-prev"></button>
+          <button type="button" role="presentation" class="owl-next"></button>
+        </div>
+      </div>
 
-		<div role="main" class="main">
-			<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-style-diamond custom-nav-with-transparency nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
-				data-plugin-options="{'autoplayTimeout': 7000}"
-				data-dynamic-height="['700px','700px','700px','550px','500px']" style="height: 700px;">
-			<Slider></Slider>
-				<div class="owl-nav">
-					<button type="button" role="presentation" class="owl-prev"></button>
-					<button type="button" role="presentation" class="owl-next"></button>
-				</div>
-			</div>
+      <About></About>
+      <Service></Service>
+      <Yorum></Yorum>
 
-			<About></About>
-			<Service></Service>
-			<Yorum></Yorum>
+      <Project></Project>
 
-			<Project></Project>
-
-			<!-- <BlogList></BlogList> -->
-		</div>
-
-		<Footer></Footer>
-
-	</div>
+     <!--  <BlogList></BlogList> -->
+    </div>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
@@ -48,7 +48,11 @@ export default {
     About,
     Slider,
   },
-        beforeCreate() {
+  data() {
+    return {};
+  },
+
+  mounted() {
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");
     document.body.appendChild(jQueryAppearA);
@@ -135,9 +139,9 @@ export default {
     jQueryAppearY.setAttribute("src", "frontend/js/demos/demo-construction.js");
     document.body.appendChild(jQueryAppearY);
 
-     var jQueryAppearS = document.createElement("script");
+    /*  var jQueryAppearS = document.createElement("script");
     jQueryAppearS.setAttribute("src", "frontend/js/views/view.contact.js");
-    document.body.appendChild(jQueryAppearS);
+    document.body.appendChild(jQueryAppearS); */
 
     var jQueryAppearT = document.createElement("script");
     jQueryAppearT.setAttribute("src", "frontend/js/custom.js");
@@ -151,9 +155,17 @@ export default {
     jQueryAppearV.setAttribute("src", "frontend/vendor/modernizr/modernizr.min.js");
     document.head.appendChild(jQueryAppearV);
   },
+  /*   beforeDestroy() {
+    var scripts = $("script[src^='frontend/']");
+    var filteredScripts = [];
+    for (let i = 1; i < 21; i++) {
+      filteredScripts.push(scripts[i]);
     }
+    for (let i = 0; i < filteredScripts.length; i++) {
+      document.body.removeChild(filteredScripts[i]);
+    }
+  }, */
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss"></style>

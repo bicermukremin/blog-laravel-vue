@@ -127,7 +127,7 @@ export default {
   methods: {
     async makeAbone() {
       this.deleting = true;
-      debugger;
+   
       await axios
         .post("/api/make-abone", { email: this.email })
         .then((res) => {
@@ -146,6 +146,9 @@ export default {
         });
     },
   },
+  async created(){
+     this.$store.dispatch("indexSetting");
+  }
 };
 </script>
 

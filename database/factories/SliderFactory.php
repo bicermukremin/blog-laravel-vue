@@ -23,7 +23,7 @@ class SliderFactory extends Factory
     {
         return [
             'title' => $this->faker->name,
-            'image' => $this->faker->text,
+            'image' => "initialImage/web.jpg",
         ];
     }
 }

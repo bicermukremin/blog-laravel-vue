@@ -24,7 +24,7 @@ export default {
   computed: {
     ...mapGetters(["getBaseAbout"]),
   },
-  created() {
+  beforeCreate() {
     this.$store.dispatch("indexAbout", { filter: null });
   },
 };

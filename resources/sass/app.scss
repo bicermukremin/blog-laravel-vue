@@ -1,8 +1,8 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~vue-toast-notification/dist/theme-sugar.css';
+@import '~vue-cool-lightbox/dist/vue-cool-lightbox.min.css'

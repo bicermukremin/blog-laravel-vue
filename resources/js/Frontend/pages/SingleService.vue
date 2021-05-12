@@ -40,12 +40,24 @@
           </div>
           <div class="col-lg-9">
             <h2 class="mb-2">{{ service.title }}</h2>
-
+              
             <img
               class="img-fluid float-right ml-5 mb-4 mt-4"
+              width="150px"
+              height="150px"
               :src="`storage/${service.images[1]}`"
               alt=""
             />
+             <p class="lead pb-4">
+                  Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                  mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                  auctor a ornare odio. Sed non mauris vitae erat consequat. Lorem quis
+                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                  elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                  Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+                  ornare.
+                </p>
 
             <p class="lead mb-4 mt-4" v-html="service.content"></p>
 

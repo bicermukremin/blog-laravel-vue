@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api;
 
 
 use App\Models\About;
+use App\Models\Email;
 use App\Models\Comment;
-use App\Models\MailModel;
 use App\Mail\CommentMailler;
 use Illuminate\Http\Request;
 use App\Mail\MessageSendMailer;
@@ -27,11 +27,11 @@ class MailController extends Controller
     {
          if(isset( $_GET['search']) && $_GET['search']!='' ){
             $searched= $_GET['search'];
-            $mails=MailModel::where('email', 'like',"%{$searched}%")
+            $mails=Email::where('email', 'like',"%{$searched}%")
            ->latest()->paginate(2);
             
         }else{
-            $mails=MailModel::latest()->paginate(2);
+            $mails=Email::latest()->paginate(2);
 
         }
         return MailResource::collection($mails);
@@ -47,7 +47,7 @@ class MailController extends Controller
     {
         $input= $request->all();
 
-       $mail=MailModel::create($input);
+       $mail=Email::create($input);
         
 
         return new MailResource($mail);
@@ -68,7 +68,7 @@ class MailController extends Controller
     
         Mail::to($input['email'])->cc('bicermukremin86@gmail.com')->queue(new MessageSendMailer($input));
         $input['type']='contact';
-        $message=MailModel::create($input);
+        $message=Email::create($input);
        
         return new MailResource($message);
     }
@@ -83,7 +83,7 @@ class MailController extends Controller
         $input['type']='contact';
         $input['content']=$request->description;
         $input['konu']='Yorum';
-        MailModel::create($input);
+        Email::create($input);
         $comment=Comment::create([
             'user_id'=>auth()->user()->id,
             'blog_id'=>$request->blog_id,
@@ -105,7 +105,7 @@ class MailController extends Controller
      public function mailUpdate(Request $request, $id)
     {
 
-         $mail=MailModel::find($id);
+         $mail=Email::find($id);
         
          $input= $request->all();
           
@@ -121,7 +121,7 @@ class MailController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MailModel $mail)
+    public function destroy(Email $mail)
     { 
         $delete=$mail->delete();
         if($delete){

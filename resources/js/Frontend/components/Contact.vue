@@ -167,7 +167,7 @@ export default {
         .catch((e) => {
           this.deleting = false;
           this.errorAlert = true;
-          this.$toast.danger("Mesajınız gönderilemedi");
+          this.$toast.error("Mesajınız gönderilemedi");
           console.log(e.res.data.data.errors);
         });
     },

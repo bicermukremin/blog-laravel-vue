@@ -96,7 +96,7 @@ export default {
     };
   },
 
-  created() {
+  beforeCreate() {
     this.$store.dispatch("initProject", { filter: null });
     axios.get("/api/projects").then((res) => {
       this.projects = res.data.data;
@@ -108,7 +108,7 @@ export default {
       this.project6 = res.data.data[5];
       this.project7 = res.data.data[6];
 
-     
+      console.log(this.projects);
     });
   },
 };

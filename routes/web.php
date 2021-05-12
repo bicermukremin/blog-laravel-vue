@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
 
 Route::any('/{any?}', function ($any=null) {
     if($any==null && $any!='madmin'&& $any!='signin' && $any!='signup'){

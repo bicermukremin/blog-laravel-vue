@@ -23,7 +23,7 @@ class ProjectFactory extends Factory
     {
         return [
             'service_id'=>1,
-            'image' => $this->faker->text,
+            'image' => "initialImage/first.png",
             'company_name'=>$this->faker->company()
         ];
     }

@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Service;
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ServiceFactory extends Factory
@@ -21,10 +22,11 @@ class ServiceFactory extends Factory
      */
     public function definition()
     {
+        $title=$this->faker->name;
        return [
-            'title' => $this->faker->name,
-            'slug' => $this->faker->name,
-            'images' => '["service\/RM5PLm0LIAq2MmiNLFGzq0O3X1wYusy0G0er8nHT.png","service\/h3INKYdLQPcPFz5i0PNFvO7HP1MHdhjoazwmuqXB.png","service\/HB2fugUECp8dda0bqrgGZK5DlgmzyiaLNqRyCYPN.png","service\/KcBit6xhCVMb1ZnAlrDZPmpuHE5zcJ4BvkftoTwQ.png","service\/GXNUJjMGXVbIX1QsFPl2IlEgD9sTsOO6gVuhglpz.png","service\/wsuIuSWGpAn6FStq4DxbpDyBThiSoTYu5M3H7QTF.jpg","service\/6mRL4KKKUZVDQKdI10ICYN2vZZjhG35sZujN0xSI.jpg","service\/P00aWGRzNcStEwgooPHQXfK6aqAEVtEuJF5ElDur.jpg","service\/HjsteRGIDobSe9RaHgaAA5SbHdMPC61jnJselqly.jpg"]',
+            'title' => $title,
+            'slug' => Str::slug($title),
+            'images' => '["initialImage\/first.png","initialImage\/logo-construction.png","initialImage\/PmdesY.png","initialImage\/web-designing - Kopya.jpg"]',
             'items' => '[{"value":"sadasdasdasdasd"},{"value":"asdasdsadsadasd"},{"value":"sdasadsadsadsads"}]',
             'content'=>$this->faker->sentence(5)
         ];
