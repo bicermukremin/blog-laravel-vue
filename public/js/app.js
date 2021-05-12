@@ -3166,6 +3166,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _components_Slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Slider */ "./resources/js/Frontend/components/Slider.vue");
 //
 //
 //
@@ -3731,51 +3732,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Slider: _components_Slider__WEBPACK_IMPORTED_MODULE_0__.default
+  },
   beforeCreate: function beforeCreate() {
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");
@@ -3841,6 +3802,106 @@ __webpack_require__.r(__webpack_exports__);
     var jQueryAppearV = document.createElement("script");
     jQueryAppearV.setAttribute("src", "frontend/vendor/modernizr/modernizr.min.js");
     document.head.appendChild(jQueryAppearV);
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      filter: {}
+    };
+  },
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapGetters)(["getSliders"])),
+  created: function created() {
+    this.$store.dispatch("initSlider", {
+      filter: this.filter
+    });
   }
 });
 
@@ -43262,6 +43323,45 @@ component.options.__file = "resources/js/Frontend/Frontend.vue"
 
 /***/ }),
 
+/***/ "./resources/js/Frontend/components/Slider.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/Frontend/components/Slider.vue ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Slider.vue?vue&type=template&id=022011fb&scoped=true& */ "./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true&");
+/* harmony import */ var _Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Slider.vue?vue&type=script&lang=js& */ "./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "022011fb",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Frontend/components/Slider.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Admin/Admin.vue?vue&type=script&lang=js&":
 /*!***************************************************************!*\
   !*** ./resources/js/Admin/Admin.vue?vue&type=script&lang=js& ***!
@@ -43307,6 +43407,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Frontend_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Frontend.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/Frontend.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Frontend_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Slider.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -43357,6 +43473,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Frontend_vue_vue_type_template_id_02799761_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Frontend_vue_vue_type_template_id_02799761_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Frontend.vue?vue&type=template&id=02799761&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/Frontend.vue?vue&type=template&id=02799761&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true& ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Slider_vue_vue_type_template_id_022011fb_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Slider.vue?vue&type=template&id=022011fb&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true&");
 
 
 /***/ }),
@@ -46298,201 +46431,171 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "body" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "main", attrs: { role: "main" } }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-style-diamond custom-nav-with-transparency nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0",
+          staticStyle: { height: "700px" },
+          attrs: {
+            "data-plugin-options": "{'autoplayTimeout': 7000}",
+            "data-dynamic-height": "['700px','700px','700px','550px','500px']"
+          }
+        },
+        [_c("Slider"), _vm._v(" "), _vm._m(1)],
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _vm._m(4),
+      _vm._v(" "),
+      _vm._m(5),
+      _vm._v(" "),
+      _vm._m(6)
+    ]),
+    _vm._v(" "),
+    _vm._m(7)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "body" }, [
-      _c(
-        "header",
-        {
-          staticClass: "header-narrow header-semi-transparent-light",
-          attrs: {
-            id: "header",
-            "data-plugin-options":
-              "{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}"
-          }
-        },
-        [
-          _c("div", { staticClass: "header-body" }, [
-            _c("div", { staticClass: "header-container container" }, [
-              _c("div", { staticClass: "header-row" }, [
-                _c("div", { staticClass: "header-column" }, [
-                  _c("div", { staticClass: "header-row" }, [
-                    _c("div", { staticClass: "header-logo" }, [
+    return _c(
+      "header",
+      {
+        staticClass: "header-narrow header-semi-transparent-light",
+        attrs: {
+          id: "header",
+          "data-plugin-options":
+            "{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}"
+        }
+      },
+      [
+        _c("div", { staticClass: "header-body" }, [
+          _c("div", { staticClass: "header-container container" }, [
+            _c("div", { staticClass: "header-row" }, [
+              _c("div", { staticClass: "header-column" }, [
+                _c("div", { staticClass: "header-row" }, [
+                  _c("div", { staticClass: "header-logo" }, [
+                    _c("img", {
+                      staticClass: "logo-default",
+                      attrs: {
+                        alt: "Porto",
+                        width: "324",
+                        height: "212",
+                        src: "img/demos/construction/logo-construction.png"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "demo-construction.html" } }, [
                       _c("img", {
-                        staticClass: "logo-default",
+                        staticClass: "logo-small",
                         attrs: {
                           alt: "Porto",
-                          width: "324",
-                          height: "212",
-                          src: "img/demos/construction/logo-construction.png"
+                          width: "131",
+                          height: "48",
+                          src:
+                            "img/demos/construction/logo-construction-small.png"
                         }
-                      }),
-                      _vm._v(" "),
-                      _c("a", { attrs: { href: "demo-construction.html" } }, [
-                        _c("img", {
-                          staticClass: "logo-small",
-                          attrs: {
-                            alt: "Porto",
-                            width: "131",
-                            height: "48",
-                            src:
-                              "img/demos/construction/logo-construction-small.png"
-                          }
-                        })
-                      ])
+                      })
                     ])
                   ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "header-column justify-content-end" },
-                  [
-                    _c("div", { staticClass: "header-row" }, [
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "header-column justify-content-end" }, [
+                _c("div", { staticClass: "header-row" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "header-nav header-nav-stripe order-2 order-lg-1"
+                    },
+                    [
                       _c(
                         "div",
                         {
                           staticClass:
-                            "header-nav header-nav-stripe order-2 order-lg-1"
+                            "header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1"
                         },
                         [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "header-nav-main header-nav-main-square header-nav-main-effect-1 header-nav-main-sub-effect-1"
-                            },
-                            [
-                              _c("nav", { staticClass: "collapse" }, [
-                                _c(
-                                  "ul",
-                                  {
-                                    staticClass: "nav nav-pills",
-                                    attrs: { id: "mainNav" }
-                                  },
-                                  [
-                                    _c("li", [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass: "nav-link active",
-                                          attrs: {
-                                            href: "demo-construction.html"
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tHome\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ]
+                          _c("nav", { staticClass: "collapse" }, [
+                            _c(
+                              "ul",
+                              {
+                                staticClass: "nav nav-pills",
+                                attrs: { id: "mainNav" }
+                              },
+                              [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link active",
+                                      attrs: { href: "demo-construction.html" }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tHome\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
                                       )
-                                    ]),
-                                    _vm._v(" "),
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link",
+                                      attrs: {
+                                        href: "demo-construction-company.html"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCompany\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", { staticClass: "dropdown" }, [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link dropdown-toggle",
+                                      attrs: {
+                                        href: "demo-construction-services.html"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tServices\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("ul", { staticClass: "dropdown-menu" }, [
                                     _c("li", [
                                       _c(
                                         "a",
                                         {
-                                          staticClass: "nav-link",
+                                          staticClass: "dropdown-item",
                                           attrs: {
                                             href:
-                                              "demo-construction-company.html"
+                                              "demo-construction-services-detail.html"
                                           }
                                         },
-                                        [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tCompany\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", { staticClass: "dropdown" }, [
-                                      _c(
-                                        "a",
-                                        {
-                                          staticClass:
-                                            "nav-link dropdown-toggle",
-                                          attrs: {
-                                            href:
-                                              "demo-construction-services.html"
-                                          }
-                                        },
-                                        [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tServices\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "ul",
-                                        { staticClass: "dropdown-menu" },
-                                        [
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                staticClass: "dropdown-item",
-                                                attrs: {
-                                                  href:
-                                                    "demo-construction-services-detail.html"
-                                                }
-                                              },
-                                              [_vm._v("Pre-Construction")]
-                                            )
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                staticClass: "dropdown-item",
-                                                attrs: {
-                                                  href:
-                                                    "demo-construction-services-detail.html"
-                                                }
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "General\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tConstruction"
-                                                )
-                                              ]
-                                            )
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                staticClass: "dropdown-item",
-                                                attrs: {
-                                                  href:
-                                                    "demo-construction-services-detail.html"
-                                                }
-                                              },
-                                              [_vm._v("Plumbing")]
-                                            )
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("li", [
-                                            _c(
-                                              "a",
-                                              {
-                                                staticClass: "dropdown-item",
-                                                attrs: {
-                                                  href:
-                                                    "demo-construction-services-detail.html"
-                                                }
-                                              },
-                                              [_vm._v("Painting")]
-                                            )
-                                          ])
-                                        ]
+                                        [_vm._v("Pre-Construction")]
                                       )
                                     ]),
                                     _vm._v(" "),
@@ -46500,15 +46603,15 @@ var staticRenderFns = [
                                       _c(
                                         "a",
                                         {
-                                          staticClass: "nav-link",
+                                          staticClass: "dropdown-item",
                                           attrs: {
                                             href:
-                                              "demo-construction-projects.html"
+                                              "demo-construction-services-detail.html"
                                           }
                                         },
                                         [
                                           _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tProjects\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                            "General\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tConstruction"
                                           )
                                         ]
                                       )
@@ -46518,16 +46621,13 @@ var staticRenderFns = [
                                       _c(
                                         "a",
                                         {
-                                          staticClass: "nav-link",
+                                          staticClass: "dropdown-item",
                                           attrs: {
-                                            href: "demo-construction-blog.html"
+                                            href:
+                                              "demo-construction-services-detail.html"
                                           }
                                         },
-                                        [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tBlog\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ]
+                                        [_vm._v("Plumbing")]
                                       )
                                     ]),
                                     _vm._v(" "),
@@ -46535,1374 +46635,1361 @@ var staticRenderFns = [
                                       _c(
                                         "a",
                                         {
-                                          staticClass: "nav-link",
+                                          staticClass: "dropdown-item",
                                           attrs: {
                                             href:
-                                              "demo-construction-contact.html"
+                                              "demo-construction-services-detail.html"
                                           }
                                         },
-                                        [
-                                          _vm._v(
-                                            "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tContact\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
-                                          )
-                                        ]
+                                        [_vm._v("Painting")]
                                       )
                                     ])
-                                  ]
-                                )
-                              ])
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "button",
-                            {
-                              staticClass: "btn header-btn-collapse-nav",
-                              attrs: {
-                                "data-toggle": "collapse",
-                                "data-target": ".header-nav-main nav"
-                              }
-                            },
-                            [_c("i", { staticClass: "fas fa-bars" })]
-                          )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link",
+                                      attrs: {
+                                        href: "demo-construction-projects.html"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tProjects\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link",
+                                      attrs: {
+                                        href: "demo-construction-blog.html"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tBlog\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                      )
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "nav-link",
+                                      attrs: {
+                                        href: "demo-construction-contact.html"
+                                      }
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tContact\n\t\t\t\t\t\t\t\t\t\t\t\t\t"
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
                         ]
                       ),
                       _vm._v(" "),
                       _c(
-                        "div",
+                        "button",
+                        {
+                          staticClass: "btn header-btn-collapse-nav",
+                          attrs: {
+                            "data-toggle": "collapse",
+                            "data-target": ".header-nav-main nav"
+                          }
+                        },
+                        [_c("i", { staticClass: "fas fa-bars" })]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "header-nav-features header-nav-features-no-border d-none d-sm-block order-1 order-lg-2"
+                    },
+                    [
+                      _c(
+                        "ul",
                         {
                           staticClass:
-                            "header-nav-features header-nav-features-no-border d-none d-sm-block order-1 order-lg-2"
+                            "header-social-icons social-icons d-none d-sm-block social-icons-clean ml-0"
                         },
                         [
-                          _c(
-                            "ul",
-                            {
-                              staticClass:
-                                "header-social-icons social-icons d-none d-sm-block social-icons-clean ml-0"
-                            },
-                            [
-                              _c(
-                                "li",
-                                { staticClass: "social-icons-facebook" },
-                                [
-                                  _c(
-                                    "a",
-                                    {
-                                      attrs: {
-                                        href: "http://www.facebook.com/",
-                                        target: "_blank",
-                                        title: "Facebook"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fab fa-facebook-f"
-                                      })
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "li",
-                                { staticClass: "social-icons-twitter" },
-                                [
-                                  _c(
-                                    "a",
-                                    {
-                                      attrs: {
-                                        href: "http://www.twitter.com/",
-                                        target: "_blank",
-                                        title: "Twitter"
-                                      }
-                                    },
-                                    [_c("i", { staticClass: "fab fa-twitter" })]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "li",
-                                { staticClass: "social-icons-linkedin" },
-                                [
-                                  _c(
-                                    "a",
-                                    {
-                                      attrs: {
-                                        href: "http://www.linkedin.com/",
-                                        target: "_blank",
-                                        title: "Linkedin"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fab fa-linkedin-in"
-                                      })
-                                    ]
-                                  )
-                                ]
-                              )
-                            ]
-                          )
+                          _c("li", { staticClass: "social-icons-facebook" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "http://www.facebook.com/",
+                                  target: "_blank",
+                                  title: "Facebook"
+                                }
+                              },
+                              [_c("i", { staticClass: "fab fa-facebook-f" })]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "social-icons-twitter" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "http://www.twitter.com/",
+                                  target: "_blank",
+                                  title: "Twitter"
+                                }
+                              },
+                              [_c("i", { staticClass: "fab fa-twitter" })]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "social-icons-linkedin" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  href: "http://www.linkedin.com/",
+                                  target: "_blank",
+                                  title: "Linkedin"
+                                }
+                              },
+                              [_c("i", { staticClass: "fab fa-linkedin-in" })]
+                            )
+                          ])
                         ]
                       )
-                    ])
-                  ]
-                )
+                    ]
+                  )
+                ])
               ])
             ])
           ])
-        ]
-      ),
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "owl-nav" }, [
+      _c("button", {
+        staticClass: "owl-prev",
+        attrs: { type: "button", role: "presentation" }
+      }),
       _vm._v(" "),
-      _c("div", { staticClass: "main", attrs: { role: "main" } }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-style-diamond custom-nav-with-transparency nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0",
-            staticStyle: { height: "700px" },
-            attrs: {
-              "data-plugin-options": "{'autoplayTimeout': 7000}",
-              "data-dynamic-height": "['700px','700px','700px','550px','500px']"
-            }
-          },
-          [
-            _c("div", { staticClass: "owl-stage-outer" }, [
-              _c("div", { staticClass: "owl-stage" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "owl-item position-relative",
-                    staticStyle: {
-                      "background-image":
-                        "url(img/demos/construction/slides/slide-construction-1.jpg)",
-                      "background-size": "cover",
-                      "background-position": "center"
-                    }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation",
-                        staticStyle: { right: "-50px" },
-                        attrs: {
-                          "data-appear-animation": "fadeInLeftShorter",
-                          "data-appear-animation-delay": "500",
-                          "data-plugin-options": "{'minWindowWidth': 0}"
-                        }
-                      },
-                      [
-                        _c("div", {
-                          staticClass: "bg-primary custom-skew-1 mb-5",
-                          staticStyle: { height: "70px" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "container position-relative z-index-1 h-100"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "row align-items-end h-100" },
-                          [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "col-10 col-sm-8 col-lg-5 ml-auto"
-                              },
-                              [
-                                _c(
-                                  "h1",
-                                  {
-                                    staticClass:
-                                      "text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation",
-                                    attrs: {
-                                      "data-appear-animation":
-                                        "fadeInLeftShorter",
-                                      "data-appear-animation-delay": "850",
-                                      "data-plugin-options":
-                                        "{'minWindowWidth': 0}"
-                                    }
-                                  },
-                                  [_vm._v("#1 FASTEST-GROWING COMPANY")]
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "owl-item position-relative",
-                    staticStyle: {
-                      "background-image":
-                        "url(img/demos/construction/slides/slide-construction-2.jpg)",
-                      "background-size": "cover",
-                      "background-position": "center"
-                    }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation",
-                        staticStyle: { right: "-50px" },
-                        attrs: {
-                          "data-appear-animation": "fadeInLeftShorter",
-                          "data-appear-animation-delay": "500",
-                          "data-plugin-options": "{'minWindowWidth': 0}"
-                        }
-                      },
-                      [
-                        _c("div", {
-                          staticClass: "bg-primary custom-skew-1 mb-5",
-                          staticStyle: { height: "70px" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "container position-relative z-index-1 h-100"
-                      },
-                      [
-                        _c(
-                          "div",
-                          { staticClass: "row align-items-end h-100" },
-                          [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "col-10 col-sm-8 col-lg-5 ml-auto"
-                              },
-                              [
-                                _c(
-                                  "h2",
-                                  {
-                                    staticClass:
-                                      "text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation",
-                                    attrs: {
-                                      "data-appear-animation":
-                                        "fadeInLeftShorter",
-                                      "data-appear-animation-delay": "850",
-                                      "data-plugin-options":
-                                        "{'minWindowWidth': 0}"
-                                    }
-                                  },
-                                  [_vm._v("MODERN OFFICES DESIGN")]
-                                )
-                              ]
-                            )
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "owl-nav" }, [
-              _c("button", {
-                staticClass: "owl-prev",
-                attrs: { type: "button", role: "presentation" }
-              }),
-              _vm._v(" "),
-              _c("button", {
-                staticClass: "owl-next",
-                attrs: { type: "button", role: "presentation" }
-              })
-            ])
-          ]
-        ),
+      _c("button", {
+        staticClass: "owl-next",
+        attrs: { type: "button", role: "presentation" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row mt-4 mt-lg-5 mb-4 py-4" }, [
+        _c("div", { staticClass: "col-lg-4" }, [
+          _c("h2", { staticClass: "mb-0 text-color-dark" }, [
+            _vm._v("Who We Are")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "lead" }, [
+            _vm._v("Lorem ipsum dolor sit amet.")
+          ])
+        ]),
         _vm._v(" "),
+        _c("div", { staticClass: "col-lg-2 text-center d-none d-lg-block" }, [
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: { src: "img/dotted-line-angle.png", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-6" }, [
+          _c("p", [
+            _vm._v(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque\n\t\t\t\t\t\t\timperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "mt-3",
+              attrs: { href: "demo-construction-company.html" }
+            },
+            [
+              _vm._v("Learn More "),
+              _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass:
+          "section section-tertiary section-no-border section-custom-construction"
+      },
+      [
         _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row mt-4 mt-lg-5 mb-4 py-4" }, [
-            _c("div", { staticClass: "col-lg-4" }, [
+          _c("div", { staticClass: "row pt-4" }, [
+            _c("div", { staticClass: "col" }, [
               _c("h2", { staticClass: "mb-0 text-color-dark" }, [
-                _vm._v("Who We Are")
+                _vm._v("Services")
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "lead" }, [
                 _vm._v("Lorem ipsum dolor sit amet.")
               ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-lg-2 text-center d-none d-lg-block" },
-              [
-                _c("img", {
-                  staticClass: "img-fluid",
-                  attrs: { src: "img/dotted-line-angle.png", alt: "" }
-                })
-              ]
-            ),
-            _vm._v(" "),
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-4" }, [
             _c("div", { staticClass: "col-lg-6" }, [
-              _c("p", [
-                _vm._v(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque\n\t\t\t\t\t\t\timperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
-                )
-              ]),
-              _vm._v(" "),
               _c(
-                "a",
+                "div",
                 {
-                  staticClass: "mt-3",
-                  attrs: { href: "demo-construction-company.html" }
+                  staticClass:
+                    "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
+                  attrs: {
+                    "data-appear-animation": "fadeInUp",
+                    "data-appear-animation-delay": "300"
+                  }
                 },
                 [
-                  _vm._v("Learn More "),
-                  _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+                  _c("div", { staticClass: "feature-box-icon w-auto" }, [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: {
+                        src:
+                          "img/demos/construction/icons/ground-construction.png",
+                        alt: "",
+                        width: "55"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "feature-box-info ml-3" }, [
+                    _c("h4", { staticClass: "mb-2" }, [
+                      _vm._v("Pre-Construction")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "mt-3",
+                        attrs: {
+                          href: "demo-construction-services-detail.html"
+                        }
+                      },
+                      [
+                        _vm._v("Learn More "),
+                        _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-6" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
+                  attrs: {
+                    "data-appear-animation": "fadeInUp",
+                    "data-appear-animation-delay": "0"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "feature-box-icon w-auto" }, [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: {
+                        src: "img/demos/construction/icons/construction.png",
+                        alt: "",
+                        width: "55"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "feature-box-info ml-3" }, [
+                    _c("h4", { staticClass: "mb-2" }, [
+                      _vm._v("General Construction")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "mt-3",
+                        attrs: {
+                          href: "demo-construction-services-detail.html"
+                        }
+                      },
+                      [
+                        _vm._v("Learn More "),
+                        _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-3 mb-4" }, [
+            _c("div", { staticClass: "col-lg-6" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
+                  attrs: {
+                    "data-appear-animation": "fadeInUp",
+                    "data-appear-animation-delay": "300"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "feature-box-icon w-auto" }, [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: {
+                        src: "img/demos/construction/icons/painting.png",
+                        alt: "",
+                        width: "55"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "feature-box-info ml-3" }, [
+                    _c("h4", { staticClass: "mb-2" }, [_vm._v("Painting")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "mt-3",
+                        attrs: {
+                          href: "demo-construction-services-detail.html"
+                        }
+                      },
+                      [
+                        _vm._v("Learn More "),
+                        _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-6" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
+                  attrs: {
+                    "data-appear-animation": "fadeInUp",
+                    "data-appear-animation-delay": "0"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "feature-box-icon w-auto" }, [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: {
+                        src: "img/demos/construction/icons/plumbing.png",
+                        alt: "",
+                        width: "55"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "feature-box-info ml-3" }, [
+                    _c("h4", { staticClass: "mb-2" }, [_vm._v("Plumbing")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "mt-3",
+                        attrs: {
+                          href: "demo-construction-services-detail.html"
+                        }
+                      },
+                      [
+                        _vm._v("Learn More "),
+                        _c("i", { staticClass: "fas fa-long-arrow-alt-right" })
+                      ]
+                    )
+                  ])
                 ]
               )
             ])
           ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "section",
-          {
-            staticClass:
-              "section section-tertiary section-no-border section-custom-construction"
-          },
-          [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "row pt-4" }, [
-                _c("div", { staticClass: "col" }, [
-                  _c("h2", { staticClass: "mb-0 text-color-dark" }, [
-                    _vm._v("Services")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "lead" }, [
-                    _vm._v("Lorem ipsum dolor sit amet.")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "pt-3 pb-4 home-concept-construction" },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row pt-4" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("h2", { staticClass: "mb-0 text-color-dark" }, [
+                _vm._v("Projects")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "lead" }, [
+                _vm._v("Lorem ipsum dolor sit amet.")
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "diamonds-wrapper lightbox",
+                  attrs: {
+                    "data-plugin-options":
+                      "{'delegate': '.diamond', 'type': 'image', 'gallery': {'enabled': true}}"
+                  }
+                },
+                [
+                  _c("ul", { staticClass: "diamonds" }, [
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-1.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-1.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-2.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-2.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-3.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-3.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond diamond-sm",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-4.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-4.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-5.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-5.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond diamond-sm",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-6.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-6.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "diamond diamond-sm",
+                          attrs: {
+                            href:
+                              "img/demos/construction/gallery/construction-gallery-7.jpg"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "content" }, [
+                            _c("img", {
+                              staticClass: "img-fluid",
+                              attrs: {
+                                src:
+                                  "img/demos/construction/gallery/construction-gallery-7.jpg",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]
+                      )
+                    ])
                   ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row mt-4" }, [
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
-                      attrs: {
-                        "data-appear-animation": "fadeInUp",
-                        "data-appear-animation-delay": "300"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "feature-box-icon w-auto" }, [
-                        _c("img", {
-                          staticClass: "img-fluid",
-                          attrs: {
-                            src:
-                              "img/demos/construction/icons/ground-construction.png",
-                            alt: "",
-                            width: "55"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "feature-box-info ml-3" }, [
-                        _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v("Pre-Construction")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "mt-3",
-                            attrs: {
-                              href: "demo-construction-services-detail.html"
-                            }
-                          },
-                          [
-                            _vm._v("Learn More "),
-                            _c("i", {
-                              staticClass: "fas fa-long-arrow-alt-right"
-                            })
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
-                      attrs: {
-                        "data-appear-animation": "fadeInUp",
-                        "data-appear-animation-delay": "0"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "feature-box-icon w-auto" }, [
-                        _c("img", {
-                          staticClass: "img-fluid",
-                          attrs: {
-                            src:
-                              "img/demos/construction/icons/construction.png",
-                            alt: "",
-                            width: "55"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "feature-box-info ml-3" }, [
-                        _c("h4", { staticClass: "mb-2" }, [
-                          _vm._v("General Construction")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet. Nulla lacinia iaculis nulla."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "mt-3",
-                            attrs: {
-                              href: "demo-construction-services-detail.html"
-                            }
-                          },
-                          [
-                            _vm._v("Learn More "),
-                            _c("i", {
-                              staticClass: "fas fa-long-arrow-alt-right"
-                            })
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row mt-3 mb-4" }, [
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
-                      attrs: {
-                        "data-appear-animation": "fadeInUp",
-                        "data-appear-animation-delay": "300"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "feature-box-icon w-auto" }, [
-                        _c("img", {
-                          staticClass: "img-fluid",
-                          attrs: {
-                            src: "img/demos/construction/icons/painting.png",
-                            alt: "",
-                            width: "55"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "feature-box-info ml-3" }, [
-                        _c("h4", { staticClass: "mb-2" }, [_vm._v("Painting")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "mt-3",
-                            attrs: {
-                              href: "demo-construction-services-detail.html"
-                            }
-                          },
-                          [
-                            _vm._v("Learn More "),
-                            _c("i", {
-                              staticClass: "fas fa-long-arrow-alt-right"
-                            })
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation",
-                      attrs: {
-                        "data-appear-animation": "fadeInUp",
-                        "data-appear-animation-delay": "0"
-                      }
-                    },
-                    [
-                      _c("div", { staticClass: "feature-box-icon w-auto" }, [
-                        _c("img", {
-                          staticClass: "img-fluid",
-                          attrs: {
-                            src: "img/demos/construction/icons/plumbing.png",
-                            alt: "",
-                            width: "55"
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "feature-box-info ml-3" }, [
-                        _c("h4", { staticClass: "mb-2" }, [_vm._v("Plumbing")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\t\t\tpellentesque imperdiet."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "mt-3",
-                            attrs: {
-                              href: "demo-construction-services-detail.html"
-                            }
-                          },
-                          [
-                            _vm._v("Learn More "),
-                            _c("i", {
-                              staticClass: "fas fa-long-arrow-alt-right"
-                            })
-                          ]
-                        )
-                      ])
-                    ]
-                  )
-                ])
-              ])
+                ]
+              )
             ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("section", { staticClass: "pt-3 pb-4 home-concept-construction" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row pt-4" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("h2", { staticClass: "mb-0 text-color-dark" }, [
-                  _vm._v("Projects")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "lead" }, [
-                  _vm._v("Lorem ipsum dolor sit amet.")
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "row row-diamonds-description justify-content-center justify-content-xl-start text-center text-xl-left"
+            },
+            [
+              _c("div", { staticClass: "col-md-8 col-lg-6" }, [
+                _c("p", [
+                  _vm._v(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\tpellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.\n\t\t\t\t\t\t\t\tQuisque rutrum pellentesque imperdiet."
+                  )
                 ]),
                 _vm._v(" "),
                 _c(
-                  "div",
+                  "a",
                   {
-                    staticClass: "diamonds-wrapper lightbox",
-                    attrs: {
-                      "data-plugin-options":
-                        "{'delegate': '.diamond', 'type': 'image', 'gallery': {'enabled': true}}"
-                    }
+                    staticClass: "btn btn-outline btn-primary",
+                    attrs: { href: "demo-construction-projects.html" }
                   },
-                  [
-                    _c("ul", { staticClass: "diamonds" }, [
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-1.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-1.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-2.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-2.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-3.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-3.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond diamond-sm",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-4.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-4.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-5.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-5.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond diamond-sm",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-6.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-6.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "diamond diamond-sm",
-                            attrs: {
-                              href:
-                                "img/demos/construction/gallery/construction-gallery-7.jpg"
-                            }
-                          },
-                          [
-                            _c("div", { staticClass: "content" }, [
-                              _c("img", {
-                                staticClass: "img-fluid",
-                                attrs: {
-                                  src:
-                                    "img/demos/construction/gallery/construction-gallery-7.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ])
-                          ]
-                        )
-                      ])
-                    ])
-                  ]
+                  [_vm._v("View All\n\t\t\t\t\t\t\t\tProjects")]
                 )
               ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "row row-diamonds-description justify-content-center justify-content-xl-start text-center text-xl-left"
-              },
-              [
-                _c("div", { staticClass: "col-md-8 col-lg-6" }, [
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      {
+        staticClass: "section section-background mb-4",
+        staticStyle: {
+          "background-image":
+            "url(img/demos/construction/testimonials/testimonials-bg.jpg)",
+          "background-position": "50% 100%",
+          "min-height": "540px",
+          "background-size": "cover"
+        }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row justify-content-end" }, [
+            _c("div", { staticClass: "col-lg-6" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "owl-carousel owl-theme nav-bottom rounded-nav mt-4 pt-4 mb-4 pb-4",
+                  attrs: {
+                    "data-plugin-options": "{'items': 1, 'loop': false}"
+                  }
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "testimonial testimonial-style-2 testimonial-with-quotes mb-0"
+                        },
+                        [
+                          _c("blockquote", [
+                            _c("p", [
+                              _vm._v(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget\n\t\t\t\t\t\t\t\t\t\t\t\t\trisus porta, tincidunt turpis at, interdum tortor. Suspendisse\n\t\t\t\t\t\t\t\t\t\t\t\t\tpotenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t\t\t\t\t\t\t\tSociis natoque penatibus et magnis dis parturient montes, nascetur\n\t\t\t\t\t\t\t\t\t\t\t\t\tridiculus mus. Fusce ante tellus, convallis non consectetur sed,\n\t\t\t\t\t\t\t\t\t\t\t\t\tpharetra nec ex."
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "testimonial-author" }, [
+                            _c("p", [
+                              _c("strong", [_vm._v("Ana Smith")]),
+                              _c("span", [_vm._v("Porto Magazine")])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("div", { staticClass: "col" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "testimonial testimonial-style-2 testimonial-with-quotes mb-0"
+                        },
+                        [
+                          _c("blockquote", [
+                            _c("p", [
+                              _vm._v(
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget\n\t\t\t\t\t\t\t\t\t\t\t\t\trisus porta, tincidunt turpis at, interdum tortor. Suspendisse\n\t\t\t\t\t\t\t\t\t\t\t\t\tpotenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t\t\t\t\t\t\t"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "testimonial-author" }, [
+                            _c("p", [
+                              _c("strong", [_vm._v("Jessica Smith")]),
+                              _c("span", [_vm._v("Porto Magazine")])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "pt-3 section-custom-construction-2" },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-12 text-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "owl-carousel owl-theme stage-margin rounded-nav",
+                  attrs: {
+                    "data-plugin-options":
+                      "{'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40, 'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}"
+                  }
+                },
+                [
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-1.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-2.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-3.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-4.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-5.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-6.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-4.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("img", {
+                      staticClass: "img-fluid",
+                      attrs: { src: "img/logos/logo-2.png", alt: "" }
+                    })
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-12 text-center mt-4" }, [
+              _c("hr", { staticClass: "solid mt-0 mb-4" })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row pt-4" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("h2", { staticClass: "mb-0 text-color-dark" }, [
+                _vm._v("Blog")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "lead mb-2" }, [
+                _vm._v("Lorem ipsum dolor sit amet.")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("div", { staticClass: "recent-posts mt-4" }, [
+                _c(
+                  "a",
+                  { attrs: { href: "demo-construction-blog-detail.html" } },
+                  [
+                    _c("img", {
+                      staticClass: "img-fluid pb-3",
+                      attrs: {
+                        src:
+                          "img/demos/construction/blog/blog-construction-1.jpg",
+                        alt: "Blog"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("article", { staticClass: "post" }, [
+                  _c("div", { staticClass: "post-date" }, [
+                    _c("span", { staticClass: "day" }, [_vm._v("15")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "month" }, [_vm._v("Jan")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-color-dark",
+                        attrs: { href: "demo-construction-blog-detail.html" }
+                      },
+                      [_vm._v("Lorem ipsum dolor sit amet")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("By admin")]),
+                  _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum\n\t\t\t\t\t\t\t\tpellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus elit.\n\t\t\t\t\t\t\t\tQuisque rutrum pellentesque imperdiet."
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
                     )
                   ]),
                   _vm._v(" "),
                   _c(
                     "a",
                     {
-                      staticClass: "btn btn-outline btn-primary",
-                      attrs: { href: "demo-construction-projects.html" }
-                    },
-                    [_vm._v("View All\n\t\t\t\t\t\t\t\tProjects")]
-                  )
-                ])
-              ]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "section",
-          {
-            staticClass: "section section-background mb-4",
-            staticStyle: {
-              "background-image":
-                "url(img/demos/construction/testimonials/testimonials-bg.jpg)",
-              "background-position": "50% 100%",
-              "min-height": "540px",
-              "background-size": "cover"
-            }
-          },
-          [
-            _c("div", { staticClass: "container" }, [
-              _c("div", { staticClass: "row justify-content-end" }, [
-                _c("div", { staticClass: "col-lg-6" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "owl-carousel owl-theme nav-bottom rounded-nav mt-4 pt-4 mb-4 pb-4",
-                      attrs: {
-                        "data-plugin-options": "{'items': 1, 'loop': false}"
-                      }
+                      staticClass: "mt-3",
+                      attrs: { href: "demo-construction-blog-detail.html" }
                     },
                     [
-                      _c("div", [
-                        _c("div", { staticClass: "col" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "testimonial testimonial-style-2 testimonial-with-quotes mb-0"
-                            },
-                            [
-                              _c("blockquote", [
-                                _c("p", [
-                                  _vm._v(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget\n\t\t\t\t\t\t\t\t\t\t\t\t\trisus porta, tincidunt turpis at, interdum tortor. Suspendisse\n\t\t\t\t\t\t\t\t\t\t\t\t\tpotenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t\t\t\t\t\t\t\tSociis natoque penatibus et magnis dis parturient montes, nascetur\n\t\t\t\t\t\t\t\t\t\t\t\t\tridiculus mus. Fusce ante tellus, convallis non consectetur sed,\n\t\t\t\t\t\t\t\t\t\t\t\t\tpharetra nec ex."
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "testimonial-author" }, [
-                                _c("p", [
-                                  _c("strong", [_vm._v("Ana Smith")]),
-                                  _c("span", [_vm._v("Porto Magazine")])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", [
-                        _c("div", { staticClass: "col" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "testimonial testimonial-style-2 testimonial-with-quotes mb-0"
-                            },
-                            [
-                              _c("blockquote", [
-                                _c("p", [
-                                  _vm._v(
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget\n\t\t\t\t\t\t\t\t\t\t\t\t\trisus porta, tincidunt turpis at, interdum tortor. Suspendisse\n\t\t\t\t\t\t\t\t\t\t\t\t\tpotenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\t\t\t\t\t\t\t\t\t\t\t\t"
-                                  )
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "testimonial-author" }, [
-                                _c("p", [
-                                  _c("strong", [_vm._v("Jessica Smith")]),
-                                  _c("span", [_vm._v("Porto Magazine")])
-                                ])
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
+                      _vm._v("Read More "),
+                      _c("i", {
+                        staticClass:
+                          "fas fa-long-arrow-alt-right position-relative top-1"
+                      })
                     ]
                   )
                 ])
               ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("section", { staticClass: "pt-3 section-custom-construction-2" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-12 text-center" }, [
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("div", { staticClass: "recent-posts mt-4" }, [
                 _c(
-                  "div",
-                  {
-                    staticClass:
-                      "owl-carousel owl-theme stage-margin rounded-nav",
-                    attrs: {
-                      "data-plugin-options":
-                        "{'margin': 10, 'loop': true, 'nav': true, 'dots': false, 'stagePadding': 40, 'items': 6, 'autoplay': true, 'autoplayTimeout': 3000}"
-                    }
-                  },
+                  "a",
+                  { attrs: { href: "demo-construction-blog-detail.html" } },
                   [
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-1.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-2.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-3.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-4.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-5.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-6.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-4.png", alt: "" }
-                      })
-                    ]),
-                    _vm._v(" "),
-                    _c("div", [
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: { src: "img/logos/logo-2.png", alt: "" }
-                      })
-                    ])
+                    _c("img", {
+                      staticClass: "img-fluid pb-3",
+                      attrs: {
+                        src:
+                          "img/demos/construction/blog/blog-construction-2.jpg",
+                        alt: "Blog"
+                      }
+                    })
                   ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-12 text-center mt-4" }, [
-                _c("hr", { staticClass: "solid mt-0 mb-4" })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row pt-4" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("h2", { staticClass: "mb-0 text-color-dark" }, [
-                  _vm._v("Blog")
-                ]),
+                ),
                 _vm._v(" "),
-                _c("p", { staticClass: "lead mb-2" }, [
-                  _vm._v("Lorem ipsum dolor sit amet.")
+                _c("article", { staticClass: "post" }, [
+                  _c("div", { staticClass: "post-date" }, [
+                    _c("span", { staticClass: "day" }, [_vm._v("15")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "month" }, [_vm._v("Jan")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "text-color-dark",
+                        attrs: { href: "demo-construction-blog-detail.html" }
+                      },
+                      [_vm._v("Lorem ipsum dolor sit amet")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("By admin")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "mt-3",
+                      attrs: { href: "demo-construction-blog-detail.html" }
+                    },
+                    [
+                      _vm._v("Read More "),
+                      _c("i", {
+                        staticClass:
+                          "fas fa-long-arrow-alt-right position-relative top-1"
+                      })
+                    ]
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-4" }, [
-                _c("div", { staticClass: "recent-posts mt-4" }, [
-                  _c(
-                    "a",
-                    { attrs: { href: "demo-construction-blog-detail.html" } },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid pb-3",
-                        attrs: {
-                          src:
-                            "img/demos/construction/blog/blog-construction-1.jpg",
-                          alt: "Blog"
-                        }
-                      })
-                    ]
-                  ),
+            _c("div", { staticClass: "col-lg-4" }, [
+              _c("div", { staticClass: "recent-posts mt-4" }, [
+                _c(
+                  "a",
+                  { attrs: { href: "demo-construction-blog-detail.html" } },
+                  [
+                    _c("img", {
+                      staticClass: "img-fluid pb-3",
+                      attrs: {
+                        src:
+                          "img/demos/construction/blog/blog-construction-3.jpg",
+                        alt: "Blog"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c("article", { staticClass: "post" }, [
+                  _c("div", { staticClass: "post-date" }, [
+                    _c("span", { staticClass: "day" }, [_vm._v("15")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "month" }, [_vm._v("Jan")])
+                  ]),
                   _vm._v(" "),
-                  _c("article", { staticClass: "post" }, [
-                    _c("div", { staticClass: "post-date" }, [
-                      _c("span", { staticClass: "day" }, [_vm._v("15")]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "month" }, [_vm._v("Jan")])
-                    ]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-color-dark",
-                          attrs: { href: "demo-construction-blog-detail.html" }
-                        },
-                        [_vm._v("Lorem ipsum dolor sit amet")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("By admin")]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
-                      )
-                    ]),
-                    _vm._v(" "),
+                  _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
                     _c(
                       "a",
                       {
-                        staticClass: "mt-3",
+                        staticClass: "text-color-dark",
                         attrs: { href: "demo-construction-blog-detail.html" }
                       },
-                      [
-                        _vm._v("Read More "),
-                        _c("i", {
-                          staticClass:
-                            "fas fa-long-arrow-alt-right position-relative top-1"
-                        })
-                      ]
+                      [_vm._v("Lorem ipsum dolor sit amet")]
                     )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4" }, [
-                _c("div", { staticClass: "recent-posts mt-4" }, [
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("By admin")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c(
                     "a",
-                    { attrs: { href: "demo-construction-blog-detail.html" } },
+                    {
+                      staticClass: "mt-3",
+                      attrs: { href: "demo-construction-blog-detail.html" }
+                    },
                     [
-                      _c("img", {
-                        staticClass: "img-fluid pb-3",
-                        attrs: {
-                          src:
-                            "img/demos/construction/blog/blog-construction-2.jpg",
-                          alt: "Blog"
-                        }
+                      _vm._v("Read More "),
+                      _c("i", {
+                        staticClass:
+                          "fas fa-long-arrow-alt-right position-relative top-1"
                       })
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c("article", { staticClass: "post" }, [
-                    _c("div", { staticClass: "post-date" }, [
-                      _c("span", { staticClass: "day" }, [_vm._v("15")]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "month" }, [_vm._v("Jan")])
-                    ]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-color-dark",
-                          attrs: { href: "demo-construction-blog-detail.html" }
-                        },
-                        [_vm._v("Lorem ipsum dolor sit amet")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("By admin")]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "mt-3",
-                        attrs: { href: "demo-construction-blog-detail.html" }
-                      },
-                      [
-                        _vm._v("Read More "),
-                        _c("i", {
-                          staticClass:
-                            "fas fa-long-arrow-alt-right position-relative top-1"
-                        })
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4" }, [
-                _c("div", { staticClass: "recent-posts mt-4" }, [
-                  _c(
-                    "a",
-                    { attrs: { href: "demo-construction-blog-detail.html" } },
-                    [
-                      _c("img", {
-                        staticClass: "img-fluid pb-3",
-                        attrs: {
-                          src:
-                            "img/demos/construction/blog/blog-construction-3.jpg",
-                          alt: "Blog"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("article", { staticClass: "post" }, [
-                    _c("div", { staticClass: "post-date" }, [
-                      _c("span", { staticClass: "day" }, [_vm._v("15")]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "month" }, [_vm._v("Jan")])
-                    ]),
-                    _vm._v(" "),
-                    _c("h4", { staticClass: "pt-2 pb-0 mb-0" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "text-color-dark",
-                          attrs: { href: "demo-construction-blog-detail.html" }
-                        },
-                        [_vm._v("Lorem ipsum dolor sit amet")]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("By admin")]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula\n\t\t\t\t\t\t\t\t\t\test, in consequat libero."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "mt-3",
-                        attrs: { href: "demo-construction-blog-detail.html" }
-                      },
-                      [
-                        _vm._v("Read More "),
-                        _c("i", {
-                          staticClass:
-                            "fas fa-long-arrow-alt-right position-relative top-1"
-                        })
-                      ]
-                    )
-                  ])
+                  )
                 ])
               ])
             ])
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("footer", { attrs: { id: "footer" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row pt-4 pb-5 text-center text-md-left" }, [
-            _c("div", { staticClass: "col-md-3" }, [
-              _c("a", { attrs: { href: "demo-construction.html" } }, [
-                _c("img", {
-                  staticClass: "img-fluid logo",
-                  attrs: {
-                    alt: "Porto",
-                    width: "110",
-                    src: "img/demos/construction/logo-construction-small.png"
-                  }
-                })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", { attrs: { id: "footer" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row pt-4 pb-5 text-center text-md-left" }, [
+          _c("div", { staticClass: "col-md-3" }, [
+            _c("a", { attrs: { href: "demo-construction.html" } }, [
+              _c("img", {
+                staticClass: "img-fluid logo",
+                attrs: {
+                  alt: "Porto",
+                  width: "110",
+                  src: "img/demos/construction/logo-construction-small.png"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-4" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-6 mb-2" }, [
+                _c("h4", [_vm._v("Navigation")])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-lg-6 mb-2" }, [
-                  _c("h4", [_vm._v("Navigation")])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-6 mb-0" }, [
-                  _c("ul", { staticClass: "list list-footer-nav" }, [
-                    _c("li", [
-                      _c("a", { attrs: { href: "demo-construction.html" } }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-6 mb-0" }, [
+                _c("ul", { staticClass: "list list-footer-nav" }, [
+                  _c("li", [
+                    _c("a", { attrs: { href: "demo-construction.html" } }, [
+                      _vm._v(
+                        "\n\t\t\t\t\t\t\t\t\t\t\tHome\n\t\t\t\t\t\t\t\t\t\t"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      { attrs: { href: "demo-construction-company.html" } },
+                      [
                         _vm._v(
-                          "\n\t\t\t\t\t\t\t\t\t\t\tHome\n\t\t\t\t\t\t\t\t\t\t"
+                          "\n\t\t\t\t\t\t\t\t\t\t\tCompany\n\t\t\t\t\t\t\t\t\t\t"
                         )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        { attrs: { href: "demo-construction-company.html" } },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t\tCompany\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        { attrs: { href: "demo-construction-services.html" } },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t\tServices\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-6" }, [
-                  _c("ul", { staticClass: "list list-footer-nav" }, [
-                    _c("li", [
-                      _c(
-                        "a",
-                        { attrs: { href: "demo-construction-projects.html" } },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t\tProjects\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        { attrs: { href: "demo-construction-blog.html" } },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t\tBlog\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ]
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c(
-                        "a",
-                        { attrs: { href: "demo-construction-contact.html" } },
-                        [
-                          _vm._v(
-                            "\n\t\t\t\t\t\t\t\t\t\t\tContact\n\t\t\t\t\t\t\t\t\t\t"
-                          )
-                        ]
-                      )
-                    ])
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      { attrs: { href: "demo-construction-services.html" } },
+                      [
+                        _vm._v(
+                          "\n\t\t\t\t\t\t\t\t\t\t\tServices\n\t\t\t\t\t\t\t\t\t\t"
+                        )
+                      ]
+                    )
                   ])
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-5" }, [
-              _c("h4", [_vm._v("Newsletter")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "newsletter" }, [
-                _c(
-                  "div",
-                  {
-                    staticClass: "alert alert-success d-none",
-                    attrs: { id: "newsletterSuccess" }
-                  },
-                  [
-                    _c("strong", [_vm._v("Success!")]),
-                    _vm._v(
-                      " You've been added to our email list.\n\t\t\t\t\t\t\t"
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", {
-                  staticClass: "alert alert-danger d-none",
-                  attrs: { id: "newsletterError" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "form",
-                  {
-                    attrs: {
-                      id: "newsletterForm",
-                      action: "php/newsletter-subscribe.php",
-                      method: "POST"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "input-group" }, [
-                      _c("input", {
-                        staticClass: "form-control form-control-sm",
-                        attrs: {
-                          placeholder: "Email Address",
-                          name: "newsletterEmail",
-                          id: "newsletterEmail",
-                          type: "text"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "input-group-append" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-light",
-                            attrs: { type: "submit" }
-                          },
-                          [_c("i", { staticClass: "icon-paper-plane icons" })]
-                        )
-                      ])
-                    ])
-                  ]
-                )
               ]),
               _vm._v(" "),
-              _c("p", [
-                _c("i", { staticClass: "fas fa-phone" }),
-                _vm._v(" (123) 456-789 "),
-                _c("i", { staticClass: "far fa-envelope ml-2" }),
-                _vm._v(" "),
-                _c("a", { attrs: { href: "mailto:mail@example.com" } }, [
-                  _vm._v("mail@example.com")
+              _c("div", { staticClass: "col-6" }, [
+                _c("ul", { staticClass: "list list-footer-nav" }, [
+                  _c("li", [
+                    _c(
+                      "a",
+                      { attrs: { href: "demo-construction-projects.html" } },
+                      [
+                        _vm._v(
+                          "\n\t\t\t\t\t\t\t\t\t\t\tProjects\n\t\t\t\t\t\t\t\t\t\t"
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      { attrs: { href: "demo-construction-blog.html" } },
+                      [
+                        _vm._v(
+                          "\n\t\t\t\t\t\t\t\t\t\t\tBlog\n\t\t\t\t\t\t\t\t\t\t"
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      { attrs: { href: "demo-construction-contact.html" } },
+                      [
+                        _vm._v(
+                          "\n\t\t\t\t\t\t\t\t\t\t\tContact\n\t\t\t\t\t\t\t\t\t\t"
+                        )
+                      ]
+                    )
+                  ])
                 ])
               ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "footer-copyright" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-12 text-center" }, [
-                _c("p", [_vm._v("© Copyright 2021. All Rights Reserved.")])
+          _c("div", { staticClass: "col-md-5" }, [
+            _c("h4", [_vm._v("Newsletter")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "newsletter" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "alert alert-success d-none",
+                  attrs: { id: "newsletterSuccess" }
+                },
+                [
+                  _c("strong", [_vm._v("Success!")]),
+                  _vm._v(
+                    " You've been added to our email list.\n\t\t\t\t\t\t\t"
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "alert alert-danger d-none",
+                attrs: { id: "newsletterError" }
+              }),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  attrs: {
+                    id: "newsletterForm",
+                    action: "php/newsletter-subscribe.php",
+                    method: "POST"
+                  }
+                },
+                [
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("input", {
+                      staticClass: "form-control form-control-sm",
+                      attrs: {
+                        placeholder: "Email Address",
+                        name: "newsletterEmail",
+                        id: "newsletterEmail",
+                        type: "text"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "input-group-append" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-light",
+                          attrs: { type: "submit" }
+                        },
+                        [_c("i", { staticClass: "icon-paper-plane icons" })]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("i", { staticClass: "fas fa-phone" }),
+              _vm._v(" (123) 456-789 "),
+              _c("i", { staticClass: "far fa-envelope ml-2" }),
+              _vm._v(" "),
+              _c("a", { attrs: { href: "mailto:mail@example.com" } }, [
+                _vm._v("mail@example.com")
               ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "footer-copyright" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-12 text-center" }, [
+              _c("p", [_vm._v("© Copyright 2021. All Rights Reserved.")])
             ])
           ])
         ])
       ])
     ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Frontend/components/Slider.vue?vue&type=template&id=022011fb&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "owl-stage-outer" }, [
+    _c(
+      "div",
+      { staticClass: "owl-stage" },
+      _vm._l(_vm.getSliders, function(slider) {
+        return _c(
+          "div",
+          {
+            key: slider.id,
+            staticClass: "owl-item position-relative",
+            staticStyle: {
+              "background-size": "cover",
+              "background-position": "center"
+            },
+            style: {
+              "background-image": " url(" + slider.image + ")"
+            }
+          },
+          [
+            _vm._m(0, true),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "container position-relative z-index-1 h-100" },
+              [
+                _c("div", { staticClass: "row align-items-end h-100" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-10 col-sm-8 col-lg-5 ml-auto" },
+                    [
+                      _c(
+                        "h1",
+                        {
+                          staticClass:
+                            "text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation",
+                          attrs: {
+                            "data-appear-animation": "fadeInLeftShorter",
+                            "data-appear-animation-delay": "850",
+                            "data-plugin-options": "{'minWindowWidth': 0}"
+                          }
+                        },
+                        [_vm._v(_vm._s(slider.title))]
+                      )
+                    ]
+                  )
+                ])
+              ]
+            )
+          ]
+        )
+      }),
+      0
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation",
+        staticStyle: { right: "-50px" },
+        attrs: {
+          "data-appear-animation": "fadeInLeftShorter",
+          "data-appear-animation-delay": "500",
+          "data-plugin-options": "{'minWindowWidth': 0}"
+        }
+      },
+      [
+        _c("div", {
+          staticClass: "bg-primary custom-skew-1 mb-5",
+          staticStyle: { height: "70px" }
+        })
+      ]
+    )
   }
 ]
 render._withStripped = true

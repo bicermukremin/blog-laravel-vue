@@ -102,51 +102,7 @@
 			<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center show-dots-hover nav-style-diamond custom-nav-with-transparency nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0"
 				data-plugin-options="{'autoplayTimeout': 7000}"
 				data-dynamic-height="['700px','700px','700px','550px','500px']" style="height: 700px;">
-				<div class="owl-stage-outer">
-					<div class="owl-stage">
-
-						<!-- Carousel Slide 1 -->
-						<div class="owl-item position-relative"
-							style="background-image: url(img/demos/construction/slides/slide-construction-1.jpg); background-size: cover; background-position: center;">
-
-							<div class="position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation"
-								data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500"
-								data-plugin-options="{'minWindowWidth': 0}" style="right: -50px;">
-								<div class="bg-primary custom-skew-1 mb-5" style="height: 70px;"></div>
-							</div>
-							<div class="container position-relative z-index-1 h-100">
-								<div class="row align-items-end h-100">
-									<div class="col-10 col-sm-8 col-lg-5 ml-auto">
-										<h1 class="text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation"
-											data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="850"
-											data-plugin-options="{'minWindowWidth': 0}">#1 FASTEST-GROWING COMPANY</h1>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- Carousel Slide 2 -->
-						<div class="owl-item position-relative"
-							style="background-image: url(img/demos/construction/slides/slide-construction-2.jpg); background-size: cover; background-position: center;">
-
-							<div class="position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation"
-								data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="500"
-								data-plugin-options="{'minWindowWidth': 0}" style="right: -50px;">
-								<div class="bg-primary custom-skew-1 mb-5" style="height: 70px;"></div>
-							</div>
-							<div class="container position-relative z-index-1 h-100">
-								<div class="row align-items-end h-100">
-									<div class="col-10 col-sm-8 col-lg-5 ml-auto">
-										<h2 class="text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation"
-											data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="850"
-											data-plugin-options="{'minWindowWidth': 0}">MODERN OFFICES DESIGN</h2>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
+			<Slider></Slider>
 				<div class="owl-nav">
 					<button type="button" role="presentation" class="owl-prev"></button>
 					<button type="button" role="presentation" class="owl-next"></button>
@@ -608,7 +564,11 @@
 </template>
 
 <script>
+import Slider from './components/Slider'
     export default {
+		components:{
+			Slider
+		},
         beforeCreate() {
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");
