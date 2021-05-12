@@ -72,6 +72,7 @@ const app = new Vue({
     },
     async created() {
         this.$store.dispatch("loadUser");
+        this.$store.dispatch("indexSetting");
 
 
         /*  this.$store.dispatch("initBlog", { filter: this.filter }); */

@@ -29,7 +29,7 @@ const mutations = {
         state.blogs.unshift(payload);
     },
     updateBlog(state, { blogUpdate, index }) {
-        debugger;
+
         Vue.set(state.blogs, index, blogUpdate);
     },
     deleteBlog(state, index) {

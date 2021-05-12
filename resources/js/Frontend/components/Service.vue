@@ -78,7 +78,7 @@ export default {
     axios.get("/api/services").then((res) => {
       this.services = res.data.data;
       this.serviceCount = res.data.data.length;
-      console.log(this.services);
+     
     });
   },
 };

@@ -108,7 +108,6 @@ export default {
       this.project6 = res.data.data[5];
       this.project7 = res.data.data[6];
 
-      console.log(this.projects);
     });
   },
 };

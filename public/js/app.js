@@ -1926,8 +1926,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           switch (_context.prev = _context.next) {
             case 0:
               _this.$store.dispatch("loadUser");
-
-              _this.$store.dispatch("indexSetting");
               /* $("head").append(
                 $('<link rel="stylesheet">').attr(
                   "href",
@@ -2019,7 +2017,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               jQueryAppearP.setAttribute("src", "admin/master/style-switcher/style.switcher.localstorage.js");
               document.head.appendChild(jQueryAppearP); // Maintain Scroll Position
 
-            case 38:
+            case 37:
             case "end":
               return _context.stop();
           }
@@ -6886,12 +6884,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_mixins_validationErrors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../shared/mixins/validationErrors */ "./resources/js/shared/mixins/validationErrors.js");
 /* harmony import */ var _shared_utils_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../shared/utils/auth */ "./resources/js/shared/utils/auth.js");
 /* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -7017,6 +7022,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+
 
 
 
@@ -7048,6 +7054,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       maxLength: (0,vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.maxLength)(8)
     }
   },
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_4__.mapGetters)(["getSetting", "isAdmin"])),
   methods: {
     login: function login() {
       var _this = this;
@@ -7071,12 +7078,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   if (res.status == 204) {
                     (0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_2__.logIn)();
 
-                    _this.$store.dispatch("loadUser");
+                    _this.$store.dispatch("loadUser").then(function () {
+                      return _this.$router.push({
+                        name: "admin"
+                      });
+                    });
                   }
-
-                  _this.$router.push({
-                    name: "admin"
-                  });
                 })["catch"](function (error) {
                   _this.errors = error.response && error.response.data.errors;
                 });
@@ -7939,12 +7946,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_mixins_validationErrors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../shared/mixins/validationErrors */ "./resources/js/shared/mixins/validationErrors.js");
 /* harmony import */ var _shared_utils_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../shared/utils/auth */ "./resources/js/shared/utils/auth.js");
 /* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -8106,20 +8120,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 
 
@@ -8142,15 +8143,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     },
     email: {
       email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.email,
-      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.required // uniq  : value => {
-      //     return value !== 'gokhan@gkandemir.com'
-      // }
-      // return axios.get("url")
-      //     .then(response => {
-      //         return false
-      //     })
-      // return value !== 'gokhan@gkandemir.com'
-
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.required
     },
     password: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_3__.required,
@@ -8167,6 +8160,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       })
     }
   },
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_4__.mapGetters)(["getSetting"])),
   methods: {
     register: function register() {
       var _this = this;
@@ -10512,13 +10506,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
               case 0:
                 _context.next = 2;
                 return axios.post("/logout").then(function (res) {
-                  _this.$store.dispatch("logout").then(function () {
-                    return _this.$router.push("/");
-                  }).then(function () {
-                    return _this.$toast.success("Başarılı bir şekilde çıkış yaptınız.");
-                  })["catch"](function () {
-                    return _this.$toast.error("Sayfayı yenileyin ve tekrar deneyiniz.");
-                  });
+                  if (res.status == 204) {
+                    _this.$store.dispatch("logout").then(function () {
+                      return _this.$toast.success("Başarılı bir şekilde çıkış yaptınız.");
+                    });
+                  }
+                })["catch"](function () {
+                  return _this.$toast.error("Sayfayı yenileyin ve tekrar deneyiniz.");
                 });
 
               case 2:
@@ -10661,7 +10655,6 @@ __webpack_require__.r(__webpack_exports__);
       _this.project5 = res.data.data[4];
       _this.project6 = res.data.data[5];
       _this.project7 = res.data.data[6];
-      console.log(_this.projects);
     });
   }
 });
@@ -10760,7 +10753,6 @@ __webpack_require__.r(__webpack_exports__);
     axios.get("/api/services").then(function (res) {
       _this.services = res.data.data;
       _this.serviceCount = res.data.data.length;
-      console.log(_this.services);
     });
   }
 });
@@ -11187,10 +11179,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   if (res.status == 204) {
                     (0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_2__.logIn)();
 
-                    _this.$store.dispatch("loadUser");
+                    _this.$store.dispatch("loadUser").then(function () {
+                      return _this.$router.go(-1);
+                    });
                   }
-
-                  _this.$router.go(-1);
                 }).then(function () {
                   return _this.$toast.success("Başarılı bir şekilde giriş yaptınız.");
                 })["catch"](function (error) {
@@ -12810,10 +12802,12 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_9__.default({
           switch (_context.prev = _context.next) {
             case 0:
               _this.$store.dispatch("loadUser");
+
+              _this.$store.dispatch("indexSetting");
               /*  this.$store.dispatch("initBlog", { filter: this.filter }); */
 
 
-            case 1:
+            case 2:
             case "end":
               return _context.stop();
           }
@@ -13121,35 +13115,20 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_23__.default({
   // short for `routes: routes`
   mode: "history"
 });
-/* 
-router.beforeEach((to, from, next) => {
-    if (to.matched.some(record => record.meta.admin)) {
-        // this route requires auth, check if logged in
-        // if not, redirect to login page.
-        if (!isLoggedIn()) {
-            next({
-                path: "/signin"
-            });
-        } else {
-            next();
-        }
-    } else {
-        next(); // make sure to always call next()!
-    }
-}); */
-
 router.beforeEach(function (to, from, next) {
   if (to.matched.some(function (record) {
-    return record.meta.guest;
+    return record.meta.admin;
   })) {
     // this route requires auth, check if logged in
     // if not, redirect to login page.
-    if ((0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_22__.isLoggedIn)()) {
+    if (!(0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_22__.isLoggedIn)()) {
       next({
-        path: "/"
+        path: "/signin"
       });
-    } else {
+    } else if ((0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_22__.isLoggedIn)() && (0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_22__.isAdmin)()) {
       next();
+    } else {
+      window.location.href = "http://127.0.0.1:8000";
     }
   } else {
     next(); // make sure to always call next()!
@@ -13236,17 +13215,22 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "isLoggedIn": () => (/* binding */ isLoggedIn),
+/* harmony export */   "isAdmin": () => (/* binding */ isAdmin),
 /* harmony export */   "logIn": () => (/* binding */ logIn),
 /* harmony export */   "logOut": () => (/* binding */ logOut)
 /* harmony export */ });
 function isLoggedIn() {
   return localStorage.getItem("isLoggedIn") == 'true';
 }
+function isAdmin() {
+  return localStorage.getItem("isAdmin") == 'true';
+}
 function logIn() {
   localStorage.setItem("isLoggedIn", true);
 }
 function logOut() {
   localStorage.setItem("isLoggedIn", false);
+  localStorage.setItem("isAdmin", false);
 }
 
 /***/ }),
@@ -13473,8 +13457,7 @@ var actions = {
           switch (_context3.prev = _context3.next) {
             case 0:
               commit = _ref4.commit, state = _ref4.state;
-              debugger;
-              _context3.next = 4;
+              _context3.next = 3;
               return axios.post("/api/abones/".concat(payload.id), payload.formData1).then(function (res) {
                 var aboneUpdate = res.data.data;
                 /* debugger; */
@@ -13493,7 +13476,7 @@ var actions = {
                 commit("aboneErrors", err.response.data.errors);
               });
 
-            case 4:
+            case 3:
             case "end":
               return _context3.stop();
           }
@@ -14090,7 +14073,6 @@ var mutations = {
   updateBlog: function updateBlog(state, _ref) {
     var blogUpdate = _ref.blogUpdate,
         index = _ref.index;
-    debugger;
     vue__WEBPACK_IMPORTED_MODULE_2__.default.set(state.blogs, index, blogUpdate);
   },
   deleteBlog: function deleteBlog(state, index) {
@@ -14749,8 +14731,7 @@ var actions = {
           switch (_context3.prev = _context3.next) {
             case 0:
               commit = _ref4.commit, state = _ref4.state;
-              debugger;
-              _context3.next = 4;
+              _context3.next = 3;
               return axios.post("/api/mails/".concat(payload.id), payload.formData1).then(function (res) {
                 var mailUpdate = res.data.data;
                 /* debugger; */
@@ -14769,7 +14750,7 @@ var actions = {
                 commit("mailErrors", err.response.data.errors);
               });
 
-            case 4:
+            case 3:
             case "end":
               return _context3.stop();
           }
@@ -15149,7 +15130,10 @@ var actions = {
               _context2.next = 3;
               return axios.post("/api/replies", payload).then(function (res) {
                 var blogUpdate = res.data.data;
-                debugger;
+                /* debugger; */
+
+                /* debugger; */
+
                 /* debugger; */
 
                 /* debugger; */
@@ -15189,7 +15173,6 @@ var actions = {
               _context3.next = 3;
               return axios.post("/api/reply-reply", payload).then(function (res) {
                 var blogUpdate = res.data.data;
-                debugger;
                 /* debugger; */
 
                 /* debugger; */
@@ -15571,13 +15554,12 @@ var actions = {
           switch (_context.prev = _context.next) {
             case 0:
               commit = _ref.commit;
-              debugger;
-              _context.next = 4;
+              _context.next = 3;
               return axios.get("/api/settings").then(function (res) {
                 commit("updateSetting", res.data.data);
               });
 
-            case 4:
+            case 3:
             case "end":
               return _context.stop();
           }
@@ -16086,11 +16068,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var state = {
   users: {},
   isLoggedIn: false,
+  isAdmin: false,
   user: {}
 };
 var getters = {
   isLoggedIn: function isLoggedIn(state) {
     return state.isLoggedIn;
+  },
+  isAdmin: function isAdmin(state) {
+    return state.isAdmin;
   },
   getUser: function getUser(state) {
     return state.user;
@@ -16102,6 +16088,9 @@ var mutations = {
   },
   setLoggedIn: function setLoggedIn(state, payload) {
     state.isLoggedIn = payload;
+  },
+  setAdmin: function setAdmin(state, payload) {
+    state.isAdmin = payload;
   }
 };
 var actions = {
@@ -16124,6 +16113,11 @@ var actions = {
                 var user = res.data;
                 commit("setUser", user);
                 commit("setLoggedIn", true);
+
+                if (res.data.status == 'admin') {
+                  commit("setAdmin", true);
+                  localStorage.setItem('isAdmin', true);
+                }
               });
 
             case 4:
@@ -16145,6 +16139,7 @@ var actions = {
     var commit = _ref2.commit;
     commit("setUser", {});
     commit("setLoggedIn", false);
+    commit("setAdmin", false);
     (0,_shared_utils_auth__WEBPACK_IMPORTED_MODULE_1__.logOut)();
   }
 };
@@ -68221,188 +68216,194 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "body-sign" }, [
-    _c("div", { staticClass: "center-sign" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "panel card-sign" }, [
-        _vm._m(1),
+    _c(
+      "div",
+      { staticClass: "center-sign" },
+      [
+        _c(
+          "router-link",
+          {
+            staticClass: "logo float-left",
+            attrs: { to: { name: "frontend" } }
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/storage/" + _vm.getSetting.logo2,
+                height: "54",
+                alt: "MB"
+              }
+            })
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("form", { attrs: { method: "post" } }, [
-            _c(
-              "div",
-              { staticClass: "form-group mb-3" },
-              [
-                _c("label", [_vm._v("Username")]),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.email,
-                        expression: "email"
-                      }
-                    ],
-                    staticClass: "form-control form-control-lg",
-                    class: [
-                      {
-                        "is-invalid":
-                          _vm.errorFor("email") || _vm.$v.email.$error
-                      }
-                    ],
-                    attrs: { name: "email", type: "text" },
-                    domProps: { value: _vm.email },
-                    on: {
-                      blur: function($event) {
-                        return _vm.$v.email.$touch()
-                      },
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.email = $event.target.value
-                      }
-                    }
-                  }),
+        _c("div", { staticClass: "panel card-sign" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("form", { attrs: { method: "post" } }, [
+              _c(
+                "div",
+                { staticClass: "form-group mb-3" },
+                [
+                  _c("label", [_vm._v("Mail Adresi")]),
                   _vm._v(" "),
-                  _vm._m(2)
-                ]),
-                _vm._v(" "),
-                !_vm.$v.email.email
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen geçerli bir e-posta adresi giriniz...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("v-errors", { attrs: { errors: _vm.errorFor("email") } })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "form-group mb-3" },
-              [
-                _vm._m(3),
-                _vm._v(" "),
-                _c("div", { staticClass: "input-group" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.password,
-                        expression: "password"
-                      }
-                    ],
-                    staticClass: "form-control form-control-lg",
-                    class: [{ "is-invalid": _vm.errorFor("password") }],
-                    attrs: { name: "pwd", type: "password" },
-                    domProps: { value: _vm.password },
-                    on: {
-                      blur: function($event) {
-                        return _vm.$v.password.$touch()
-                      },
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.email,
+                          expression: "email"
                         }
-                        _vm.password = $event.target.value
+                      ],
+                      staticClass: "form-control form-control-lg",
+                      class: [
+                        {
+                          "is-invalid":
+                            _vm.errorFor("email") || _vm.$v.email.$error
+                        }
+                      ],
+                      attrs: { name: "email", type: "text" },
+                      domProps: { value: _vm.email },
+                      on: {
+                        blur: function($event) {
+                          return _vm.$v.email.$touch()
+                        },
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.email = $event.target.value
+                        }
                       }
-                    }
-                  }),
+                    }),
+                    _vm._v(" "),
+                    _vm._m(1)
+                  ]),
                   _vm._v(" "),
-                  _vm._m(4)
-                ]),
-                _vm._v(" "),
-                !_vm.$v.password.minLength
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen şifreniz en az " +
-                          _vm._s(_vm.$v.password.$params.minLength.min) +
-                          " karakterden\n              oluşmalıdır...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.$v.password.maxLength
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen şifreniz en fazla\n              " +
-                          _vm._s(_vm.$v.password.$params.maxLength.max) +
-                          " karakterden oluşmalıdır...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("v-errors", { attrs: { errors: _vm.errorFor("password") } })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _vm._m(5),
+                  !_vm.$v.email.email
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen geçerli bir e-posta adresi giriniz...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("v-errors", { attrs: { errors: _vm.errorFor("email") } })
+                ],
+                1
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 text-right" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary mt-2",
-                    attrs: { type: "submit", disabled: _vm.$v.$invalid },
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.login($event)
+              _c(
+                "div",
+                { staticClass: "form-group mb-3" },
+                [
+                  _vm._m(2),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.password,
+                          expression: "password"
+                        }
+                      ],
+                      staticClass: "form-control form-control-lg",
+                      class: [{ "is-invalid": _vm.errorFor("password") }],
+                      attrs: { name: "pwd", type: "password" },
+                      domProps: { value: _vm.password },
+                      on: {
+                        blur: function($event) {
+                          return _vm.$v.password.$touch()
+                        },
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.password = $event.target.value
+                        }
                       }
-                    }
-                  },
-                  [_vm._v("\n                Sign In\n              ")]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
-            _c(
-              "p",
-              { staticClass: "text-center" },
-              [
-                _vm._v(
-                  "\n            Don't have an account yet?\n            "
-                ),
-                _c("router-link", { attrs: { to: { name: "register" } } }, [
-                  _vm._v("Sign Up!")
+                    }),
+                    _vm._v(" "),
+                    _vm._m(3)
+                  ]),
+                  _vm._v(" "),
+                  !_vm.$v.password.minLength
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen şifreniz en az " +
+                            _vm._s(_vm.$v.password.$params.minLength.min) +
+                            " karakterden\n              oluşmalıdır...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  !_vm.$v.password.maxLength
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen şifreniz en fazla\n              " +
+                            _vm._s(_vm.$v.password.$params.maxLength.max) +
+                            " karakterden oluşmalıdır...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("v-errors", {
+                    attrs: { errors: _vm.errorFor("password") }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "row" }, [
+                _vm._m(4),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-4 text-right" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary mt-2",
+                      attrs: { type: "submit", disabled: _vm.$v.$invalid },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.login($event)
+                        }
+                      }
+                    },
+                    [_vm._v("\n               Giriş Yap\n              ")]
+                  )
                 ])
-              ],
-              1
-            )
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "text-center" },
+                [
+                  _vm._v("\n            Hesabın Yoksa?\n            "),
+                  _c("router-link", { attrs: { to: { name: "register" } } }, [
+                    _vm._v("Kayıt Ol!")
+                  ])
+                ],
+                1
+              )
+            ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-center text-muted mt-3 mb-3" }, [
+          _vm._v("\n      © Copyright 2017. All Rights Reserved.\n    ")
         ])
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-center text-muted mt-3 mb-3" }, [
-        _vm._v("\n      © Copyright 2017. All Rights Reserved.\n    ")
-      ])
-    ])
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "logo float-left", attrs: { href: "/" } }, [
-      _c("img", {
-        attrs: { src: "admin/img/logo.png", height: "54", alt: "Porto Admin" }
-      })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -68412,7 +68413,7 @@ var staticRenderFns = [
         _c("i", {
           staticClass: "bx bx-user-circle mr-1 text-6 position-relative top-5"
         }),
-        _vm._v(" Sign In\n        ")
+        _vm._v(" Giriş\n        ")
       ])
     ])
   },
@@ -68431,7 +68432,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "clearfix" }, [
-      _c("label", { staticClass: "float-left" }, [_vm._v("Password")]),
+      _c("label", { staticClass: "float-left" }, [_vm._v("Şifre")]),
       _vm._v(" "),
       _c(
         "a",
@@ -68439,7 +68440,7 @@ var staticRenderFns = [
           staticClass: "float-right",
           attrs: { href: "pages-recover-password.html" }
         },
-        [_vm._v("Lost Password?")]
+        [_vm._v("Şifremi Unuttum?")]
       )
     ])
   },
@@ -68463,39 +68464,8 @@ var staticRenderFns = [
           attrs: { id: "RememberMe", name: "rememberme", type: "checkbox" }
         }),
         _vm._v(" "),
-        _c("label", { attrs: { for: "RememberMe" } }, [_vm._v("Remember Me")])
+        _c("label", { attrs: { for: "RememberMe" } }, [_vm._v("Beni Hatırla")])
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "span",
-      { staticClass: "mt-3 mb-3 line-thru text-center text-uppercase" },
-      [_c("span", [_vm._v("or")])]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb-1 text-center" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-facebook mb-3 ml-1 mr-1",
-          attrs: { href: "#" }
-        },
-        [_vm._v("Connect with "), _c("i", { staticClass: "fab fa-facebook-f" })]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-twitter mb-3 ml-1 mr-1", attrs: { href: "#" } },
-        [_vm._v("Connect with "), _c("i", { staticClass: "fab fa-twitter" })]
-      )
     ])
   }
 ]
@@ -68896,320 +68866,352 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "body-sign" }, [
-    _c("div", { staticClass: "center-sign" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "panel card-sign" }, [
-        _vm._m(1),
+    _c(
+      "div",
+      { staticClass: "center-sign" },
+      [
+        _c(
+          "router-link",
+          {
+            staticClass: "logo float-left",
+            attrs: { to: { name: "frontend" } }
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/storage/" + _vm.getSetting.logo2,
+                height: "54",
+                alt: "MB"
+              }
+            })
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("form", [
-            _c(
-              "div",
-              { staticClass: "form-group mb-3" },
-              [
-                _c("label", [_vm._v("Name")]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.name,
-                      expression: "name"
-                    }
-                  ],
-                  staticClass: "form-control form-control-lg",
-                  class: [
-                    { "is-invalid": _vm.errorFor("name") || _vm.$v.name.$error }
-                  ],
-                  attrs: { name: "name", type: "text" },
-                  domProps: { value: _vm.name },
-                  on: {
-                    blur: function($event) {
-                      return _vm.$v.name.$touch()
-                    },
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+        _c("div", { staticClass: "panel card-sign" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body" }, [
+            _c("form", [
+              _c(
+                "div",
+                { staticClass: "form-group mb-3" },
+                [
+                  _c("label", [_vm._v("İsim")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.name,
+                        expression: "name"
                       }
-                      _vm.name = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                !_vm.$v.name.minLength
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen isim kısmı en az " +
-                          _vm._s(_vm.$v.name.minLength.min) +
-                          " karakterden\n              oluşmalıdır...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.$v.name.maxLength
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen isim kısmı en fazla\n              " +
-                          _vm._s(_vm.$v.name.$params.maxLength.min) +
-                          " karakterden oluşmalıdır...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("v-errors", { attrs: { errors: _vm.errorFor("name") } })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "form-group mb-3" },
-              [
-                _c("label", [_vm._v("E-mail Address")]),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.email,
-                      expression: "email"
-                    }
-                  ],
-                  staticClass: "form-control form-control-lg",
-                  class: [
-                    {
-                      "is-invalid": _vm.errorFor("email") || _vm.$v.email.$error
-                    }
-                  ],
-                  attrs: { name: "email", type: "email" },
-                  domProps: { value: _vm.email },
-                  on: {
-                    blur: function($event) {
-                      return _vm.$v.email.$touch()
-                    },
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                    ],
+                    staticClass: "form-control form-control-lg",
+                    class: [
+                      {
+                        "is-invalid": _vm.errorFor("name") || _vm.$v.name.$error
                       }
-                      _vm.email = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                !_vm.$v.email.email
-                  ? _c("small", { staticClass: "form-text text-danger" }, [
-                      _vm._v(
-                        "Lütfen geçerli bir e-posta adresi giriniz...\n            "
-                      )
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("v-errors", { attrs: { errors: _vm.errorFor("email") } })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group mb-0" }, [
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col-sm-6 mb-3" },
-                  [
-                    _c("label", [_vm._v("Password")]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.password,
-                          expression: "password"
-                        }
-                      ],
-                      staticClass: "form-control form-control-lg",
-                      class: [{ "is-invalid": _vm.errorFor("password") }],
-                      attrs: { name: "pwd", type: "password" },
-                      domProps: { value: _vm.password },
-                      on: {
-                        blur: function($event) {
-                          return _vm.$v.password.$touch()
-                        },
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.password = $event.target.value
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    !_vm.$v.password.minLength
-                      ? _c("small", { staticClass: "form-text text-danger" }, [
-                          _vm._v(
-                            "Lütfen şifreniz en az\n                  " +
-                              _vm._s(_vm.$v.password.$params.minLength.min) +
-                              " karakterden oluşmalıdır...\n                "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.$v.password.maxLength
-                      ? _c("small", { staticClass: "form-text text-danger" }, [
-                          _vm._v(
-                            "Lütfen şifreniz en fazla\n                  " +
-                              _vm._s(_vm.$v.password.$params.maxLength.max) +
-                              " karakterden oluşmalıdır...\n                "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("v-errors", {
-                      attrs: { errors: _vm.errorFor("password") }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "col-sm-6 mb-3" },
-                  [
-                    _c("label", [_vm._v("Password Confirmation")]),
-                    _vm._v(" "),
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.password_confirmation,
-                          expression: "password_confirmation"
-                        }
-                      ],
-                      staticClass: "form-control form-control-lg",
-                      class: [
-                        { "is-invalid": _vm.errorFor("password_confirmation") }
-                      ],
-                      attrs: { name: "pwd_confirm", type: "password" },
-                      domProps: { value: _vm.password_confirmation },
-                      on: {
-                        blur: function($event) {
-                          return _vm.$v.password_confirmation.$touch()
-                        },
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.password_confirmation = $event.target.value
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    !_vm.$v.password_confirmation.minLength
-                      ? _c("small", { staticClass: "form-text text-danger" }, [
-                          _vm._v(
-                            "Lütfen şifreniz en az\n                  " +
-                              _vm._s(
-                                _vm.$v.password_confirmation.$params.minLength
-                                  .min
-                              ) +
-                              " karakterden\n                  oluşmalıdır...\n                "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.$v.password_confirmation.maxLength
-                      ? _c("small", { staticClass: "form-text text-danger" }, [
-                          _vm._v(
-                            "Lütfen şifreniz en fazla\n                  " +
-                              _vm._s(
-                                _vm.$v.password_confirmation.$params.maxLength
-                                  .max
-                              ) +
-                              " karakterden\n                  oluşmalıdır...\n                "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    !_vm.$v.password_confirmation.sameAs
-                      ? _c("small", { staticClass: "form-text text-danger" }, [
-                          _vm._v(
-                            "Girdiğiniz şifreler birbirleriyle uyuşmuyor...\n                "
-                          )
-                        ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("v-errors", {
-                      attrs: { errors: _vm.errorFor("password_confirmation") }
-                    })
-                  ],
-                  1
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _vm._m(2),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm-4 text-right" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-primary mt-2",
-                    attrs: {
-                      type: "submit",
-                      disabled: _vm.loading || _vm.$v.$invalid
-                    },
+                    ],
+                    attrs: { name: "name", type: "text" },
+                    domProps: { value: _vm.name },
                     on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.register($event)
+                      blur: function($event) {
+                        return _vm.$v.name.$touch()
+                      },
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.name = $event.target.value
                       }
                     }
-                  },
-                  [_vm._v("\n                Kayıt Ol\n              ")]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c(
-              "p",
-              { staticClass: "text-center" },
-              [
-                _vm._v("\n            Already have an account?\n            "),
-                _c("router-link", { attrs: { to: { name: "login" } } }, [
-                  _vm._v("Sign In!")
+                  }),
+                  _vm._v(" "),
+                  !_vm.$v.name.minLength
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen isim kısmı en az " +
+                            _vm._s(_vm.$v.name.minLength.min) +
+                            " karakterden\n              oluşmalıdır...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  !_vm.$v.name.maxLength
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen isim kısmı en fazla\n              " +
+                            _vm._s(_vm.$v.name.$params.maxLength.min) +
+                            " karakterden oluşmalıdır...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("v-errors", { attrs: { errors: _vm.errorFor("name") } })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "form-group mb-3" },
+                [
+                  _c("label", [_vm._v("Mail Adresi")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.email,
+                        expression: "email"
+                      }
+                    ],
+                    staticClass: "form-control form-control-lg",
+                    class: [
+                      {
+                        "is-invalid":
+                          _vm.errorFor("email") || _vm.$v.email.$error
+                      }
+                    ],
+                    attrs: { name: "email", type: "email" },
+                    domProps: { value: _vm.email },
+                    on: {
+                      blur: function($event) {
+                        return _vm.$v.email.$touch()
+                      },
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.email = $event.target.value
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  !_vm.$v.email.email
+                    ? _c("small", { staticClass: "form-text text-danger" }, [
+                        _vm._v(
+                          "Lütfen geçerli bir e-posta adresi giriniz...\n            "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("v-errors", { attrs: { errors: _vm.errorFor("email") } })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group mb-0" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-6 mb-3" },
+                    [
+                      _c("label", [_vm._v("Şifre")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.password,
+                            expression: "password"
+                          }
+                        ],
+                        staticClass: "form-control form-control-lg",
+                        class: [{ "is-invalid": _vm.errorFor("password") }],
+                        attrs: { name: "pwd", type: "password" },
+                        domProps: { value: _vm.password },
+                        on: {
+                          blur: function($event) {
+                            return _vm.$v.password.$touch()
+                          },
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.password = $event.target.value
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      !_vm.$v.password.minLength
+                        ? _c(
+                            "small",
+                            { staticClass: "form-text text-danger" },
+                            [
+                              _vm._v(
+                                "Lütfen şifreniz en az\n                  " +
+                                  _vm._s(
+                                    _vm.$v.password.$params.minLength.min
+                                  ) +
+                                  " karakterden oluşmalıdır...\n                "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      !_vm.$v.password.maxLength
+                        ? _c(
+                            "small",
+                            { staticClass: "form-text text-danger" },
+                            [
+                              _vm._v(
+                                "Lütfen şifreniz en fazla\n                  " +
+                                  _vm._s(
+                                    _vm.$v.password.$params.maxLength.max
+                                  ) +
+                                  " karakterden oluşmalıdır...\n                "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("v-errors", {
+                        attrs: { errors: _vm.errorFor("password") }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "col-sm-6 mb-3" },
+                    [
+                      _c("label", [_vm._v("Şifre Tekrarı")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.password_confirmation,
+                            expression: "password_confirmation"
+                          }
+                        ],
+                        staticClass: "form-control form-control-lg",
+                        class: [
+                          {
+                            "is-invalid": _vm.errorFor("password_confirmation")
+                          }
+                        ],
+                        attrs: { name: "pwd_confirm", type: "password" },
+                        domProps: { value: _vm.password_confirmation },
+                        on: {
+                          blur: function($event) {
+                            return _vm.$v.password_confirmation.$touch()
+                          },
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.password_confirmation = $event.target.value
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      !_vm.$v.password_confirmation.minLength
+                        ? _c(
+                            "small",
+                            { staticClass: "form-text text-danger" },
+                            [
+                              _vm._v(
+                                "Lütfen şifreniz en az\n                  " +
+                                  _vm._s(
+                                    _vm.$v.password_confirmation.$params
+                                      .minLength.min
+                                  ) +
+                                  " karakterden\n                  oluşmalıdır...\n                "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      !_vm.$v.password_confirmation.maxLength
+                        ? _c(
+                            "small",
+                            { staticClass: "form-text text-danger" },
+                            [
+                              _vm._v(
+                                "Lütfen şifreniz en fazla\n                  " +
+                                  _vm._s(
+                                    _vm.$v.password_confirmation.$params
+                                      .maxLength.max
+                                  ) +
+                                  " karakterden\n                  oluşmalıdır...\n                "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      !_vm.$v.password_confirmation.sameAs
+                        ? _c(
+                            "small",
+                            { staticClass: "form-text text-danger" },
+                            [
+                              _vm._v(
+                                "Girdiğiniz şifreler birbirleriyle uyuşmuyor...\n                "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _c("v-errors", {
+                        attrs: { errors: _vm.errorFor("password_confirmation") }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-4 text-right" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary mt-2",
+                        attrs: { type: "submit", disabled: _vm.$v.$invalid },
+                        on: {
+                          click: function($event) {
+                            $event.preventDefault()
+                            return _vm.register($event)
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                  Kayıt Ol\n                  "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ],
-              1
-            )
+              ]),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "text-center" },
+                [
+                  _vm._v("\n            Hesabın var mı?\n            "),
+                  _c("router-link", { attrs: { to: { name: "login" } } }, [
+                    _vm._v("Sign In!")
+                  ])
+                ],
+                1
+              )
+            ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-center text-muted mt-3 mb-3" }, [
+          _vm._v("\n      © Copyright 2017. All Rights Reserved.\n    ")
         ])
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "text-center text-muted mt-3 mb-3" }, [
-        _vm._v("\n      © Copyright 2017. All Rights Reserved.\n    ")
-      ])
-    ])
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "logo float-left", attrs: { href: "/" } }, [
-      _c("img", {
-        attrs: { src: "admin/img/logo.png", height: "54", alt: "Porto Admin" }
-      })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -69219,56 +69221,8 @@ var staticRenderFns = [
         _c("i", {
           staticClass: "bx bx-user-circle mr-1 text-6 position-relative top-5"
         }),
-        _vm._v(" Sign Up\n        ")
+        _vm._v(" Kayıt Ol\n        ")
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-8" }, [
-      _c("div", { staticClass: "checkbox-custom checkbox-default" }, [
-        _c("input", {
-          attrs: { id: "AgreeTerms", name: "agreeterms", type: "checkbox" }
-        }),
-        _vm._v(" "),
-        _c("label", { attrs: { for: "AgreeTerms" } }, [
-          _vm._v("I agree with "),
-          _c("a", { attrs: { href: "#" } }, [_vm._v("terms of use")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "span",
-      { staticClass: "mt-3 mb-3 line-thru text-center text-uppercase" },
-      [_c("span", [_vm._v("or")])]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb-1 text-center" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn btn-facebook mb-3 ml-1 mr-1",
-          attrs: { href: "#" }
-        },
-        [_vm._v("Connect with "), _c("i", { staticClass: "fab fa-facebook-f" })]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        { staticClass: "btn btn-twitter mb-3 ml-1 mr-1", attrs: { href: "#" } },
-        [_vm._v("Connect with "), _c("i", { staticClass: "fab fa-twitter" })]
-      )
     ])
   }
 ]

@@ -1,20 +1,20 @@
 <template>
   <section class="body-sign">
     <div class="center-sign">
-      <a href="/" class="logo float-left">
-        <img src="admin/img/logo.png" height="54" alt="Porto Admin" />
-      </a>
+      <router-link :to="{name:'frontend'}" class="logo float-left">
+        <img :src="'/storage/'+getSetting.logo2" height="54" alt="MB" />
+      </router-link>
 
       <div class="panel card-sign">
         <div class="card-title-sign mt-3 text-right">
           <h2 class="title text-uppercase font-weight-bold m-0">
-            <i class="bx bx-user-circle mr-1 text-6 position-relative top-5"></i> Sign Up
+            <i class="bx bx-user-circle mr-1 text-6 position-relative top-5"></i> Kayıt Ol
           </h2>
         </div>
         <div class="card-body">
           <form>
             <div class="form-group mb-3">
-              <label>Name</label>
+              <label>İsim</label>
               <input
                 name="name"
                 type="text"
@@ -39,7 +39,7 @@
             </div>
 
             <div class="form-group mb-3">
-              <label>E-mail Address</label>
+              <label>Mail Adresi</label>
               <input
                 name="email"
                 type="email"
@@ -61,7 +61,7 @@
             <div class="form-group mb-0">
               <div class="row">
                 <div class="col-sm-6 mb-3">
-                  <label>Password</label>
+                  <label>Şifre</label>
                   <input
                     name="pwd"
                     type="password"
@@ -85,7 +85,7 @@
                   <v-errors :errors="errorFor('password')"></v-errors>
                 </div>
                 <div class="col-sm-6 mb-3">
-                  <label>Password Confirmation</label>
+                  <label>Şifre Tekrarı</label>
                   <input
                     name="pwd_confirm"
                     type="password"
@@ -94,11 +94,7 @@
                     v-model="password_confirmation"
                     :class="[{ 'is-invalid': errorFor('password_confirmation') }]"
                   />
-                  <!-- <small
-                    v-if="!$v.password_confirmation.required"
-                    class="form-text text-danger"
-                    >Bu alan zorunludur...
-                  </small> -->
+
 
                   <small
                     v-if="!$v.password_confirmation.minLength"
@@ -121,45 +117,35 @@
                   </small>
                   <v-errors :errors="errorFor('password_confirmation')"></v-errors>
                 </div>
+                <div class="col-sm-4 text-right">
+                    <button
+                      type="submit"
+                      class="btn btn-primary mt-2"
+                      :disabled="$v.$invalid"
+                      @click.prevent="register"
+                    >
+                    Kayıt Ol
+                    </button>
+                  </div>
               </div>
+           
             </div>
 
-            <div class="row">
-              <div class="col-sm-8">
-                <div class="checkbox-custom checkbox-default">
-                  <input id="AgreeTerms" name="agreeterms" type="checkbox" />
-                  <label for="AgreeTerms"
-                    >I agree with <a href="#">terms of use</a></label
-                  >
-                </div>
-              </div>
-              <div class="col-sm-4 text-right">
-                <button
-                  type="submit"
-                  class="btn btn-primary mt-2"
-                  :disabled="loading || $v.$invalid"
-                  @click.prevent="register"
-                >
-                  Kayıt Ol
-                </button>
-              </div>
-            </div>
-
-            <span class="mt-3 mb-3 line-thru text-center text-uppercase">
+           <!--  <span class="mt-3 mb-3 line-thru text-center text-uppercase">
               <span>or</span>
-            </span>
+            </span> -->
 
-            <div class="mb-1 text-center">
+            <!-- <div class="mb-1 text-center">
               <a class="btn btn-facebook mb-3 ml-1 mr-1" href="#"
                 >Connect with <i class="fab fa-facebook-f"></i
               ></a>
               <a class="btn btn-twitter mb-3 ml-1 mr-1" href="#"
                 >Connect with <i class="fab fa-twitter"></i
               ></a>
-            </div>
+            </div> -->
 
             <p class="text-center">
-              Already have an account?
+              Hesabın var mı?
               <router-link :to="{ name: 'login' }">Sign In!</router-link>
             </p>
           </form>
@@ -185,6 +171,7 @@ import {
   sameAs,
   between,
 } from "vuelidate/lib/validators";
+import {mapGetters} from 'vuex'
 export default {
   mixins: [validationErrors],
   data() {
@@ -205,14 +192,7 @@ export default {
     email: {
       email,
       required,
-      // uniq  : value => {
-      //     return value !== 'gokhan@gkandemir.com'
-      // }
-      // return axios.get("url")
-      //     .then(response => {
-      //         return false
-      //     })
-      // return value !== 'gokhan@gkandemir.com'
+     
     },
     password: {
       required,
@@ -229,6 +209,9 @@ export default {
         return vm.password;
       }),
     },
+  },
+  computed:{
+    ...mapGetters(["getSetting"])
   },
   methods: {
     async register() {

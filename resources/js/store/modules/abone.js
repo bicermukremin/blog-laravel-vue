@@ -73,7 +73,7 @@ const actions = {
             });
     },
     async updateAbone({ commit, state }, payload) {
-        debugger;
+
         await axios
             .post(`/api/abones/${payload.id}`, payload.formData1)
             .then(res => {

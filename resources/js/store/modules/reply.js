@@ -71,7 +71,7 @@ const actions = {
             .post("/api/replies", payload)
             .then(res => {
                 const blogUpdate = res.data.data;
-                debugger;
+                /* debugger; */
                 /* debugger; */
                 const index = rootState.blog.blogs.findIndex(
                     blog => blog.id === blogUpdate.id
@@ -93,7 +93,7 @@ const actions = {
             .post("/api/reply-reply", payload)
             .then(res => {
                 const blogUpdate = res.data.data;
-                debugger;
+
                 /* debugger; */
                 const index = rootState.blog.blogs.findIndex(
                     blog => blog.id === blogUpdate.id

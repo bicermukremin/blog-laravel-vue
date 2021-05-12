@@ -206,9 +206,9 @@ export default {
         .then((res) => {
           if (res.status == 204) {
             logIn();
-            this.$store.dispatch("loadUser");
+            
+            this.$store.dispatch("loadUser").then(()=>this.$router.go(-1));
           }
-          this.$router.go(-1);
         })
         .then(() => this.$toast.success("Başarılı bir şekilde giriş yaptınız."))
         .catch((error) => {

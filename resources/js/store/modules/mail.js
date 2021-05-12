@@ -73,7 +73,7 @@ const actions = {
             });
     },
     async updateMail({ commit, state }, payload) {
-        debugger;
+
         await axios
             .post(`/api/mails/${payload.id}`, payload.formData1)
             .then(res => {

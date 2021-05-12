@@ -52,7 +52,7 @@ export default {
 
   async beforeCreate() {
     this.$store.dispatch("loadUser");
-    this.$store.dispatch("indexSetting");
+   
     /* $("head").append(
       $('<link rel="stylesheet">').attr(
         "href",

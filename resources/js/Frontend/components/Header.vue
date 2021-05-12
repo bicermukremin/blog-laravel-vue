@@ -197,12 +197,14 @@ export default {
   methods: {
     async logout() {
       await axios.post("/logout").then((res) => {
-        this.$store
+        if (res.status == 204) {
+            this.$store
           .dispatch("logout")
-          .then(() => this.$router.push("/"))
           .then(() => this.$toast.success("Başarılı bir şekilde çıkış yaptınız."))
-          .catch(() => this.$toast.error("Sayfayı yenileyin ve tekrar deneyiniz."));
-      });
+          
+          }
+        
+      }).catch(() => this.$toast.error("Sayfayı yenileyin ve tekrar deneyiniz."));
     },
   },
   beforeCreate() {

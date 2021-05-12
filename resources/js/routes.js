@@ -30,7 +30,7 @@ import Reply from "./Admin/pages/Reply.vue"; */
 import Banner from "./Admin/pages/Banner.vue";
 import Abone from "./Admin/pages/Abone.vue";
 import Mail from "./Admin/pages/Mail.vue";
-import { isLoggedIn } from "./shared/utils/auth";
+import { isLoggedIn, isAdmin } from "./shared/utils/auth";
 
 const routes = [{
         path: "",
@@ -200,7 +200,7 @@ const router = new VueRouter({
     routes, // short for `routes: routes`
     mode: "history"
 });
-/* 
+
 router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.admin)) {
         // this route requires auth, check if logged in
@@ -209,27 +209,15 @@ router.beforeEach((to, from, next) => {
             next({
                 path: "/signin"
             });
+        } else if (isLoggedIn() && isAdmin()) {
+            next()
         } else {
-            next();
-        }
-    } else {
-        next(); // make sure to always call next()!
-    }
-}); */
-router.beforeEach((to, from, next) => {
-    if (to.matched.some(record => record.meta.guest)) {
-        // this route requires auth, check if logged in
-        // if not, redirect to login page.
-        if (isLoggedIn()) {
-            next({
-                path: "/"
-            });
-        } else {
-            next();
+            window.location.href = "http://127.0.0.1:8000"
         }
     } else {
         next(); // make sure to always call next()!
     }
 });
+
 
 export default router;
