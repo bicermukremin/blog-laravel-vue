@@ -1,20 +1,20 @@
 <template>
   <section class="body-sign">
     <div class="center-sign">
-      <a href="/" class="logo float-left">
-        <img src="admin/img/logo.png" height="54" alt="Porto Admin" />
-      </a>
+      <router-link :to="{name:'frontend'}" class="logo float-left">
+        <img :src="'/storage/'+getSetting.logo2" height="54" alt="MB" />
+      </router-link>
 
       <div class="panel card-sign">
         <div class="card-title-sign mt-3 text-right">
           <h2 class="title text-uppercase font-weight-bold m-0">
-            <i class="bx bx-user-circle mr-1 text-6 position-relative top-5"></i> Sign In
+            <i class="bx bx-user-circle mr-1 text-6 position-relative top-5"></i> Giriş
           </h2>
         </div>
         <div class="card-body">
           <form method="post">
             <div class="form-group mb-3">
-              <label>Username</label>
+              <label>Mail Adresi</label>
               <div class="input-group">
                 <input
                   name="email"
@@ -41,9 +41,9 @@
             </div>
             <div class="form-group mb-3">
               <div class="clearfix">
-                <label class="float-left">Password</label>
+                <label class="float-left">Şifre</label>
                 <a href="pages-recover-password.html" class="float-right"
-                  >Lost Password?</a
+                  >Şifremi Unuttum?</a
                 >
               </div>
               <div class="input-group">
@@ -80,7 +80,7 @@
               <div class="col-sm-8">
                 <div class="checkbox-custom checkbox-default">
                   <input id="RememberMe" name="rememberme" type="checkbox" />
-                  <label for="RememberMe">Remember Me</label>
+                  <label for="RememberMe">Beni Hatırla</label>
                 </div>
               </div>
               <div class="col-sm-4 text-right">
@@ -90,12 +90,12 @@
                   :disabled="$v.$invalid"
                   @click.prevent="login"
                 >
-                  Sign In
+                 Giriş Yap
                 </button>
               </div>
             </div>
 
-            <span class="mt-3 mb-3 line-thru text-center text-uppercase">
+           <!--  <span class="mt-3 mb-3 line-thru text-center text-uppercase">
               <span>or</span>
             </span>
 
@@ -106,11 +106,11 @@
               <a class="btn btn-twitter mb-3 ml-1 mr-1" href="#"
                 >Connect with <i class="fab fa-twitter"></i
               ></a>
-            </div>
+            </div> -->
 
             <p class="text-center">
-              Don't have an account yet?
-              <router-link :to="{ name: 'register' }">Sign Up!</router-link>
+              Hesabın Yoksa?
+              <router-link :to="{ name: 'register' }">Kayıt Ol!</router-link>
             </p>
           </form>
         </div>
@@ -125,7 +125,7 @@
 
 <script>
 import validationErrors from "./../../shared/mixins/validationErrors";
-import { logIn } from "./../../shared/utils/auth";
+import { logIn,isAdmin } from "./../../shared/utils/auth";
 import {
   required,
   email,
@@ -135,6 +135,7 @@ import {
   sameAs,
   between,
 } from "vuelidate/lib/validators";
+import {mapGetters} from 'vuex'
 export default {
   mixins: [validationErrors],
   data() {
@@ -164,6 +165,9 @@ export default {
       maxLength: maxLength(8),
     },
   },
+  computed:{
+    ...mapGetters(["getSetting","isAdmin"])
+  },
   methods: {
     async login() {
       this.loading = true;
@@ -178,9 +182,9 @@ export default {
         .then((res) => {
           if (res.status == 204) {
             logIn();
-            this.$store.dispatch("loadUser");
+            this.$store.dispatch("loadUser").then(()=> this.$router.push({ name: "admin" }));
+           
           }
-          this.$router.push({ name: "admin" });
         })
         .catch((error) => {
           this.errors = error.response && error.response.data.errors;
