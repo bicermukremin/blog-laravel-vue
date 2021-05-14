@@ -5966,11 +5966,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this3.isloading = true;
 
                 if (!_this3.$route.params.aboutEdit) {
-                  _context8.next = 13;
+                  _context8.next = 14;
                   break;
                 }
 
                 _this3.progress = 100;
+                debugger;
                 _this3.about = _this3.$route.params.aboutEdit;
                 _this3.aboutImages = JSON.parse(_this3.about.images);
                 _this3.historyItems = JSON.parse(_this3.about.history_items);
@@ -5978,7 +5979,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 _this3.items1 = _this3.aboutImages.map(function (item) {
                   return "http://127.0.0.1:8000/storage/" + item;
                 });
-                _context8.next = 10;
+                _context8.next = 11;
                 return axios.get("/api/yazilim").then(function (res) {
                   _this3.softImages = JSON.parse(res.data.data[0]);
                   _this3.softImageCount = JSON.parse(res.data.data[0]).length;
@@ -5992,18 +5993,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   console.log(Err.res.data.errors);
                 });
 
-              case 10:
+              case 11:
                 _this3.edit = true;
-                _context8.next = 20;
+                _context8.next = 21;
                 break;
 
-              case 13:
+              case 14:
                 _this3.isloading = true;
                 _this3.about = {};
                 _this3.aboutImages = {};
                 _this3.historyItems = [];
                 _this3.aboutCount = 0, _this3.edit = false;
-                _context8.next = 20;
+                _context8.next = 21;
                 return axios.get("/api/yazilim").then(function (res) {
                   _this3.softImages = JSON.parse(res.data.data[0]);
                   _this3.softImageCount = JSON.parse(res.data.data[0]).length;
@@ -6017,7 +6018,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   console.log(Err);
                 });
 
-              case 20:
+              case 21:
               case "end":
                 return _context8.stop();
             }
@@ -9719,7 +9720,7 @@ __webpack_require__.r(__webpack_exports__);
     Header: _components_Header__WEBPACK_IMPORTED_MODULE_0__.default,
     Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_1__.default,
 
-    /*  BlogList, */
+    /* BlogList, */
     Yorum: _components_Yorum__WEBPACK_IMPORTED_MODULE_2__.default,
     Project: _components_Project__WEBPACK_IMPORTED_MODULE_3__.default,
     Service: _components_Service__WEBPACK_IMPORTED_MODULE_4__.default,
@@ -10198,6 +10199,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -10239,9 +10241,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                   _this.deleting = false;
                   _this.errorAlert = true;
 
-                  _this.$toast.danger("İşlem başarısız.");
-
-                  console.log(e.res.data.data.errors);
+                  _this.$toast.error("İşlem başarısız.");
                 });
 
               case 3:
@@ -10252,24 +10252,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee);
       }))();
     }
-  },
-  created: function created() {
-    var _this2 = this;
-
-    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
-      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _this2.$store.dispatch("indexSetting");
-
-            case 1:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, _callee2);
-    }))();
   }
 });
 
@@ -10975,6 +10957,19 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -12846,6 +12841,8 @@ try {
 
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+axios.defaults.withCredentials = true;
+axios.baseURL = "http://127.0.0.1:8000";
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -15959,7 +15956,7 @@ var actions = {
             case 0:
               commit = _ref4.commit;
               _context4.next = 3;
-              return axios.get("/api/front-software").then(function (res) {
+              return axios.get('/api/front-soft').then(function (res) {
                 var software = res.data.data;
                 /* debugger; */
 
@@ -71124,7 +71121,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_c("i", { staticClass: "icon-paper-plane icons" })]
+                    [_c("i", { staticClass: "fas fa-plane" })]
                   )
                 ]),
                 _vm._v(" "),
@@ -71138,7 +71135,7 @@ var render = function() {
               ])
             ])
           ]),
-          _vm._v(" "),
+          _vm._v(",\n\n\n        "),
           _c("p", [
             _c("i", { staticClass: "fas fa-phone" }),
             _vm._v(" " + _vm._s(_vm.getSetting.tel) + "\n          "),
@@ -72521,7 +72518,16 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("\n            Giriş Yap\n          ")]
+                      [
+                        _vm.loading
+                          ? _c("span", [
+                              _c("i", {
+                                staticClass: "fas fa-circle-notch fa-spin"
+                              }),
+                              _vm._v(" Gönderiliyor...\n        ")
+                            ])
+                          : _c("span", [_vm._v("\n          Giriş\n        ")])
+                      ]
                     )
                   : _c(
                       "button",
@@ -72534,7 +72540,18 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("\n            Kayıt Ol\n          ")]
+                      [
+                        _vm.loading
+                          ? _c("span", [
+                              _c("i", {
+                                staticClass: "fas fa-circle-notch fa-spin"
+                              }),
+                              _vm._v(" Gönderiliyor...\n        ")
+                            ])
+                          : _c("span", [
+                              _vm._v("\n          Kayıt Ol\n        ")
+                            ])
+                      ]
                     ),
                 _vm._v(" "),
                 _c(

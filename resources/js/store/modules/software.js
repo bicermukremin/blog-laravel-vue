@@ -86,7 +86,7 @@ const actions = {
     },
     async getFrontSoftware({ commit }) {
         await axios
-            .get(`/api/front-software`)
+            .get('/api/front-soft')
             .then(res => {
                 const software = res.data.data;
                 /* debugger; */

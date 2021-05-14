@@ -20,6 +20,8 @@ try {
  */
 
 window.axios = require('axios');
+axios.defaults.withCredentials = true;
+axios.baseURL = "http://127.0.0.1:8000";
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

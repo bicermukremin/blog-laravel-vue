@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Api;
 
-
 use App\Models\About;
 use App\Models\Email;
 use App\Models\Comment;

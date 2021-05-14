@@ -23,7 +23,7 @@ class SoftwareFactory extends Factory
     {
         return [
             
-            'images' => '["initialImage\/first.png","initialImage\/logo-construction.png",initialImage\/first.png","initialImage\/PmdesY.png","initialImage\/web-designing - Kopya.jpg,initialImage\/first.png"]',
+            'images' => '["initialImage\/logo-construction.png","initialImage\/PmdesY.png","initialImage\/web-designing - Kopya.jpg"]',
         ];
     }
 }

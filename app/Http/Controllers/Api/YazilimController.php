@@ -3,14 +3,13 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Software;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SoftwareRequest;
-use App\Http\Resources\SoftFrontResource;
 use App\Http\Resources\SoftwareResource;
+use App\Http\Resources\SoftFrontResource;
 
-class SoftwareController extends Controller
+class YazilimController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,6 +18,7 @@ class SoftwareController extends Controller
      */
     public function index()
     {
+        
         $software=Software::where('id',1)->firstOrFail();
         
         return new SoftwareResource($software);
@@ -27,7 +27,11 @@ class SoftwareController extends Controller
 
     public function showSoftware()
     {
+
+     
         $software=Software::where('id',1)->firstOrFail();
+       /*  return $software->images;
+        dd(json_decode($software->images)); */
         $software['images']=json_decode($software->images);
         
         return new SoftFrontResource($software);

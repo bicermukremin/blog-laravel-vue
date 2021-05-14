@@ -725,6 +725,7 @@ export default {
       this.isloading = true;
       if (this.$route.params.aboutEdit) {
         this.progress = 100;
+          debugger
         this.about = this.$route.params.aboutEdit;
         this.aboutImages = JSON.parse(this.about.images);
         this.historyItems = JSON.parse(this.about.history_items);

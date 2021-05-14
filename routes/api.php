@@ -49,7 +49,7 @@ Route::get('/projects', [App\Http\Controllers\Api\ProjectController::class,'inde
 
 Route::post('/softResimSil', [App\Http\Controllers\Api\SoftwareController::class,'resmiSil']);
 Route::post('/softResimSil', [App\Http\Controllers\Api\SoftwareController::class,'resmiSil']);
-Route::apiResource('/yazilim', App\Http\Controllers\Api\SoftwareController::class);
+Route::apiResource('/yazilim', App\Http\Controllers\Api\YazilimController::class);
 
 
 Route::post('/aboutResimSil/{about}', [App\Http\Controllers\Api\AboutController::class,'resmiSil']);
@@ -57,7 +57,7 @@ Route::post('/serviceResimSil/{service}', [App\Http\Controllers\Api\ServiceContr
 Route::post('/makeActive/{about}', [App\Http\Controllers\Api\AboutController::class,'makeActive']);
 Route::apiResource('/about', App\Http\Controllers\Api\AboutController::class)->except('update','edit','show');
 Route::get('/front-about', [App\Http\Controllers\Api\AboutController::class,'showFrontend']);
-Route::get('/front-software', [App\Http\Controllers\Api\SoftwareController::class,'showSoftware']);
+Route::get('/front-soft', [App\Http\Controllers\Api\YazilimController::class,'showSoftware']);
 
 Route::apiResource('/categories', App\Http\Controllers\Api\CategoryController::class);
 Route::apiResource('/comments', App\Http\Controllers\Api\CommentController::class);

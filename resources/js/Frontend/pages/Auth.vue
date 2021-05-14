@@ -106,15 +106,28 @@
               v-if="isUser"
               class="btn btn-primary btn-block mb-2"
               @click.prevent="login"
+              
             >
-              Giriş Yap
+               <span v-if="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Gönderiliyor...
+          </span> 
+          <span  v-else>
+            Giriş
+          </span>
             </button>
             <button
               v-else
               class="btn btn-success btn-block mb-2"
               @click.prevent="register"
+              
             >
-              Kayıt Ol
+            <span v-if="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Gönderiliyor...
+          </span> 
+          <span  v-else>
+            Kayıt Ol
+          </span>
+              
             </button>
             <a href="#" @click.prevent="isUser = !isUser" class="text-secondary">
               {{ isUser ? "Üye değilim" : "Üyeliğim var" }}

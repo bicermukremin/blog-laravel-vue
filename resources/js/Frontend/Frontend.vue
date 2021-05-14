@@ -41,7 +41,7 @@ export default {
   components: {
     Header,
     Footer,
-   /*  BlogList, */
+    /* BlogList, */
     Yorum,
     Project,
     Service,

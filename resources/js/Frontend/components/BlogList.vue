@@ -29,11 +29,8 @@
           <div class="recent-posts mt-4">
             <router-link
               :to="{
-                name: 'singleBlog',
-                params: {
-                  slug: blog.slug,
-                  props: { blog: blog },
-                },
+                name: 'frontend',
+            
               }"
             >
               <img class="img-fluid pb-3" :src="`storage/${blog.image}`" alt="Blog" />
@@ -50,11 +47,8 @@
               <p v-html="blog.description"></p>
               <router-link
                 :to="{
-                  name: 'singleBlog',
-                  params: {
-                    slug: blog.slug,
-                    props: { blog: blog },
-                  },
+                  name: 'frontend',
+                
                 }"
                 class="mt-3"
                 >Devamını Oku
@@ -81,6 +75,7 @@ export default {
   },
   async created() {
     this.$store.dispatch("getFrontSoftware");
+    this.$store.dispatch("initBlog",{filter:this.filter});
   },
 };
 </script>

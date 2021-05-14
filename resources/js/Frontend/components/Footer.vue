@@ -74,7 +74,7 @@
 
                 <span class="input-group-append">
                   <button class="btn btn-light" @click.prevent="makeAbone">
-                    <i class="icon-paper-plane icons"></i>
+                    <i class="fas fa-plane"></i>
                   </button>
                 </span>
                 <small v-if="!$v.email.email" class="form-text text-danger"
@@ -82,7 +82,8 @@
                 </small>
               </div>
             </form>
-          </div>
+          </div>,
+
 
           <p>
             <i class="fas fa-phone"></i> {{ getSetting.tel }}
@@ -141,14 +142,12 @@ export default {
         .catch((e) => {
           this.deleting = false;
           this.errorAlert = true;
-          this.$toast.danger("İşlem başarısız.");
-          console.log(e.res.data.data.errors);
+          this.$toast.error("İşlem başarısız.");
+          
         });
     },
   },
-  async created(){
-     this.$store.dispatch("indexSetting");
-  }
+
 };
 </script>
 
