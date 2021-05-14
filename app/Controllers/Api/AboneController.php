@@ -5,12 +5,12 @@ namespace App\Http\Controllers\Api;
 use App\Models\Abone;
 use App\Models\About;
 use App\Mail\AboneMailer;
-use App\Models\MailModel;
 use Illuminate\Http\Request;
 use App\Http\Requests\AboneRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Resources\AboneResource;
+use App\Models\Email;
 
 class AboneController extends Controller
 {
@@ -50,7 +50,7 @@ class AboneController extends Controller
           Mail::to($input['email'])->cc('bicermukremin86@gmail.com')->queue(new AboneMailer($input));
           $input['type']='abone';
           $input['konu']='Abone';
-          MailModel::create($input);
+          Email::create($input);
         return response()->json(['message'=>'Abone işlemi başarılı'],201);
     }
 
