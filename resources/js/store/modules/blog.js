@@ -54,8 +54,9 @@ const actions = {
     async initBlog({ commit }, options) {
         const url = applyFilters("/api/blogs", options.filter);
         await axios.get(url).then(res => {
+            debugger
             commit("listBlogs", res.data.data);
-            commit("blogMeta", res.data.meta);
+            commit("blogMeta", res.data);
         });
     },
     async saveBlog({ commit, state }, payload) {
@@ -63,7 +64,7 @@ const actions = {
         await axios
             .post("/api/blogs", payload)
             .then(res => {
-                const blog = res.data.data;
+                const blog = res.data;
                 commit("deleteErrors", null);
                 commit("addBlog", blog);
             })
@@ -78,7 +79,7 @@ const actions = {
                 headers: { "Content-Type": "multipart/form-data" }
             })
             .then(res => {
-                const blogUpdate = res.data.data;
+                const blogUpdate = res.data;
                 /* debugger; */
                 const index = state.blogs.findIndex(
                     blog => blog.id === blogUpdate.id

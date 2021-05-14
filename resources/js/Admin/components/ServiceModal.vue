@@ -351,7 +351,13 @@ export default {
           if (this.name == true) {
             this.updateImages.push(file);
             this.serviceImages.push(URL.createObjectURL(file));
-            var array = this.images.concat(this.serviceImages);
+                  if(this.newImages.length > 0) {
+
+                    var array = this.newImages.concat(this.serviceImages);
+                  }else{
+
+                    var array = this.images.concat(this.serviceImages);
+                  }
             if (array.length > 4) {
               this.$toast.warning("Toplamda kayıtlı resim sayısı 4 adet olmalıdır. ");
               const miktar = 4 - this.images.length;

@@ -35,9 +35,10 @@ class ReplyController extends Controller
           
               $input= $request->all();
               $reply=Reply::create($input);
-              $blog=$reply->comment->blog()->with('categories')->with('comments')->firstOrFail();
+              $blog=$reply->comment->blog()
+              ->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->firstOrFail();
              
-              return new BlogResource($blog);
+              return $blog;
 
     }
     public function replyReply(Request $request)
@@ -46,9 +47,9 @@ class ReplyController extends Controller
               $input= $request->all();
              
               $replyreply=ReplyReply::create($input);
-              $blog=$replyreply->reply->comment->blog()->with('categories')->with('comments')->firstOrFail();
+              $blog=$replyreply->reply->comment->blog()->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->firstOrFail();
              
-              return new BlogResource($blog);
+              return $blog;
 
     }
 

@@ -70,7 +70,7 @@ const actions = {
         await axios
             .post("/api/replies", payload)
             .then(res => {
-                const blogUpdate = res.data.data;
+                const blogUpdate = res.data;
                 /* debugger; */
                 /* debugger; */
                 const index = rootState.blog.blogs.findIndex(
@@ -92,9 +92,9 @@ const actions = {
         await axios
             .post("/api/reply-reply", payload)
             .then(res => {
-                const blogUpdate = res.data.data;
+                const blogUpdate = res.data;
 
-                /* debugger; */
+                debugger;
                 const index = rootState.blog.blogs.findIndex(
                     blog => blog.id === blogUpdate.id
                 );

@@ -33,7 +33,7 @@
                 <img
                   width="50px"
                   height="50px"
-                  :src="`http://127.0.0.1:8000/storage/${blog.image}`"
+                  :src="`/storage/${blog.image}`"
                   :alt="blog.title"
                 />
               </td>

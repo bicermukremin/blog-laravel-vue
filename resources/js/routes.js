@@ -10,7 +10,7 @@ import Projelerimiz from "./Frontend/pages/Projelerimiz.vue";
 import BizeUlasin from "./Frontend/pages/BizeUlasin.vue";
 /* import Profile from "./Frontend/pages/Profile.vue"; */
 import Haber from "./Frontend/pages/Haber.vue";
-/* import SingleBlog from "./Frontend/pages/SingleBlog.vue"; */
+import SingleBlog from "./Frontend/pages/SingleBlog.vue";
 import SingleService from "./Frontend/pages/SingleService.vue";
 import Auth from "./Frontend/pages/Auth.vue";
 
@@ -22,11 +22,11 @@ import Ayar from "./Admin/pages/Settings.vue";
 import Slider from "./Admin/pages/Slider.vue";
 import About from "./Admin/pages/About.vue";
 import AboutEdit from "./Admin/pages/AboutEdit.vue";
-/* import Blog from "./Admin/pages/Blog.vue"; */
+import Blog from "./Admin/pages/Blog.vue";
 import Project from "./Admin/pages/Project.vue";
 import Category from "./Admin/pages/Category.vue";
-/* import Comment from "./Admin/pages/Comment.vue";
-import Reply from "./Admin/pages/Reply.vue"; */
+import Comment from "./Admin/pages/Comment.vue";
+import Reply from "./Admin/pages/Reply.vue";
 import Banner from "./Admin/pages/Banner.vue";
 import Abone from "./Admin/pages/Abone.vue";
 import Mail from "./Admin/pages/Mail.vue";
@@ -67,11 +67,11 @@ const routes = [{
         component: Profile,
         name: "profile"
     }, */
-    /*  {
-         path: ":slug",
-         component: SingleBlog,
-         name: "singleBlog"
-     }, */
+    {
+        path: ":slug",
+        component: SingleBlog,
+        name: "singleBlog"
+    },
     {
         path: ":slugService",
         component: SingleService,
@@ -112,12 +112,12 @@ const routes = [{
                 name: "aboutEdit",
                 meta: { admin: true }
             },
-            /* {
+            {
                 path: "blog",
                 component: Blog,
                 name: "blog",
                 meta: { admin: true }
-            }, */
+            },
             {
                 path: "project",
                 component: Project,
@@ -130,18 +130,18 @@ const routes = [{
                 name: "category",
                 meta: { admin: true }
             },
-            /* {
+            {
                 path: "yorumlar",
                 component: Comment,
                 name: "comment",
                 meta: { admin: true }
-            }, */
-            /*  {
-                 path: "cevaplar",
-                 component: Reply,
-                 name: "reply",
-                 meta: { admin: true }
-             }, */
+            },
+            {
+                path: "cevaplar",
+                component: Reply,
+                name: "reply",
+                meta: { admin: true }
+            },
             {
                 path: "bannerlar",
                 component: Banner,

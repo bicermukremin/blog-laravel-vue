@@ -78,11 +78,11 @@
                           Projelerimiz
                         </router-link>
                       </li>
-                     <!--  <li>
+                      <li>
                         <router-link :to="{ name: 'haber' }" class="nav-link">
                           Blog
                         </router-link>
-                      </li> -->
+                      </li>
                       <li>
                         <router-link :to="{ name: 'bizeulasin' }" class="nav-link">
                           Bize Ulaşın
@@ -150,11 +150,11 @@
                 <ul
                   class="header-social-icons social-icons d-none d-sm-block social-icons-clean ml-0"
                 >
-                  <li class="social-icons-facebook">
+                 <!--  <li class="social-icons-facebook">
                     <a :href="getSetting.facebook" target="_blank" title="Facebook"
                       ><i class="fab fa-facebook-f"></i
                     ></a>
-                  </li>
+                  </li> -->
                   <li class="social-icons-instagram">
                     <a :href="getSetting.instagram" target="_blank" title="İnstagram"
                       ><i class="fab fa-instagram"></i

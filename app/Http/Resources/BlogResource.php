@@ -17,9 +17,7 @@ class BlogResource extends JsonResource
      */
     public function toArray($request)
     {
-        Date::setLocale('tr');
-       
-        $date=$this->created_at;
+        
        return [
             'id'=>$this->id,
             'title'=>$this->title,
@@ -27,11 +25,8 @@ class BlogResource extends JsonResource
             'slug'=>$this->slug,
             'description'=>$this->description,
             'author_description'=>$this->author_description,
-            'fromNow'=>$date->diffForHumans(),
-            'createdAt'=>$date->isoFormat('DD MMMM YYYY'),
-            'author'=>new UserResource($this->author),
-            'comments'=>CommentResource::collection($this->comments),
-            'categories'=>CategoryResource::collection($this->categories),
+            'created_at'=>$this->created_at,
+            
             
             
         ];

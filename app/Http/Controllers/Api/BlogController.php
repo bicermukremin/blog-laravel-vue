@@ -8,11 +8,14 @@ use Illuminate\Http\Request;
 use App\Http\Requests\BlogRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\BlogResource;
+use Illuminate\Database\Query\Builder;
 use App\Http\Requests\BlogUpdateRequest;
 use App\Http\Resources\SingleBlogResource;
 
 class BlogController extends Controller
 {
+
+ 
     /**
      * Display a listing of the resource.
      *
@@ -24,10 +27,10 @@ class BlogController extends Controller
             $searched= $_GET['search'];
             $blogs=Blog::where('title', 'like',"%{$searched}%")
             ->orWhere('description', 'like',"%{$searched}%")
-            ->with('comments')->with('categories')->with('author')->latest()->paginate(4);
+            ->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->latest()->paginate(4);
             
         }else{
-            $blogs=Blog::with('comments')->with('categories')->with('author')
+            $blogs=Blog::with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')
             ->latest()->paginate(4);
             
         }
@@ -70,9 +73,9 @@ class BlogController extends Controller
        }
        
        $blog->categories()->attach($attachCategories);
-       $blogAdded=Blog::where('id',$blog->id)->with(['categories','comments'])->firstOrFail();
+       $blogAdded=Blog::where('id',$blog->id)->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->firstOrFail();
         
-        return new BlogResource($blogAdded);
+        return $blogAdded;
     }
 
   
@@ -85,7 +88,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        return new SingleBlogResource($blog);
+        return $blog;
     }
 
     /**
@@ -148,9 +151,10 @@ class BlogController extends Controller
        }
        
        $blog->categories()->sync($attachCategories);
-       $blogUpdated=Blog::where('id',$blog->id)->with(['categories','comments'])->firstOrFail();
+       $blogUpdated=Blog::where('id',$blog->id)
+       ->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->firstOrFail();
         
-        return new BlogResource($blogUpdated);
+        return $blogUpdated;
     }
 
     /**

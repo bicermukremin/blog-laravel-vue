@@ -39,7 +39,7 @@ const actions = {
                 const user = res.data;
                 commit("setUser", user);
                 commit("setLoggedIn", true);
-
+                debugger
                 if (res.data.status == 'admin') {
                     commit("setAdmin", true);
                     localStorage.setItem('isAdmin', true);

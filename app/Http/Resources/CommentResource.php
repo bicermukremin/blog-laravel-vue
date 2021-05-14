@@ -15,16 +15,13 @@ class CommentResource extends JsonResource
      */
     public function toArray($request)
     {
-        Date::setLocale('tr');
-       
-        $date=$this->created_at;
+        
         return [
             'id'=>$this->id,
             'like'=>$this->like,
             'dislike'=>$this->dislike,
             'description'=>$this->description,
-             'fromNow'=>$date->diffForHumans(),
-            'createdAt'=>$date->isoFormat('DD MMMM YYYY'),
+            'created_at'=>$this->created_at,
             'user'=>new UserResource($this->user),
             /* 'blog'=>new BlogResource($this->blog), */
             'replies'=>ReplyResource::collection($this->replies)

@@ -23,7 +23,7 @@ class ProfileResource extends JsonResource
             'instagram'=>$this->instagram,
             'linkedIn'=>$this->linkedIn,
             'youtube'=>$this->youtube,
-            'user'=>new UserResource($this->user),
+           
             
         ];
       

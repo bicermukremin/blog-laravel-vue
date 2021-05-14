@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\About;
+use App\Models\Email;
 use App\Models\Comment;
+use App\Mail\CommentMailler;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\CommentRequest;
 use App\Http\Resources\CommentResource;
+use App\Notifications\BlogNotification;
 
 class CommentController extends Controller
 {
@@ -15,10 +20,35 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function index()
+    public function index()
     {
         return CommentResource::collection(Comment::latest()->paginate(4));
     }
+
+    
+    public function makeComment(Request $request)
+    {
+         $input=$request->all();
+        
+        $about=About::where('active',1)->first();
+ 
+        $input['mission']=$about->mission;
+    
+        $input['type']='contact';
+        $input['content']=$request->description;
+        $input['konu']='Yorum';
+        Email::create($input);
+        $comment=Comment::create([
+            'user_id'=>$request->user_id,
+            'blog_id'=>$request->blog_id,
+            'description'=>$request->description,
+            ]);
+            Mail::to($input['email'])->cc('bicermukremin86@gmail.com')->queue(new CommentMailler($input));
+           $comment->blog->author->notify(new BlogNotification($comment));
+        $comments=Comment::where('blog_id',$comment->blog_id)->with('user.profile')->with('replies.replyUser.profile')->with('replies.replyReplies.replyReplyUser.profile')->get();
+        return $comments;
+    }
+
 
     /**
      * Store a newly created resource in storage.

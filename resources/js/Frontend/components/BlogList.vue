@@ -29,7 +29,8 @@
           <div class="recent-posts mt-4">
             <router-link
               :to="{
-                name: 'frontend',
+                name: 'singleBlog',
+                params: {slug: blog.slug}
             
               }"
             >
@@ -47,7 +48,8 @@
               <p v-html="blog.description"></p>
               <router-link
                 :to="{
-                  name: 'frontend'
+                  name: 'singleBlog',
+                params: {slug: blog.slug}
                 
                 }"
                 class="mt-3"

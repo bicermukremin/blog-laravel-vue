@@ -19,8 +19,8 @@
           <div class="blog-posts single-post mt-4">
             <article class="post post-large blog-single-post">
               <div class="post-date">
-                <span class="day">{{ getDay }}</span>
-                <span class="month">{{ getMonth }}</span>
+                <span class="day">{{ getBlog.created_at | day }}</span>
+                <span class="month">{{ getBlog.created_at | month }}</span>
               </div>
 
               <div class="post-content">
@@ -179,24 +179,24 @@
                         <li v-for="reply in comment.replies" :key="reply.id">
                           <div class="comment">
                             <div class="img-thumbnail d-none d-sm-block">
-                              <img class="avatar" :alt="reply.user.name" :src="reply.user.profile.avatar" />
+                              <img class="avatar" :alt="reply.reply_user.name" :src="reply.reply_user.profile.avatar" />
                             </div>
                             <div class="comment-block">
                               <div class="comment-arrow"></div>
                               <span class="comment-by">
-                                <strong>{{ reply.user.name }}</strong>
+                                <strong>{{ reply.reply_user.name }}</strong>
                                 <span class="float-right">
                                   <span
                                     v-if="
                                       !repRep &&
                                       isLoggedIn &&
-                                      canReply.includes(reply.user.id)
+                                      canReply.includes(reply.reply_user.id)
                                     "
                                   >
                                     <a
-                                      :name="'@' + reply.user.name + ''"
+                                      :name="'@' + reply.reply_user.name + ''"
                                       :id="reply.id"
-                                      :userId="reply.user.id"
+                                      :userId="reply.reply_user.id"
                                       href="#"
                                       @click.prevent="repYanitla"
                                       ><i class="fas fa-reply"></i>Yanıtla</a
@@ -223,9 +223,9 @@
                                   </span>
                                   <span v-if="repRep && repId == reply.id">
                                     <a
-                                      :name="'@' + reply.user.name + ''"
+                                      :name="'@' + reply.reply_user.name + ''"
                                       :id="reply.id"
-                                      :userId="reply.user.id"
+                                      :userId="reply.reply_user.id"
                                       href="#"
                                       @click.prevent="repYanitla"
                                       ><i class="fas fa-reply"></i> İptal</a
@@ -250,7 +250,7 @@
                                   id="comment"
                                 ></textarea>
                                 <button
-                                  @click.prevent="repReply(comment.id, reply.id)"
+                                  @click.prevent="repReply(reply.id)"
                                   class="btn btn-lg btn-primary mt-2 float-right"
                                 >
                                   <span v-if="loading">
@@ -258,20 +258,20 @@
                           </span>
                               <span v-else>Cevapla</span>
                             </button>
-                                </button>
+                               
                               </div>
                             </li>
                           </ul>
-                          <ul class="comments reply" v-if="reply.reReply.length > 0">
-                            <li v-for="reply in reply.reReply" :key="reply.id">
+                          <ul class="comments reply" v-if="reply.reply_replies.length > 0">
+                            <li v-for="reply in reply.reply_replies" :key="reply.id">
                               <div class="comment">
                                 <div class="img-thumbnail d-none d-sm-block">
-                                  <img class="avatar" :alt="reply.user.name" :src="reply.user.profile.avatar" />
+                                  <img class="avatar" :alt="reply.reply_reply_user.name" :src="reply.reply_reply_user.profile.avatar" />
                                 </div>
                                 <div class="comment-block">
                                   <div class="comment-arrow"></div>
                                   <span class="comment-by">
-                                    <strong>{{ reply.user.name }}</strong>
+                                    <strong>{{ reply.reply_reply_user.name }}</strong>
                                   </span>
                                   <p v-html="reply.description"></p>
 
@@ -291,7 +291,8 @@
                   </div>
                 </div>
 
-                <div v-if="canComment" class="post-block post-leave-comment mb-4">
+                  <div v-if="getUser.id!=getBlog.author.id">
+                    <div v-if="canComment" class="post-block post-leave-comment mb-4">
                   <h4 class="mb-3">Yorum Yap</h4>
 
                   <form>
@@ -406,6 +407,7 @@
                     </div>
                   </div>
                 </div>
+                  </div>
               </div>
             </article>
           </div>
@@ -479,6 +481,7 @@ export default {
     canComment() {
       return this.isLoggedIn && this.getUser.id != this.getBlog.author.id;
     },
+  
     canComReply() {
       let commentsUsersIds = this.getBlog.comments.map((el) => el.user.id);
 
@@ -493,43 +496,45 @@ export default {
           repies.push(replies[i][x]);
         }
       }
-      let repiesUsers = repies.map((el) => el.user.id);
+      let repiesUsers = repies.map((el) => el.reply_user.id);
       return repiesUsers.filter((el) => el != this.getUser.id);
     },
     getBlog() {
-      return this.$store.getters["getBlog"](this.$route.params.props.blog.slug)[0];
+      return this.$store.getters["getBlog"](this.$route.params.slug)[0];
     },
-    getDay() {
+ /*    getDay() {
       return this.getBlog.createdAt.substring(0, 2);
     },
     getMonth() {
       return this.getBlog.createdAt.substring(6, 3);
-    },
+    }, */
   },
   methods: {
     async sendMail() {
       this.deleting = true;
       this.form.from = "bicermukremin86@gmail.com";
       this.form.blog_id = this.getBlog.id;
+      this.form.user_id = this.getUser.id;
       await axios
-        .post("/api/make-comment", this.form)
+        .post("/api/make-com", this.form)
         .then((res) => {
           this.deleting = false;
           this.successAlert = true;
           this.form = {};
-          this.getBlog.comments = res.data.data;
+          this.getBlog.comments = res.data;
           let index = this.getBlogs.findIndex((blog) => {
             blog.id = this.form.blog_id;
           });
+         debugger
           let blogUpdate = this.getBlog;
-          this.$store.commit("updateBlog", { blogUpdate, index });
+          this.$store.commit("updateBlog", { blogUpdate, index })
+          this.$toast.success("Mesajınız başarıyla gönderilmiştir.");
         })
-        .then(() => this.$toast.success("Mesajınız başarıyla gönderilmiştir."))
         .catch((e) => {
           this.deleting = false;
           this.errorAlert = true;
           this.$toast.error("Mesajınız gönderilemedi");
-          console.log(e.res.data.data.errors);
+        
         });
     },
     comYanitla(e) {
@@ -560,16 +565,18 @@ export default {
         this.$toast.info("Yanıtınız başarıyla eklenmiştir.");
       });
     },
-    async repReply(comid, repid) {
+    async repReply(repid) {
       this.loading=true;
       const formData = new FormData();
       formData.append("user_id", this.getUser.id);
       formData.append("reply_id", repid);
       formData.append("description", this.replyReply);
+      debugger
       this.$store.dispatch("saveReplyReply", formData).then(() => {
         let blogUpdate = this.$store.state.reply.blogReply;
         let index = this.$store.state.reply.blogIndex;
         this.$store.commit("updateBlog", { blogUpdate, index });
+        
         this.repRep = false;
         this.loading=false;
         this.replyReply = "";

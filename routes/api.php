@@ -39,7 +39,7 @@ Route::apiResource('/mails', App\Http\Controllers\Api\MailController::class)->ex
 Route::post('/mails/{mail}', [App\Http\Controllers\Api\MailController::class,'mailUpdate']);
 Route::get('/mails', [App\Http\Controllers\Api\MailController::class,'index']);
 Route::post('/send-mail', [App\Http\Controllers\Api\MailController::class,'sendMail']);
-Route::post('/make-comment', [App\Http\Controllers\Api\MailController::class,'makeComment']);
+Route::post('/make-com', [App\Http\Controllers\Api\CommentController::class,'makeComment']);
 
 
 Route::apiResource('/projects', App\Http\Controllers\Api\ProjectController::class)->except('index','update');
