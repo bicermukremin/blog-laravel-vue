@@ -30,8 +30,8 @@ class BlogResource extends JsonResource
             'fromNow'=>$date->diffForHumans(),
             'createdAt'=>$date->isoFormat('DD MMMM YYYY'),
             'author'=>new UserResource($this->author),
-            'comments'=>CommentResource::collection($this->whenLoaded('comments')),
-            'categories'=>CategoryResource::collection($this->whenLoaded('categories')),
+            'comments'=>CommentResource::collection($this->comments),
+            'categories'=>CategoryResource::collection($this->categories),
             
             
         ];

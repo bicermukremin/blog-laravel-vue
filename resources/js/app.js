@@ -5,7 +5,9 @@ import router from "./routes.js";
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-
+import moment from 'moment'
+import 'moment/locale/tr' // without this line it didn't work
+moment.locale('tr')
 import Vuex from "vuex";
 import Vuelidate from "vuelidate";
 
@@ -59,9 +61,10 @@ window.axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-/* Vue.filter("fromNow", value => moment(value).fromNow());
-Vue.filter("day", value => value.substring(0, 2));
-Vue.filter("month", value => value.substring(3, 3)); */
+Vue.filter("fromNow", value => moment(value).fromNow());
+Vue.filter("day", value => moment(value).format('ll').substring(0, 2));
+Vue.filter("month", value => moment(value).format('ll').substring(6, 3).toUpperCase());
+
 
 const app = new Vue({
     el: "#app",

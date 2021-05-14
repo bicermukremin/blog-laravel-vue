@@ -13,7 +13,7 @@ use App\Http\Resources\SingleBlogResource;
 
 class BlogController extends Controller
 {
-     /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -24,15 +24,15 @@ class BlogController extends Controller
             $searched= $_GET['search'];
             $blogs=Blog::where('title', 'like',"%{$searched}%")
             ->orWhere('description', 'like',"%{$searched}%")
-            ->with('comments')->with('categories')->latest()->paginate(4);
+            ->with('comments')->with('categories')->with('author')->latest()->paginate(4);
             
         }else{
-            $blogs=Blog::with('comments')->with('categories')
+            $blogs=Blog::with('comments')->with('categories')->with('author')
             ->latest()->paginate(4);
-
+            
         }
-      
-        return BlogResource::collection($blogs);
+   
+        return $blogs;
     }
 
     /**

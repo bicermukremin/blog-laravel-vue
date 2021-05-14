@@ -21,7 +21,7 @@
 
       <Project></Project>
 
-     <!--  <BlogList></BlogList> -->
+      <BlogList></BlogList>
     </div>
     <Footer></Footer>
   </div>
@@ -30,7 +30,7 @@
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-/* import BlogList from "./components/BlogList"; */
+import BlogList from "./components/BlogList";
 import Yorum from "./components/Yorum";
 import Project from "./components/Project";
 import Service from "./components/Service";
@@ -41,7 +41,7 @@ export default {
   components: {
     Header,
     Footer,
-    /* BlogList, */
+    BlogList,
     Yorum,
     Project,
     Service,

@@ -37,8 +37,8 @@
             </router-link>
             <article class="post">
               <div class="post-date">
-                <span class="day">{{ blog.createdAt.substring(0, 2) }}</span>
-                <span class="month">{{ blog.createdAt.substring(6, 3) }}</span>
+                <span class="day">{{ blog.created_at | day }}</span>
+                <span class="month">{{ blog.created_at | month }}</span>
               </div>
               <h4 class="pt-2 pb-0 mb-0">
                 <a class="text-color-dark" href="#">{{ blog.title }}</a>
@@ -47,7 +47,7 @@
               <p v-html="blog.description"></p>
               <router-link
                 :to="{
-                  name: 'frontend',
+                  name: 'frontend'
                 
                 }"
                 class="mt-3"
