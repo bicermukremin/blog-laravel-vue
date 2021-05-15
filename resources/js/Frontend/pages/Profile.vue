@@ -143,7 +143,7 @@ export default {
       
     },
     async saveProfile(payload){
-     debugger
+   
       let formData=new FormData();
       if (this.image) {
         formData.append('avatar',this.image)
@@ -163,6 +163,7 @@ export default {
           this.formProfile=res.data;
           this.getUser.profile = this.formProfile;
           this.$store.commit('setUser',this.getUser);
+          
           Swal.fire("Kaydedildi!", "Profiliniz Başarılı bir şekilde kaydedildi.", "success");
         }).catch((err)=>{ 
               inputError(Object.values(err.response.data.errors));

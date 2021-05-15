@@ -200,6 +200,7 @@ export default {
         if (res.status == 204) {
             this.$store
           .dispatch("logout")
+          .then(() => this.$router.push('/'))
           .then(() => this.$toast.success("Başarılı bir şekilde çıkış yaptınız."))
           
           }

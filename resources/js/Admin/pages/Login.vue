@@ -161,8 +161,8 @@ export default {
     password: {
       required,
 
-      minLength: minLength(6),
-      maxLength: maxLength(8),
+      minLength: minLength(8),
+      maxLength: maxLength(18),
     },
   },
   computed:{

@@ -68,4 +68,5 @@ Route::post('/reply-reply', [App\Http\Controllers\Api\ReplyController::class,'re
 
 
 Route::apiResource('/profile', App\Http\Controllers\Api\ProfileController::class);
+Route::post('/password', [App\Http\Controllers\Api\UserController::class,'changePassword']);
 
