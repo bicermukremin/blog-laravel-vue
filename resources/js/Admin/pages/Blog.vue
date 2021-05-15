@@ -118,7 +118,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["getBlogs", "getBlogErrors", "getBlogMeta"]),
+    ...mapGetters(["getBlogs", "getBlogErrors", "getBlogMeta","getUser"]),
   },
   watch: {
     // whenever question changes, this function will run
@@ -194,6 +194,7 @@ export default {
       const formData = new FormData();
       formData.append("image", payload.image);
       formData.append("title", payload.blog.title);
+      formData.append("author_id", this.getUser.id);
       formData.append("description", payload.blog.description);
       formData.append("categories", payload.categories);
       formData.append("author_description", payload.blog.author_description);
@@ -215,6 +216,7 @@ export default {
       const formData1 = new FormData();
       formData1.append("image", payload.image);
       formData1.append("title", payload.blog.title);
+      formData1.append("author_id", this.getUser.id);
       formData1.append("description", payload.blog.description);
       formData1.append("id", payload.blog.id);
       formData1.append("categories", payload.categories);

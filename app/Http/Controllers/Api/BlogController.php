@@ -7,15 +7,10 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Requests\BlogRequest;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\BlogResource;
-use Illuminate\Database\Query\Builder;
 use App\Http\Requests\BlogUpdateRequest;
-use App\Http\Resources\SingleBlogResource;
 
 class BlogController extends Controller
 {
-
- 
     /**
      * Display a listing of the resource.
      *
@@ -53,7 +48,7 @@ class BlogController extends Controller
      */
     public function store(BlogRequest $request)
     {
-         /* dd($request->all()); */
+         
         $input= $request->all();
 
        
@@ -65,6 +60,7 @@ class BlogController extends Controller
         $input['image'] = $fileName;
        }
        $blog=Blog::create($input);
+       
        $categories=explode(',',$request->categories);
        $attachCategories=array();
        

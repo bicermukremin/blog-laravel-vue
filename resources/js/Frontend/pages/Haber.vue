@@ -34,9 +34,9 @@
                 <span class="month">{{ blog.created_at | month}}</span>
               </div>
               <h4 class="pt-2 pb-0 mb-0">
-                <a class="text-color-dark" href="demo-construction-blog-detail.html">{{
+                <router-link class="text-color-dark" :to="{name:'singleBlog',params:{slug:blog.slug}}">{{
                   blog.title
-                }}</a>
+                }}</router-link>
               </h4>
               <p>By {{ blog.author.name }}</p>
               <p v-html="blog.description"></p>

@@ -5,13 +5,14 @@
         class="col-md-4 offset-4 card card-primary p-3 border"
         :class="{ 'border-primary': isUser, 'border-success': !isUser }"
       >
-        <h3
-          :class="{ 'text-primary': isUser, 'text-success': !isUser }"
+        <router-link :to="{name:'frontend'}">
+         <h3 :class="{ 'text-primary': isUser, 'text-success': !isUser }"
           class="text-center mb-3 mt-3"
         >
-          <img height="100px" :src="`storage/${getSetting.logo2}`" alt="" />|
+          <img width="150px" height="100px" :src="`storage/${getSetting.logo2}`" alt="" />|
           {{ isUser ? "Giriş" : "Kayıt" }}
-        </h3>
+         </h3>
+        </router-link>
         <hr />
         <form>
           <div class="form-group" v-if="!isUser">

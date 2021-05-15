@@ -9,7 +9,7 @@
     aria-hidden="true"
   >
     <form @submit.prevent="name ? update() : create()">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">{{ editTitle }}</h5>
@@ -70,8 +70,15 @@
               <label for="description" class="form-label">Blog İçeriği</label>
               <ckeditor v-model="blog.description"></ckeditor>
               <small v-if="!$v.blog.description.minLength" class="form-text text-danger"
-                >Lütfen şifreniz en az
+                >Lütfen içerik kısmı en az
                 {{ $v.blog.description.$params.minLength.min }} karakterden oluşmalıdır...
+              </small>
+              <small
+                v-if="!$v.blog.description.maxLength"
+                class="form-text text-danger"
+                >Lütfen içerik kısmı en fazla
+                {{ $v.blog.description.$params.maxLength.max }} karakterden
+                oluşmalıdır...
               </small>
             </div>
             <div class="mb-3">
@@ -80,8 +87,15 @@
               <small
                 v-if="!$v.blog.author_description.minLength"
                 class="form-text text-danger"
-                >Lütfen şifreniz en az
+                >Lütfen yazar açıklamanız en az
                 {{ $v.blog.author_description.$params.minLength.min }} karakterden
+                oluşmalıdır...
+              </small>
+              <small
+                v-if="!$v.blog.author_description.maxLength"
+                class="form-text text-danger"
+                >Lütfen yazar açıklamanız en fazla
+                {{ $v.blog.author_description.$params.maxLength.max }} karakterden
                 oluşmalıdır...
               </small>
             </div>
@@ -168,11 +182,13 @@ export default {
       },
       description: {
         required,
-        minLength: minLength(5),
+        minLength: minLength(25),
+        maxLength: maxLength(3000),
       },
       author_description: {
         required,
-        minLength: minLength(5),
+        minLength: minLength(25),
+        maxLength: maxLength(300),
       },
     },
   },

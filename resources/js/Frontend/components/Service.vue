@@ -42,7 +42,7 @@
                     service: service,
                   },
                 }"
-                >Learn More <i class="fas fa-long-arrow-alt-right"></i
+                >Devamını Oku <i class="fas fa-long-arrow-alt-right"></i
               ></router-link>
             </div>
           </div>

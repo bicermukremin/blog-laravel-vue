@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Blog extends Model
 {
     use HasFactory;
-    protected $fillable=['title','image','description','slug','author_description'];
+    protected $fillable=['title','image','description','slug','author_description','author_id'];
 
     public function blogRelatedTables(Builder $query){
         return $query->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile');

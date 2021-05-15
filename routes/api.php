@@ -18,7 +18,7 @@ Route::apiResource('/services', App\Http\Controllers\Api\ServiceController::clas
 Route::post('/services/{service}', [App\Http\Controllers\Api\ServiceController::class,'serviceUpdate']);
 Route::get('/services', [App\Http\Controllers\Api\ServiceController::class,'index']);
 
-/* Route::apiResource('/blogs', App\Http\Controllers\Api\BlogController::class)->except('index','update'); */
+Route::apiResource('/blogs', App\Http\Controllers\Api\BlogController::class)->except('index','update');
 Route::post('/blogs/{blog}', [App\Http\Controllers\Api\BlogController::class,'blogUpdate']);
 Route::get('/blogs', [App\Http\Controllers\Api\BlogController::class,'index']);
 

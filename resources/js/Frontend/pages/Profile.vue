@@ -20,7 +20,7 @@
             <div class="d-flex justify-content-center mb-4">
               <div class="profile-image-outer-container">
                 <div class="profile-image-inner-container bg-color-primary">
-                  <img :src="showImage ? showImage : 'storage/'+getUser.profile.avatar" />
+                  <img :src="showImage ? showImage : getUser.profile.avatar.length > 0 ? 'storage/'+getUser.profile.avatar : null" />
                   <span class="profile-image-button bg-color-dark">
                     <i class="fas fa-camera text-light"></i>
                   </span>

@@ -76,8 +76,8 @@
                 <div class="post-block post-author mt-4 clearfix">
                   <h4 class="mt-4 mb-3">Yazar</h4>
                   <div class="img-thumbnail d-block">
-                    <a href="blog-post.html">
-                      <img :src="getBlog.author.profile.avatar" :alt="getBlog.author.name" />
+                    <a href="#">
+                      <img :src="'storage/'+getBlog.author.profile.avatar" :alt="getBlog.author.name" />
                     </a>
                   </div>
                   <p>
@@ -93,7 +93,7 @@
                     <li v-for="comment in getBlog.comments" :key="comment.id">
                       <div class="comment">
                         <div class="img-thumbnail d-none d-sm-block">
-                          <img class="avatar" :alt="comment.user.name" :src="comment.user.profile.avatar" />
+                          <img class="avatar" :alt="comment.user.name" :src="'storage/'+comment.user.profile.avatar" />
                         </div>
                         <div class="comment-block">
                           <div class="comment-arrow"></div>
@@ -179,7 +179,7 @@
                         <li v-for="reply in comment.replies" :key="reply.id">
                           <div class="comment">
                             <div class="img-thumbnail d-none d-sm-block">
-                              <img class="avatar" :alt="reply.reply_user.name" :src="reply.reply_user.profile.avatar" />
+                              <img class="avatar" :alt="reply.reply_user.name" :src="'storage/'+reply.reply_user.profile.avatar" />
                             </div>
                             <div class="comment-block">
                               <div class="comment-arrow"></div>
@@ -266,7 +266,7 @@
                             <li v-for="reply in reply.reply_replies" :key="reply.id">
                               <div class="comment">
                                 <div class="img-thumbnail d-none d-sm-block">
-                                  <img class="avatar" :alt="reply.reply_reply_user.name" :src="reply.reply_reply_user.profile.avatar" />
+                                  <img class="avatar" :alt="reply.reply_reply_user.name" :src="'storage/'+reply.reply_reply_user.profile.avatar" />
                                 </div>
                                 <div class="comment-block">
                                   <div class="comment-arrow"></div>

@@ -3,12 +3,16 @@ import { applyFilters } from "../../shared/helpers/index";
 const state = {
     blogs: {},
     errors: {},
-    meta: {}
+    meta: {},
+    userBlogs: {}
 };
 
 const getters = {
     getBlogs(state) {
         return state.blogs;
+    },
+    getUserBlogs(state) {
+        return state.userBlogs;
     },
     getBlogMeta(state) {
         return state.meta;
@@ -28,6 +32,9 @@ const mutations = {
     addBlog(state, payload) {
         state.blogs.unshift(payload);
     },
+    addUserBlog(state, payload) {
+        state.userBlogs.unshift(payload);
+    },
     updateBlog(state, { blogUpdate, index }) {
 
         Vue.set(state.blogs, index, blogUpdate);
@@ -38,6 +45,9 @@ const mutations = {
 
     listBlogs(state, payload) {
         state.blogs = payload;
+    },
+    listUserBlogs(state, payload) {
+        state.userBlogs = payload;
     },
     blogMeta(state, payload) {
         state.meta = payload;
@@ -51,22 +61,25 @@ const mutations = {
 };
 
 const actions = {
-    async initBlog({ commit }, options) {
+    async initBlog({ commit, getters }, options) {
         const url = applyFilters("/api/blogs", options.filter);
         await axios.get(url).then(res => {
-            debugger
+
             commit("listBlogs", res.data.data);
             commit("blogMeta", res.data);
+            commit("listUserBlogs", res.data.data.filter(blog => blog.author.id == getters['getUser'].id));
         });
     },
     async saveBlog({ commit, state }, payload) {
-        /* debugger; */
+
         await axios
             .post("/api/blogs", payload)
             .then(res => {
+                debugger
                 const blog = res.data;
                 commit("deleteErrors", null);
                 commit("addBlog", blog);
+                commit("addUserBlog", blog);
             })
             .catch(err => {
                 commit("deleteErrors", null);
