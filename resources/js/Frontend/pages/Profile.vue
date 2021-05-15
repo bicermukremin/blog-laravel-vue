@@ -20,12 +20,12 @@
             <div class="d-flex justify-content-center mb-4">
               <div class="profile-image-outer-container">
                 <div class="profile-image-inner-container bg-color-primary">
-                  <img src="img/avatars/avatar.jpg" />
+                  <img :src="showImage ? showImage : 'storage/'+getUser.profile.avatar" />
                   <span class="profile-image-button bg-color-dark">
                     <i class="fas fa-camera text-light"></i>
                   </span>
                 </div>
-                <input type="file" id="file" class="form-control profile-image-input" />
+                <input @change="uploadImage" type="file" id="file" class="form-control profile-image-input" />
               </div>
             </div>
 
@@ -85,7 +85,7 @@
             </aside>
           </div>
           <div class="col-lg-9">
-            <ProfileMain v-if="profile"></ProfileMain>
+            <ProfileMain v-if="profile" @saveProfile='saveProfile' :form='getUser.profile' :user='getUser'></ProfileMain>
             <ProfileBlog v-if="bloglarim"></ProfileBlog>
             <ProfileComment v-if="yorumlarim"></ProfileComment>
             <ProfileReply v-if="yanitlarim"></ProfileReply>
@@ -106,6 +106,8 @@ import ProfileBlog from "./../components/ProfileBlog";
 import ProfileComment from "./../components/ProfileComment";
 import ProfileReply from "./../components/ProfileReply";
 import ProfilePassword from "./../components/ProfilePassword";
+import { mapGetters} from 'vuex'
+import { inputError } from "./../../shared/utils/response";
 export default {
   components: {
     Header,
@@ -123,9 +125,51 @@ export default {
       yorumlarim: false,
       bloglarim: false,
       yanitlarim: false,
+      image:'',
+      showImage:'',
+      
     };
   },
+  computed:{
+     ...mapGetters([
+      "getUser",
+    ]),
+  },
   methods: {
+    uploadImage(e){
+        let file=e.target.files[0]
+        this.image=file
+        this.showImage=URL.createObjectURL(file);
+      
+    },
+    async saveProfile(payload){
+     debugger
+      let formData=new FormData();
+      if (this.image) {
+        formData.append('avatar',this.image)
+         }
+       
+      formData.append('user_id',this.getUser.id),
+        formData.append('about',payload.form.about),
+        formData.append('facebook',payload.form.facebook),
+        formData.append('instagram',payload.form.instagram),
+        formData.append('twitter',payload.form.twitter),
+        formData.append('youtube',payload.form.youtube),
+        formData.append('web',payload.form.web),
+        formData.append('linkedIn',payload.form.linkedIn),
+        formData.append('name',payload.user.name),
+        formData.append('email',payload.user.email),
+        await axios.post('/api/profile',formData).then((res)=>{
+          this.formProfile=res.data;
+          this.getUser.profile = this.formProfile;
+          this.$store.commit('setUser',this.getUser);
+          Swal.fire("Kaydedildi!", "Profiliniz Başarılı bir şekilde kaydedildi.", "success");
+        }).catch((err)=>{ 
+              inputError(Object.values(err.response.data.errors));
+             
+           
+    })
+    },
     menu(e) {
       if (e.currentTarget.name == "profile") {
         this.profile = true;

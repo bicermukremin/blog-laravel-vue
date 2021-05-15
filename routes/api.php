@@ -65,3 +65,7 @@ Route::apiResource('/settings', App\Http\Controllers\Api\SettingController::clas
 
 Route::apiResource('/replies', App\Http\Controllers\Api\ReplyController::class);
 Route::post('/reply-reply', [App\Http\Controllers\Api\ReplyController::class,'replyReply']);
+
+
+Route::apiResource('/profile', App\Http\Controllers\Api\ProfileController::class);
+

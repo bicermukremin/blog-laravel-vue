@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProfileRequest extends FormRequest
@@ -31,6 +32,8 @@ class ProfileRequest extends FormRequest
                 'youtube'=>'active_url',
                 'instagram'=>'active_url',
                 'linkedIn'=>'active_url',
+                'name'=>'required|string|min:3',
+                'email' =>'required|email|unique:users,email,'.Request::get('user_id')
 
         ];
     }
@@ -53,6 +56,16 @@ class ProfileRequest extends FormRequest
          
             'avatar.image' => 'Sadece resim formatı geçerlidir.',
             'avatar.mimes' => 'Resimler jpg,jpeg,png,gif formatında olmalıdır. ',
+
+            'email.required' => 'Mail adresi kısmı zorunludur.',
+            'email.email' => 'Mail adresiniz geçerli bir mail adresi olmalıdır.',
+            'email.unique' => 'Bu mail adresi kayıtlı başka bir mail adresi kullanın.',
+            
+            'name.required' => 'İsim kısmı zorunludur.',
+            'name.string' => 'İsim kısmı metin tipinde olmalıdır.',
+            'name.min' => 'İsim kısmı en az 3 karakterden oluşmalıdır.',
+            
+            
         ];
     }
 }

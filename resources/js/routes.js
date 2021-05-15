@@ -8,7 +8,7 @@ import Hizmet from "./Frontend/pages/Hizmetlerimiz.vue";
 import Hakkimizda from "./Frontend/pages/Hakkimizda.vue";
 import Projelerimiz from "./Frontend/pages/Projelerimiz.vue";
 import BizeUlasin from "./Frontend/pages/BizeUlasin.vue";
-/* import Profile from "./Frontend/pages/Profile.vue"; */
+import Profile from "./Frontend/pages/Profile.vue";
 import Haber from "./Frontend/pages/Haber.vue";
 import SingleBlog from "./Frontend/pages/SingleBlog.vue";
 import SingleService from "./Frontend/pages/SingleService.vue";
@@ -62,11 +62,11 @@ const routes = [{
         component: BizeUlasin,
         name: "bizeulasin"
     },
-    /* {
+    {
         path: ":user",
         component: Profile,
         name: "profile"
-    }, */
+    },
     {
         path: ":slug",
         component: SingleBlog,

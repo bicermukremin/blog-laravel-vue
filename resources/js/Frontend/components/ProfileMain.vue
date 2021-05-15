@@ -7,6 +7,7 @@
       >
       <div class="col-lg-9">
         <input
+          v-model="user.name"
           class="form-control text-3 h-auto py-2"
           type="text"
           placeholder="İsim"
@@ -21,6 +22,7 @@
       >
       <div class="col-lg-9">
         <ckeditor
+          v-model="form.about"
           class="form-control text-3 h-auto py-2"
           value="Hakkımda"
           required
@@ -34,6 +36,7 @@
       >
       <div class="col-lg-9">
         <input
+          v-model="user.email"
           class="form-control text-3 h-auto py-2"
           type="email"
           name="email"
@@ -48,6 +51,7 @@
       >
       <div class="col-lg-9">
         <input
+         v-model="form.facebook"
           class="form-control text-3 h-auto py-2"
           type="text"
           name="company"
@@ -61,6 +65,7 @@
       >
       <div class="col-lg-9">
         <input
+        v-model="form.twitter"
           class="form-control text-3 h-auto py-2"
           type="text"
           name="company"
@@ -74,6 +79,7 @@
       >
       <div class="col-lg-9">
         <input
+        v-model="form.instagram"
           class="form-control text-3 h-auto py-2"
           type="text"
           name="company"
@@ -87,6 +93,7 @@
       >
       <div class="col-lg-9">
         <input
+          v-model="form.youtube"
           class="form-control text-3 h-auto py-2"
           type="text"
           name="company"
@@ -100,6 +107,7 @@
       >
       <div class="col-lg-9">
         <input
+          v-model="form.linkedIn"
           class="form-control text-3 h-auto py-2"
           type="text"
           name="company"
@@ -113,6 +121,7 @@
       >
       <div class="col-lg-9">
         <input
+          v-model="form.web"
           class="form-control text-3 h-auto py-2"
           type="url"
           name="website"
@@ -124,19 +133,49 @@
     <div class="form-group row">
       <div class="form-group col-lg-9"></div>
       <div class="form-group col-lg-3">
-        <input
-          type="submit"
-          value="Save"
+        <button
+          @click.prevent="saveProfile"
+          value="Kaydet"
           class="btn btn-primary btn-modern float-end"
           data-loading-text="Loading..."
-        />
+        >Kaydet</button>
       </div>
     </div>
   </form>
 </template>
 
 <script>
-export default {};
+import { mapGetters} from "vuex";
+export default {
+  props:{
+    user: {
+      type:Object,
+      required:true
+    }, 
+    form: {
+      type:Object,
+      required:true
+    }
+  },
+  
+  
+  methods: {
+    saveProfile(){
+      this.$emit("saveProfile",{form:this.form,user:this.user});
+    }
+  },
+ /*  watch:{
+    user:function () {
+      this.userForm.email=this.user.email;
+      this.userForm.name=this.user.name;
+    },
+    form:function () {
+      
+      this.formProfile=this.form
+      
+    }
+  } */
+};
 </script>
 
 <style lang="scss" scoped></style>

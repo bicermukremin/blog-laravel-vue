@@ -124,13 +124,13 @@
                               >Çıkış Yap</a
                             >
                           </li>
-                          <!--   <li v-if="auth">
+                            <li v-if="auth">
                             <router-link
                               :to="{ name: 'profile', params: { user: getUser.id } }"
                               class="dropdown-item"
                               >Profilim</router-link
                             >
-                          </li> -->
+                          </li>
                         </ul>
                       </li>
                     </ul>

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProfileRequest;
 use App\Http\Resources\ProfileResource;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
@@ -47,9 +48,10 @@ class ProfileController extends Controller
      */
     public function store(ProfileRequest $request)
     {
-       /*   dd($request->all()); */
+         
         $input= $request->all();
-        
+     
+        $user=User::find($input['user_id']);
        
         
         if($request->avatar) {
@@ -57,11 +59,22 @@ class ProfileController extends Controller
          $fileName=$request->file('avatar')->store('avatars','public');
 
         $input['avatar'] = $fileName;
+        $user->profile->avatar=$input['avatar'];
        }
-       
-        $profile=Profile::create($input);
+       $user->profile->user_id=$input['user_id'];
+       $user->profile->facebook=$input['facebook'];
+       $user->profile->instagram=$input['instagram'];
+       $user->profile->linkedIn=$input['linkedIn'];
+       $user->profile->web=$input['web'];
+       $user->profile->twitter=$input['twitter'];
+       $user->profile->youtube=$input['youtube'];
+       $user->profile->save();
+       $user->name=$input['name'];
+       $user->email=$input['email'];
+       $user->save();
+      
   
-        return new ProfileResource($profile);
+        return $user->profile;
     }
 
   

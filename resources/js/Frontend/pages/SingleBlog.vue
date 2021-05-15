@@ -525,7 +525,7 @@ export default {
           let index = this.getBlogs.findIndex((blog) => {
             blog.id = this.form.blog_id;
           });
-         debugger
+       
           let blogUpdate = this.getBlog;
           this.$store.commit("updateBlog", { blogUpdate, index })
           this.$toast.success("Mesajınız başarıyla gönderilmiştir.");
@@ -571,7 +571,7 @@ export default {
       formData.append("user_id", this.getUser.id);
       formData.append("reply_id", repid);
       formData.append("description", this.replyReply);
-      debugger
+     
       this.$store.dispatch("saveReplyReply", formData).then(() => {
         let blogUpdate = this.$store.state.reply.blogReply;
         let index = this.$store.state.reply.blogIndex;
