@@ -149,7 +149,7 @@
                           </span>
                           <p v-html="comment.description"></p>
 
-                          <span class="date float-right">{{ comment.fromNow }}</span>
+                          <span class="date float-right">{{ comment.created_at | fromNow }}</span>
                         </div>
                       </div>
                       <ul class="comments reply">
@@ -235,7 +235,7 @@
                               </span>
                               <p v-html="reply.description"></p>
 
-                              <span class="date float-right">{{ reply.fromNow }}</span>
+                              <span class="date float-right">{{ reply.created_at | fromNow }}</span>
                             </div>
                           </div>
                           <ul class="comments reply">
@@ -276,7 +276,7 @@
                                   <p v-html="reply.description"></p>
 
                                   <span class="date float-right">{{
-                                    reply.fromNow
+                                    reply.created_at | fromNow
                                   }}</span>
                                 </div>
                               </div>

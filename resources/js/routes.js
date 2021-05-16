@@ -63,6 +63,11 @@ const routes = [{
         name: "bizeulasin"
     },
     {
+        path: "/user",
+        component: FrontendHome,
+        name: "frontend"
+    },
+    {
         path: ":user",
         component: Profile,
         name: "profile",

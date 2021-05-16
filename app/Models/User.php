@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\Blog;
 use Laravel\Sanctum\HasApiTokens;
+use App\Notifications\PasswordReset;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -23,7 +24,10 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new PasswordReset($token));
+    }
     public function blogs(){
         return $this->hasMany(Blog::class,'author_id');
     }

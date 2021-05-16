@@ -183,9 +183,9 @@
                   >
                     <span class="thumb-info-side-image-wrapper p-0">
                       <img
-                        src="img/team/team-22.jpg"
+                        src="avatars/mukobar.jpg"
                         class="img-fluid"
-                        alt=""
+                        alt="Mükremin Biçer"
                         style="width: 160px"
                       />
                     </span>
@@ -195,9 +195,9 @@
                           Mükremin Biçer- <small class="font-weight-light">Founder</small>
                         </h5>
                         <p class="mb-0">
-                          Merhaba , Ben Mükremin BİÇER. Dört yıldır internet ortamında aktif olarak faaliyet göstermekteyim. Bu yıl içerisinde 3 yıl gibi bir sürede PHP üzerine geliştirici olarak çalışmaktayım. Birçok ziyaretçime Laravel(PHP), VUE JS(Javascript), HTML5 ve CSS3 dilleri üzerinde web sitesi hizmeti sağlıyorum. 
+                            Merhaba , Ben Mükremin BİÇER. Dört yıldır internet ortamında aktif olarak faaliyet göstermekteyim. Bu yıl içerisinde 3 yıl gibi bir sürede PHP üzerine geliştirici olarak çalışmaktayım. Birçok ziyaretçime Laravel(PHP), VUE JS(Javascript), HTML5 ve CSS3 dilleri üzerinde web sitesi hizmeti sağlıyorum. 
                         </p><p class="mb-0">
-                          Eğitim sürecim içerisinde araştırma, öz motivasyon, girişimcilik ve farklı yetenekler edinme noktasında kendimi geliştirdim.
+                            Eğitim sürecim içerisinde araştırma, öz motivasyon, girişimcilik ve farklı yetenekler edinme noktasında kendimi geliştirdim.
 
 İş yaşamında efektif ve hızlı olmak konusunda son derece özverili ve hevesli olduğumu, pozisyonun gerektirdiği sorumluluğu merak ve istekle üzerime almak istediğimi belirtmek isterim. İstekli, özenli ve dikkatli çalışmanın mutlaka başarı ile sonuçlanacağının bilincindeyim. Bu nedenle size yeteneklerim ve çalışma disiplinim ile katkı sağlayabileceğim noktasında şüphem yok.
                         </p>
@@ -256,6 +256,14 @@
 											<div class="progress progress-sm">
 												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="82%" data-appear-animation-delay="900">
 													<span class="progress-bar-tooltip">82%</span>
+												</div>
+											</div> 
+                      <div class="progress-label">
+												<span>Bootstrap</span>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="84%" data-appear-animation-delay="900">
+													<span class="progress-bar-tooltip">84%</span>
 												</div>
 											</div>
                       <div class="progress-label">

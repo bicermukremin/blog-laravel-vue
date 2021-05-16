@@ -45,7 +45,7 @@
                 <a class="text-color-dark" href="#">{{ blog.title }}</a>
               </h4>
               <p>By {{ blog.author.name }}</p>
-              <p v-html="blog.description"></p>
+              <p v-html="blog.description.substring(0, 90)"></p>
               <router-link
                 :to="{
                   name: 'singleBlog',
@@ -82,4 +82,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+img {
+     width:100%;
+     min-height:100px;}
+
+</style>

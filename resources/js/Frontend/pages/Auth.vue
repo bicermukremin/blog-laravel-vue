@@ -51,7 +51,7 @@
             </small>
             <v-errors :errors="errorFor('email')"></v-errors>
           </div>
-          <div class="form-group">
+          <div class="form-group" v-if="!reset">
             <label>Şifre</label>
             <input
               v-model="user.password"
@@ -104,7 +104,7 @@
           </div>
           <div class="button-container d-flex flex-column align-items-center">
             <button
-              v-if="isUser"
+              v-if="isUser && !reset"
               class="btn btn-primary btn-block mb-2"
               @click.prevent="login"
               
@@ -115,9 +115,22 @@
           <span  v-else>
             Giriş
           </span>
+            </button> 
+             <button
+              v-if="isUser && reset"
+              class="btn btn-primary btn-block mb-2"
+              @click.prevent="resetPass"
+              
+            >
+               <span v-if="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Gönderiliyor...
+          </span> 
+          <span  v-else>
+            Gönder
+          </span>
             </button>
             <button
-              v-else
+              v-if="!isUser"
               class="btn btn-success btn-block mb-2"
               @click.prevent="register"
               
@@ -130,8 +143,11 @@
           </span>
               
             </button>
-            <a href="#" @click.prevent="isUser = !isUser" class="text-secondary">
+            <a href="#" @click.prevent="changeMode" class="text-secondary">
               {{ isUser ? "Üye değilim" : "Üyeliğim var" }}
+            </a> 
+            <a v-if="isUser" href="#" @click.prevent="resetPassword" class="text-primary">
+              Şifremi Unuttum
             </a>
           </div>
         </form>
@@ -156,6 +172,7 @@ export default {
   mixins: [validationErrors],
   data() {
     return {
+      reset:false,
       user: {
         email: null,
         password: null,
@@ -254,6 +271,23 @@ export default {
       }
       this.loading = false;
     },
+    resetPassword(){
+      this.reset=true
+    },
+    async resetPass(){
+      this.loading = true;
+      const formData=new FormData();
+      formData.append("email",this.user.email)
+      await axios.post('/password/email',formData).then((res)=>{
+       this.$router.go(-1);
+       this.$toast.warning('Mail adresi gelen kutunuzu kontrol edip linke tıklayınız.')
+       this.loading = false;
+      })
+    },
+    changeMode(){
+      this.isUser = !this.isUser
+      this.reset=false
+    }
   },
 };
 </script>
