@@ -192,11 +192,14 @@
                     <span class="thumb-info-caption">
                       <span class="thumb-info-caption-text">
                         <h5 class="text-uppercase mb-1">
-                          John Doe - <small class="font-weight-light">Founder</small>
+                          Mükremin Biçer- <small class="font-weight-light">Founder</small>
                         </h5>
                         <p class="mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                          rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                          Merhaba , Ben Mükremin BİÇER. Dört yıldır internet ortamında aktif olarak faaliyet göstermekteyim. Bu yıl içerisinde 3 yıl gibi bir sürede PHP üzerine geliştirici olarak çalışmaktayım. Birçok ziyaretçime Laravel(PHP), VUE JS(Javascript), HTML5 ve CSS3 dilleri üzerinde web sitesi hizmeti sağlıyorum. 
+                        </p><p class="mb-0">
+                          Eğitim sürecim içerisinde araştırma, öz motivasyon, girişimcilik ve farklı yetenekler edinme noktasında kendimi geliştirdim.
+
+İş yaşamında efektif ve hızlı olmak konusunda son derece özverili ve hevesli olduğumu, pozisyonun gerektirdiği sorumluluğu merak ve istekle üzerime almak istediğimi belirtmek isterim. İstekli, özenli ve dikkatli çalışmanın mutlaka başarı ile sonuçlanacağının bilincindeyim. Bu nedenle size yeteneklerim ve çalışma disiplinim ile katkı sağlayabileceğim noktasında şüphem yok.
                         </p>
                       </span>
                     </span>
@@ -204,36 +207,70 @@
                 </div>
                 	<div class="col-lg-6">
 										<div class="progress-bars progress-bars-project-detail">
+                    <h5 class="text-uppercase mb-1">
+                         Programlama Dil ve Araçları
+                        </h5>
 											<div class="progress-label">
-												<span>General Progress</span>
+												<span>Laravel</span>
 											</div>
 											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="81%">
-													<span class="progress-bar-tooltip">81%</span>
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="93%">
+													<span class="progress-bar-tooltip">93%</span>
 												</div>
 											</div>
 											<div class="progress-label">
-												<span>Phase 1</span>
+												<span>Vue Js</span>
 											</div>
 											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="85%" data-appear-animation-delay="300">
-													<span class="progress-bar-tooltip">85%</span>
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="90%" data-appear-animation-delay="300">
+													<span class="progress-bar-tooltip">90%</span>
 												</div>
 											</div>
 											<div class="progress-label">
-												<span>Phase 2</span>
+												<span>PHP</span>
 											</div>
 											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="75%" data-appear-animation-delay="600">
-													<span class="progress-bar-tooltip">75%</span>
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="91%" data-appear-animation-delay="600">
+													<span class="progress-bar-tooltip">91%</span>
 												</div>
 											</div>
 											<div class="progress-label">
-												<span>Phase 4</span>
+												<span>CSS</span>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="79%" data-appear-animation-delay="900">
+													<span class="progress-bar-tooltip">79%</span>
+												</div>
+											</div>
+                      <div class="progress-label">
+												<span>HTML</span>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="89%" data-appear-animation-delay="900">
+													<span class="progress-bar-tooltip">89%</span>
+												</div>
+											</div>
+                      <div class="progress-label">
+												<span>Sass/Scss</span>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="82%" data-appear-animation-delay="900">
+													<span class="progress-bar-tooltip">82%</span>
+												</div>
+											</div>
+                      <div class="progress-label">
+												<span>MySql</span>
 											</div>
 											<div class="progress progress-sm">
 												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="85%" data-appear-animation-delay="900">
 													<span class="progress-bar-tooltip">85%</span>
+												</div>
+											</div><div class="progress-label">
+												<span>Git/GitHub/Basic Linux</span>
+											</div>
+											<div class="progress progress-sm">
+												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="60%" data-appear-animation-delay="900">
+													<span class="progress-bar-tooltip">60%</span>
 												</div>
 											</div>
 										</div>

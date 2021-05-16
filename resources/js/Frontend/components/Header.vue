@@ -82,6 +82,7 @@
                         <router-link :to="{ name: 'haber' }" class="nav-link">
                           Blog
                         </router-link>
+                        
                       </li>
                       <li>
                         <router-link :to="{ name: 'bizeulasin' }" class="nav-link">

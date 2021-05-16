@@ -6,12 +6,16 @@ const state = {
     errors: {},
     meta: {},
     blogReply: {},
-    blogIndex: null
+    blogIndex: null,
+    userReplies: {}
 };
 
 const getters = {
     getReplies(state) {
         return state.replies;
+    },
+    getUserReplies(state) {
+        return state.userReplies;
     },
     getReplyMeta(state) {
         return state.meta;
@@ -54,16 +58,28 @@ const mutations = {
     updateReplyBlog(state, { blogUpdate, index }) {
         state.blogReply = blogUpdate;
         state.blogIndex = index;
-    }
+    },
+    deleteUserReply(state, index) {
+        Vue.delete(state.userReplies, index);
+    },
+
+    listUserReply(state, payload) {
+        state.userReplies = payload;
+    },
 };
 
 const actions = {
-    async initReply({ commit }, options) {
+    async initReply({ commit, getters }, options) {
         const url = applyFilters("/api/replies", options.filter);
         await axios.get(url).then(res => {
             commit("listReplies", res.data.data);
             commit("replyMeta", res.data.meta);
         });
+        let id = getters['getUser'].id;
+        await axios.get(`/api/get-user-replies/${id}`).then((res) => {
+            commit("listUserReply", res.data);
+
+        })
     },
     async saveReply({ commit, state, dispatch, rootState }, payload) {
         /* debugger; */
@@ -134,6 +150,11 @@ const actions = {
                 /* debugger; */
                 const index = state.replies.findIndex(reply => reply.id == id);
                 commit("deleteReply", index);
+
+                const index2 = state.userReplies.findIndex(
+                    reply => reply.id == id
+                );
+                commit("deleteUserReply", index2);
             })
             .catch(err => {
                 commit("replyErrors", err.response.data.errors);

@@ -43,7 +43,7 @@
               <small
                 v-if="!$v.comment.description.minLength"
                 class="form-text text-danger"
-                >Lütfen şifreniz en az
+                >Lütfen yorumunuz en az
                 {{ $v.comment.description.$params.minLength.min }} karakterden
                 oluşmalıdır...
               </small>
@@ -124,6 +124,9 @@ export default {
       return this.name ? "Comment Güncelle" : "Comment Ekle";
     },
   },
+  created(){
+    console.log(this.comment)
+  }
 };
 </script>
 

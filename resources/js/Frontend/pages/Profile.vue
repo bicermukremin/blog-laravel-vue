@@ -85,11 +85,13 @@
             </aside>
           </div>
           <div class="col-lg-9">
+            <transition name="fade" mode="out-in">
             <ProfileMain v-if="profile" @saveProfile='saveProfile' :form='getUser.profile' :user='getUser'></ProfileMain>
             <ProfileBlog v-if="bloglarim"></ProfileBlog>
             <ProfileComment v-if="yorumlarim"></ProfileComment>
             <ProfileReply v-if="yanitlarim"></ProfileReply>
             <ProfilePassword v-if="sifre"></ProfilePassword>
+            </transition>
           </div>
         </div>
       </div>
@@ -209,6 +211,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-leave-active {
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
 .secPart {
   background-color: #220c3c !important;
 }

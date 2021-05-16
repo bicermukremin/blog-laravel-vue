@@ -500,8 +500,13 @@ export default {
       return repiesUsers.filter((el) => el != this.getUser.id);
     },
     getBlog() {
+  
       return this.$store.getters["getBlog"](this.$route.params.slug)[0];
     },
+     /* getBlog() {
+      return this.getBlogs.filter(blog=>{
+        return blog.slug==this.$route.params.slug})[0];
+    }, */
  /*    getDay() {
       return this.getBlog.createdAt.substring(0, 2);
     },
@@ -584,7 +589,9 @@ export default {
       });
     },
   },
-  created() {},
+  /* beforeCreate() {
+    this.$store.dispatch('initBlog',{filter:null})
+  }, */
   beforeCreate() {
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");

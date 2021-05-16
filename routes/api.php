@@ -70,3 +70,5 @@ Route::post('/reply-reply', [App\Http\Controllers\Api\ReplyController::class,'re
 Route::apiResource('/profile', App\Http\Controllers\Api\ProfileController::class);
 Route::post('/password', [App\Http\Controllers\Api\UserController::class,'changePassword']);
 
+Route::get('/get-user-comments/{id}', [App\Http\Controllers\Api\CommentController::class,'userComments']);
+Route::get('/get-user-replies/{id}', [App\Http\Controllers\Api\ReplyController::class,'userReplies']);

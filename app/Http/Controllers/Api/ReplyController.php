@@ -21,7 +21,14 @@ class ReplyController extends Controller
      */
     public function index()
     {
-        return ReplyResource::collection(Reply::latest()->paginate(4));
+        return ReplyResource::collection(Reply::latest()->paginate(200));
+    }
+    
+    
+    public function userReplies($id)
+    {
+        $replies=Reply::where('user_id',$id)->with('comment.blog')->with('replyUser.profile')->with('replyReplies.replyReplyUser.profile')->get();
+        return $replies;
     }
 
     /**

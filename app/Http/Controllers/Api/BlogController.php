@@ -22,11 +22,11 @@ class BlogController extends Controller
             $searched= $_GET['search'];
             $blogs=Blog::where('title', 'like',"%{$searched}%")
             ->orWhere('description', 'like',"%{$searched}%")
-            ->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->latest()->paginate(4);
+            ->with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')->latest()->paginate(50);
             
         }else{
             $blogs=Blog::with('comments.user.profile')->with('comments.replies.replyUser.profile')->with('comments.replies.replyReplies.replyReplyUser.profile')->with('categories')->with('author.profile')
-            ->latest()->paginate(4);
+            ->latest()->paginate(50);
             
         }
    

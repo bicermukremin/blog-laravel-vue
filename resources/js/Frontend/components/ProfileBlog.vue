@@ -24,13 +24,14 @@
     <div class="container" v-if="getUserBlogs.length>0">
       <div class="row mb-4">
         <div class="col-lg-6" v-for="blog in getUserBlogs" :key="blog.id">
+          
           <div class="recent-posts mt-4 mb-4">
             <router-link
               :to="{
                 name: 'singleBlog',
                 params: {
                   slug: blog.slug,
-                  props: { blog: blog },
+                  
                 },
               }"
             >
@@ -48,19 +49,36 @@
               </h4>
               <p>By {{ blog.author.name }}</p>
               <p v-html="blog.description"></p>
+              <div class="col-lg-6">
               <router-link
                 :to="{
                   name: 'singleBlog',
                   params: {
                     slug: blog.slug,
-                    props: { blog: blog },
+                   
                   },
                 }"
                 class="mt-3"
                 >Devamını Oku <i class="fas fa-long-arrow-alt-right"></i
               ></router-link>
+              </div>
+              <div class="col-lg-6">
+                 <a
+                  href="#"
+                  @click.prevent="editBlog(blog)"
+                  class="on-default edit-row edit-buton"
+                  ><i class="fas fa-pencil-alt"></i
+                ></a>
+                <a
+                  href="#"
+                  @click.prevent="deleteBlog(blog.slug)"
+                  class="on-default remove-row delete-buton"
+                  ><i class="far fa-trash-alt"></i
+                ></a>
+              </div>
             </article>
           </div>
+          
         </div>
       </div>
     </div>
@@ -181,6 +199,27 @@ export default {
             );
           }
         });
+    },
+     deleteBlog(slug) {
+      Swal.fire({
+        title: "Emin misiniz?",
+        text: "Tekrar geri alamazsınız!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Evet, eminim sil!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.$store.dispatch("deleteBlog", slug).then(() => {
+            if (this.getBlogErrors) {
+              inputError(Object.values(this.getBlogErrors));
+            } else {
+              Swal.fire("Silindi!", "Silinme İşlemi Başarılı.", "success");
+            }
+          });
+        }
+      });
     },
   },
   created() {

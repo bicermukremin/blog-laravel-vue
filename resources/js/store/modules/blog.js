@@ -42,12 +42,15 @@ const mutations = {
     deleteBlog(state, index) {
         Vue.delete(state.blogs, index);
     },
-
-    listBlogs(state, payload) {
-        state.blogs = payload;
+    deleteUserBlog(state, index) {
+        Vue.delete(state.userBlogs, index);
     },
+
     listUserBlogs(state, payload) {
         state.userBlogs = payload;
+    },
+    listBlogs(state, payload) {
+        state.blogs = payload;
     },
     blogMeta(state, payload) {
         state.meta = payload;
@@ -109,8 +112,10 @@ const actions = {
         await axios
             .delete("/api/blogs/" + slug)
             .then(() => {
-                const index = state.blogs.findIndex(blog => blog.slug == slug);
-                commit("deleteBlog", index);
+                const index1 = state.blogs.findIndex(blog => blog.slug == slug);
+                commit("deleteBlog", index1);
+                const index2 = state.userBlogs.findIndex(blog => blog.slug == slug);
+                commit("deleteUserBlog", index2);
             })
             .catch(err => {
                 commit("blogErrors", err.response.data.errors);

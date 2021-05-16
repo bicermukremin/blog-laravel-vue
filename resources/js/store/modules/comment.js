@@ -3,12 +3,16 @@ import { applyFilters } from "../../shared/helpers/index";
 const state = {
     comments: {},
     errors: {},
-    meta: {}
+    meta: {},
+    userComments:{}
 };
 
 const getters = {
     getComments(state) {
         return state.comments;
+    },
+    getUserComments(state) {
+        return state.userComments;
     },
     getCommentMeta(state) {
         return state.meta;
@@ -46,16 +50,29 @@ const mutations = {
     },
     deleteErrors(state, payload) {
         state.errors = payload;
-    }
+    },
+
+       deleteUserComment(state, index) {
+        Vue.delete(state.userComments, index);
+    },
+
+    listUserComment(state, payload) {
+        state.userComments = payload;
+    },
 };
 
 const actions = {
-    async initComment({ commit }, options) {
+    async initComment({ commit, getters }, options) {
         const url = applyFilters("/api/comments", options.filter);
         await axios.get(url).then(res => {
             commit("listComments", res.data.data);
             commit("commentMeta", res.data.meta);
         });
+        let id=getters['getUser'].id;
+        await axios.get(`/api/get-user-comments/${id}`).then((res)=>{
+            commit("listUserComment", res.data);
+            
+            })
     },
     async saveComment({ commit, state }, payload) {
         /* debugger; */
@@ -94,10 +111,15 @@ const actions = {
             .delete("/api/comments/" + id)
             .then(res => {
                 /* debugger; */
-                const index = state.comments.findIndex(
+                const index1 = state.comments.findIndex(
                     comment => comment.id == id
                 );
-                commit("deleteComment", index);
+                commit("deleteComment", index1);
+                
+                const index2 = state.userComments.findIndex(
+                    comment => comment.id == id
+                );
+                commit("deleteUserComment", index2);
             })
             .catch(err => {
                 commit("commentErrors", err.response.data.errors);

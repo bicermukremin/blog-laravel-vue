@@ -22,7 +22,14 @@ class CommentController extends Controller
      */
     public function index()
     {
-        return CommentResource::collection(Comment::latest()->paginate(4));
+        return CommentResource::collection(Comment::latest()->paginate(10));
+    }
+    
+    
+    public function userComments($id)
+    {
+        $comments=Comment::where('user_id',$id)->with('blog')->with('user.profile')->with('replies.replyUser.profile')->with('replies.replyReplies.replyReplyUser.profile')->get();
+        return $comments;
     }
 
     
