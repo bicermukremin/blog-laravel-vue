@@ -2,12 +2,17 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta name="description" content="Mobil Uyumlu, Kurumsal, Özgün ve Kompakt Web Siteleri, Hızlı Açılan Güvenli Web Siteleri. Kastamonu Web Site Tasarımı, Müşterilerinize Kurumsal Kimliğinizi Yansıtalım.">
+	<meta name="keywords" content="Web Tasarım, Web Sitesi PHP, HTML, CSS, JavaScript">
+	<meta name="author" content="Mükremin Biçer">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon.ico') }}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'MB WDev') }}</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Scripts -->
