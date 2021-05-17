@@ -183,7 +183,7 @@ export default {
       description: {
         required,
         minLength: minLength(25),
-        maxLength: maxLength(3000),
+        maxLength: maxLength(25000),
       },
       author_description: {
         required,

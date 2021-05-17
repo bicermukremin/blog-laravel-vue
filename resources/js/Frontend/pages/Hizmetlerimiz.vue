@@ -55,7 +55,7 @@
                 >
                   <div class="feature-box-icon w-auto h-auto top-0">
                     <img
-                      :src="`storage/${service.image}`"
+                      :src="`storage/${service.images[0]}`"
                       alt=""
                       width="63px"
                       height="80px"
@@ -64,7 +64,7 @@
                   </div>
                   <div class="feature-box-info ml-2">
                     <h4 class="mb-2">{{ service.title }}</h4>
-                    <p v-html="service.content"></p>
+                    <p v-html="service.content.substring(0,350)"></p>
                     <router-link
                       class="mt-3"
                       :to="{

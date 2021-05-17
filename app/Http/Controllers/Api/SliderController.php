@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Slider;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SliderRequest;
 use App\Http\Resources\SliderResource;
-use App\Models\Slider;
-use Illuminate\Http\Request;
+use App\Http\Requests\SliderUpdateRequest;
 
 class SliderController extends Controller
 {
@@ -74,7 +75,7 @@ class SliderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function sliderUpdate(SliderRequest $request, $id)
+    public function sliderUpdate(SliderUpdateRequest $request, $id)
     {
 
          $slider=Slider::find($id);

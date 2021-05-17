@@ -32,7 +32,7 @@ class SliderUpdateRequest extends FormRequest
            ];
         }else{
             return [
-                   'image'=>'required|image|mimes:jpg,jpeg,png,gif',
+                   'image'=>'image|mimes:jpg,jpeg,png,gif',
                
                    'title'=>'required|string|min:5',
            ];

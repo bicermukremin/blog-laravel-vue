@@ -156,7 +156,7 @@
               </small>
               <small v-if="!$v.service.content.maxLength" class="form-text text-danger"
                 >Lütfen içerik kısmı en fazla
-                {{ $v.service.content.$params.maxLength.min }} karakterden oluşmalıdır...
+                {{ $v.service.content.$params.maxLength.max}} karakterden oluşmalıdır...
               </small>
             </div>
             <div class="col-lg-12">
@@ -264,7 +264,7 @@ export default {
       content: {
         required,
         minLength: minLength(15),
-        maxLength: maxLength(700),
+        maxLength: maxLength(3000),
       },
     },
   },

@@ -680,7 +680,7 @@ export default {
     afterUploadComplete1: async function () {},
     afterUploadComplete2: async function () {},
     shootMessage1: async function () {
-      if (this.$refs.myVueDropzone1.getQueuedFiles().length) {
+      if (this.$refs.myVueDropzone1.getQueuedFiles()) {
         this.$refs.myVueDropzone1.processQueue();
       } else {
         this.sendMessage();

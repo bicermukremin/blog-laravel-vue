@@ -2,11 +2,15 @@
   <div class="body">
     <Header></Header>
     <div role="main" class="main">
-      <section class="section section-tertiary secPart section-no-border pb-3 mt-0">
+      <section
+        class="section section-tertiary secPart section-no-border pb-3 mt-0"
+      >
         <div class="container">
           <div class="row justify-content-end mt-4">
             <div class="col-lg-10 pt-4 mt-4 text-right">
-              <h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">
+              <h1
+                class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary"
+              >
                 {{ getFrontend.title }}
               </h1>
             </div>
@@ -25,12 +29,20 @@
             >
               <ul class="nav nav-list flex-column mb-4 show-bg-active">
                 <li class="nav-item">
-                  <a class="nav-link" data-hash data-hash-offset="110" href="#who-we-are"
+                  <a
+                    class="nav-link"
+                    data-hash
+                    data-hash-offset="110"
+                    href="#who-we-are"
                     >Biz Kimiz</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-hash data-hash-offset="110" href="#history"
+                  <a
+                    class="nav-link"
+                    data-hash
+                    data-hash-offset="110"
+                    href="#history"
                     >Tarihçe</a
                   >
                 </li>
@@ -44,12 +56,20 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-hash data-hash-offset="110" href="#leadership"
+                  <a
+                    class="nav-link"
+                    data-hash
+                    data-hash-offset="110"
+                    href="#leadership"
                     >Bendeniz</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-hash data-hash-offset="110" href="#partners"
+                  <a
+                    class="nav-link"
+                    data-hash
+                    data-hash-offset="110"
+                    href="#partners"
                     >Programlama Dil ve Araçları</a
                   >
                 </li>
@@ -71,11 +91,23 @@
               <p class="lead mb-4 mt-4" v-html="getFrontend.description"></p>
 
               <p>
-                Gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
-                accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
-                odio. Sed non mauris vitae erat consequat.
+                MB WDev olarak, hizmet vermeye başladığım ilk günden itibaren
+                müşterilerilerimin memnuniyetlerini en yüksek seviyede
+                tutabilmek için çalışmalarıma ara vermeden devam ediyorum.
+                Başarılı olabilmek için, düşünülenden çok daha büyük bir emek ve
+                donanım gerektirmektedir. Ben de kalitemizden hiçbir zaman ödün
+                vermeden ve kendimi sürekli olarak yenileyerek rakiplerimden her
+                zaman bir adım önde olmaya devam ediyorum. Öncelikle hemen her
+                alandaki çalışmalarımın %100 özgün olmasına özen gösteriyorum.
+                Böylelikle her bir müşterime en farklı ve bir o kadar da
+                kaliteli hizmetler sunabiliyorum. Web tasarım konusunda
+                teknolojinin getirilerini iyi uygulayarak( Html5, Css3,
+                Laravel(PHP), Vue(JS), jQuery, Bootstrap ) standartlarını
+                uyguluyorum. Bütün teknik detayları hazırlayıp sunmak,
+                genellikle web sitelerin yavaşlamasına sebep olabilir. Fakat
+                müşterilerilerime her zaman hızlı, akıcı ve kullanıcı dostu olan
+                web siteleri sunmaktayız. SPA(Single Page Application) özellikli
+                web siteleri kodluyorum.
               </p>
             </section>
 
@@ -96,11 +128,9 @@
                   />
                   <p class="mt-4" v-html="getFrontend.history_content"></p>
                   <p class="mt-4">
-                    Gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                    bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                    elit. Gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                    lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
-                    sem nibh id elit.
+                    Şu anda freelancer Laravel(PHP) ve Vue(JS) geliştiricisi olarak hayatıma devam
+                    etmekteyim.Birçok firma ve müşterilerime PHP destek
+                    sağlamaktayım. 
                   </p>
                 </div>
                 <div class="col-lg-4">
@@ -192,97 +222,147 @@
                     <span class="thumb-info-caption">
                       <span class="thumb-info-caption-text">
                         <h5 class="text-uppercase mb-1">
-                          Mükremin Biçer- <small class="font-weight-light">Founder</small>
+                          Mükremin Biçer-
+                          <small class="font-weight-light">Founder</small>
                         </h5>
                         <p class="mb-0">
-                            Merhaba , Ben Mükremin BİÇER. Dört yıldır internet ortamında aktif olarak faaliyet göstermekteyim. Bu yıl içerisinde 3 yıl gibi bir sürede PHP üzerine geliştirici olarak çalışmaktayım. Birçok ziyaretçime Laravel(PHP), VUE JS(Javascript), HTML5 ve CSS3 dilleri üzerinde web sitesi hizmeti sağlıyorum. 
-                        </p><p class="mb-0">
-                            Eğitim sürecim içerisinde araştırma, öz motivasyon, girişimcilik ve farklı yetenekler edinme noktasında kendimi geliştirdim.
-
-İş yaşamında efektif ve hızlı olmak konusunda son derece özverili ve hevesli olduğumu, pozisyonun gerektirdiği sorumluluğu merak ve istekle üzerime almak istediğimi belirtmek isterim. İstekli, özenli ve dikkatli çalışmanın mutlaka başarı ile sonuçlanacağının bilincindeyim. Bu nedenle size yeteneklerim ve çalışma disiplinim ile katkı sağlayabileceğim noktasında şüphem yok.
+                          Merhaba , Ben Mükremin BİÇER. Dört yıldır internet
+                          ortamında aktif olarak faaliyet göstermekteyim. Bu yıl
+                          içerisinde 3 yıl gibi bir sürede PHP üzerine
+                          geliştirici olarak çalışmaktayım. Birçok ziyaretçime
+                          Laravel(PHP), VUE JS(Javascript), HTML5 ve CSS3
+                          dilleri üzerinde web sitesi hizmeti sağlıyorum.
+                        </p>
+                        <p class="mb-0">
+                          Eğitim sürecim içerisinde araştırma, öz motivasyon,
+                          girişimcilik ve farklı yetenekler edinme noktasında
+                          kendimi geliştirdim. İş yaşamında efektif ve hızlı
+                          olmak konusunda son derece özverili ve hevesli
+                          olduğumu, pozisyonun gerektirdiği sorumluluğu merak ve
+                          istekle üzerime almak istediğimi belirtmek isterim.
+                          İstekli, özenli ve dikkatli çalışmanın mutlaka başarı
+                          ile sonuçlanacağının bilincindeyim. Bu nedenle size
+                          yeteneklerim ve çalışma disiplinim ile katkı
+                          sağlayabileceğim noktasında şüphem yok.
                         </p>
                       </span>
                     </span>
                   </span>
                 </div>
-                	<div class="col-lg-6">
-										<div class="progress-bars progress-bars-project-detail">
+                <div class="col-lg-6">
+                  <div class="progress-bars progress-bars-project-detail">
                     <h5 class="text-uppercase mb-1">
-                         Programlama Dil ve Araçları
-                        </h5>
-											<div class="progress-label">
-												<span>Laravel</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="93%">
-													<span class="progress-bar-tooltip">93%</span>
-												</div>
-											</div>
-											<div class="progress-label">
-												<span>Vue Js</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="90%" data-appear-animation-delay="300">
-													<span class="progress-bar-tooltip">90%</span>
-												</div>
-											</div>
-											<div class="progress-label">
-												<span>PHP</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="91%" data-appear-animation-delay="600">
-													<span class="progress-bar-tooltip">91%</span>
-												</div>
-											</div>
-											<div class="progress-label">
-												<span>CSS</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="79%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">79%</span>
-												</div>
-											</div>
-                      <div class="progress-label">
-												<span>HTML</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="89%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">89%</span>
-												</div>
-											</div>
-                      <div class="progress-label">
-												<span>Sass/Scss</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="82%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">82%</span>
-												</div>
-											</div> 
-                      <div class="progress-label">
-												<span>Bootstrap</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="84%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">84%</span>
-												</div>
-											</div>
-                      <div class="progress-label">
-												<span>MySql</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="85%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">85%</span>
-												</div>
-											</div><div class="progress-label">
-												<span>Git/GitHub/Basic Linux</span>
-											</div>
-											<div class="progress progress-sm">
-												<div class="progress-bar progress-bar-primary" data-appear-progress-animation="60%" data-appear-animation-delay="900">
-													<span class="progress-bar-tooltip">60%</span>
-												</div>
-											</div>
-										</div>
-									</div>
+                      Programlama Dil ve Araçları
+                    </h5>
+                    <div class="progress-label">
+                      <span>Laravel</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="93%"
+                      >
+                        <span class="progress-bar-tooltip">93%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>Vue Js</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="90%"
+                        data-appear-animation-delay="300"
+                      >
+                        <span class="progress-bar-tooltip">90%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>PHP</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="91%"
+                        data-appear-animation-delay="600"
+                      >
+                        <span class="progress-bar-tooltip">91%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>CSS</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="79%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">79%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>HTML</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="89%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">89%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>Sass/Scss</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="82%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">82%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>Bootstrap</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="84%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">84%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>MySql</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="85%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">85%</span>
+                      </div>
+                    </div>
+                    <div class="progress-label">
+                      <span>Git/GitHub/Basic Linux</span>
+                    </div>
+                    <div class="progress progress-sm">
+                      <div
+                        class="progress-bar progress-bar-primary"
+                        data-appear-progress-animation="60%"
+                        data-appear-animation-delay="900"
+                      >
+                        <span class="progress-bar-tooltip">60%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -300,7 +380,11 @@
                       :key="'first' + index"
                     >
                       <div class="p-4">
-                        <img class="img-fluid" :src="`storage/${software}`" alt="" />
+                        <img
+                          class="img-fluid"
+                          :src="`storage/${software}`"
+                          alt=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -366,11 +450,17 @@ export default {
     document.body.appendChild(jQueryAppearD);
 
     var jQueryAppearE = document.createElement("script");
-    jQueryAppearE.setAttribute("src", "frontend/vendor/popper/umd/popper.min.js");
+    jQueryAppearE.setAttribute(
+      "src",
+      "frontend/vendor/popper/umd/popper.min.js"
+    );
     document.body.appendChild(jQueryAppearE);
 
     var jQueryAppearF = document.createElement("script");
-    jQueryAppearF.setAttribute("src", "frontend/vendor/bootstrap/js/bootstrap.min.js");
+    jQueryAppearF.setAttribute(
+      "src",
+      "frontend/vendor/bootstrap/js/bootstrap.min.js"
+    );
     document.body.appendChild(jQueryAppearF);
 
     var jQueryAppearG = document.createElement("script");
@@ -388,19 +478,31 @@ export default {
     document.body.appendChild(jQueryAppearH);
 
     var jQueryAppearI = document.createElement("script");
-    jQueryAppearI.setAttribute("src", "frontend/vendor/jquery.gmap/jquery.gmap.min.js");
+    jQueryAppearI.setAttribute(
+      "src",
+      "frontend/vendor/jquery.gmap/jquery.gmap.min.js"
+    );
     document.body.appendChild(jQueryAppearI);
 
     var jQueryAppearK = document.createElement("script");
-    jQueryAppearK.setAttribute("src", "frontend/vendor/lazysizes/lazysizes.min.js");
+    jQueryAppearK.setAttribute(
+      "src",
+      "frontend/vendor/lazysizes/lazysizes.min.js"
+    );
     document.body.appendChild(jQueryAppearK);
 
     var jQueryAppearL = document.createElement("script");
-    jQueryAppearL.setAttribute("src", "frontend/vendor/isotope/jquery.isotope.min.js");
+    jQueryAppearL.setAttribute(
+      "src",
+      "frontend/vendor/isotope/jquery.isotope.min.js"
+    );
     document.body.appendChild(jQueryAppearL);
 
     var jQueryAppearM = document.createElement("script");
-    jQueryAppearM.setAttribute("src", "frontend/vendor/owl.carousel/owl.carousel.min.js");
+    jQueryAppearM.setAttribute(
+      "src",
+      "frontend/vendor/owl.carousel/owl.carousel.min.js"
+    );
     document.body.appendChild(jQueryAppearM);
 
     var jQueryAppearN = document.createElement("script");
@@ -411,7 +513,10 @@ export default {
     document.body.appendChild(jQueryAppearN);
 
     var jQueryAppearO = document.createElement("script");
-    jQueryAppearO.setAttribute("src", "frontend/vendor/vide/jquery.vide.min.js");
+    jQueryAppearO.setAttribute(
+      "src",
+      "frontend/vendor/vide/jquery.vide.min.js"
+    );
     document.body.appendChild(jQueryAppearO);
 
     var jQueryAppearP = document.createElement("script");
@@ -439,7 +544,10 @@ export default {
     document.body.appendChild(jQueryAppearU); */
 
     var jQueryAppearV = document.createElement("script");
-    jQueryAppearV.setAttribute("src", "frontend/vendor/modernizr/modernizr.min.js");
+    jQueryAppearV.setAttribute(
+      "src",
+      "frontend/vendor/modernizr/modernizr.min.js"
+    );
     document.head.appendChild(jQueryAppearV);
   },
 };

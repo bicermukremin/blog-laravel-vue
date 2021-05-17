@@ -45,7 +45,7 @@
                 <a class="text-color-dark" href="#">{{ blog.title }}</a>
               </h4>
               <p>By {{ blog.author.name }}</p>
-              <p v-html="blog.description.substring(0, 90)"></p>
+              <p v-html="blog.description.substring(0, 200)"></p>
               <router-link
                 :to="{
                   name: 'singleBlog',

@@ -97,7 +97,7 @@ class BannerController extends Controller
 
        }
        $banner->update([
-           'title'=>$request->title,
+           'content'=>$request->content,
            'image'=>$input['image'],
        ]);
       /*  dd($service); */

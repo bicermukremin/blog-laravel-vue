@@ -30,6 +30,7 @@ class ProfileFactory extends Factory
             'instagram' => 'https://www.instagram.com/',
             'linkedIn' => 'https://www.linkedIn.com/',
             'youtube' => 'https://www.youtube.com/',
+            'web' => 'https://www.youtube.com/',
         ];
     }
 }

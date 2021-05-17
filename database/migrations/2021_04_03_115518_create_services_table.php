@@ -19,7 +19,7 @@ class CreateServicesTable extends Migration
             $table->string('slug')->nullable();
             $table->longtext('images');
             $table->text('items');
-            $table->string('content');
+            $table->longtext('content');
             $table->timestamps();
         });
     }

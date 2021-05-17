@@ -27,12 +27,12 @@
                 :src="`storage/${service.images ? service.images[0] : null}`"
                 alt=""
                 class="img-fluid"
-                width="55"
+                width="120"
               />
             </div>
             <div class="feature-box-info ml-3">
               <h4 class="mb-2">{{ service.title }}</h4>
-              <p v-html="service.content.substring(0, 50)"></p>
+              <p v-html="service.content.substring(0, 185)"></p>
               <router-link
                 class="mt-3"
                 :to="{

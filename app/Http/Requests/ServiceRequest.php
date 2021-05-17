@@ -25,7 +25,7 @@ class ServiceRequest extends FormRequest
     {
             return [
                 'images'=>'required',
-                'content'=>'required|string|min:15|max:1500',
+                'content'=>'required|string|min:15|max:3000',
                 'title'=>'required|string|min:5',
                 'items'=>'required|string|min:5',
                 
@@ -46,7 +46,7 @@ class ServiceRequest extends FormRequest
             'content.required' => 'İçerik kısmı zorunludur.',
             'content.string' => 'İçerik kısmı metin tipinde olmalıdır.',
             'content.min' => 'İçerik kısmı en az 15 karakterden oluşmalıdır.',
-            'content.max' => 'İçerik kısmı en fazla 1500 karakterden oluşmalıdır.',
+            'content.max' => 'İçerik kısmı en fazla 3000 karakterden oluşmalıdır.',
             
             'image.required' => 'Resim yüklemek zorunludur.',
             'image.image' => 'Sadece resim formatı geçerlidir.',

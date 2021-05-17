@@ -23,7 +23,8 @@
                   <div
                  
                     class="testimonial testimonial-style-2 testimonial-with-quotes mb-0"
-                  >
+                  > 
+                  <br><br><br>
                     <blockquote>
                       <p>
                         {{ banner.content }}

@@ -25,10 +25,10 @@ class AboneController extends Controller
          if(isset( $_GET['search']) && $_GET['search']!='' ){
             $searched= $_GET['search'];
             $abones=Abone::where('email', 'like',"%{$searched}%")
-           ->latest()->paginate(2);
+           ->latest()->paginate(50);
             
         }else{
-            $abones=Abone::latest()->paginate(2);
+            $abones=Abone::latest()->paginate(50);
 
         }
         return AboneResource::collection($abones);

@@ -48,7 +48,7 @@
                 }}</router-link>
               </h4>
               <p>By {{ blog.author.name }}</p>
-              <p v-html="blog.description"></p>
+              <p v-html="blog.description.substring(0, 200)"></p>
               <div class="col-lg-6">
               <router-link
                 :to="{

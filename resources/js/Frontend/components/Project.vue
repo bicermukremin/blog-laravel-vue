@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row pt-4">
         <div class="col">
-          <h2 class="mb-0 text-color-dark">Projects</h2>
-          <p class="lead">Lorem ipsum dolor sit amet.</p>
+          <h2 class="mb-0 text-color-dark">Projelerimiz</h2>
+          <p class="lead">Sizler için aklınızdaki projeyi veya istediğiniz yazılım hizmetinizi hayata geçirebilirim.</p>
 
           <div
             class="diamonds-wrapper lightbox"
@@ -69,9 +69,7 @@
       >
         <div class="col-md-8 col-lg-6">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum
-            pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing
-            metus elit. Quisque rutrum pellentesque imperdiet.
+           Tasarladığım web siteleri bilgisayarların yanında, tabletler ve cep telefonları ile de uyumludur. Firmanızı en iyi temsil edecek çözümler sunuyorum. Geleceğin web sitesine şimdiden sahip olun.
           </p>
           <router-link class="btn btn-outline btn-primary" :to="{ name: 'projelerimiz' }"
             >Projelerimizi İncele</router-link

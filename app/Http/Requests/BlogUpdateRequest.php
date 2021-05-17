@@ -28,14 +28,14 @@ class BlogUpdateRequest extends FormRequest
         if($request->image==null){
             return [
                   
-                   'description'=>'required|string|min:15|max:3000',
+                   'description'=>'required|string|min:15|max:10000',
                    'author_description'=>'required|string|min:15|max:300',
                    'title'=>'required|string|min:5',
            ];
         }else{
             return [
                    'image'=>'required|image|mimes:jpg,jpeg,png,gif',
-                   'description'=>'required|string|min:15|max:3000',
+                   'description'=>'required|string|min:15|max:25000',
                    'author_description'=>'required|string|min:15|max:300',
                    'title'=>'required|string|min:5',
            ];
@@ -52,7 +52,7 @@ class BlogUpdateRequest extends FormRequest
             'description.required' => 'İçerik kısmı zorunludur.',
             'description.string' => 'İçerik kısmı metin tipinde olmalıdır.',
             'description.min' => 'İçerik kısmı en az 15 karakterden oluşmalıdır.',
-            'description.max' => 'İçerik kısmı en fazla 3000 karakterden oluşmalıdır.',
+            'description.max' => 'İçerik kısmı en fazla 25000 karakterden oluşmalıdır.',
 
             'author_description.required' => 'İçerik kısmı zorunludur.',
             'author_description.string' => 'İçerik kısmı metin tipinde olmalıdır.',

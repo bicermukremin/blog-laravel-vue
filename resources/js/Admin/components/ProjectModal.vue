@@ -198,7 +198,7 @@ export default {
       const mimes = ["image/jpeg", "image/jpg", "image/png", "image/gif"];
       if (!mimes.includes(file.type)) {
         this.$toast.error("Yüklediğiniz resim jpeg, jpg, png ve gif tipinde olmalı!.");
-      } else if (file.size > 2 * 1024 * 1024) {
+      } else if (file.size > 4 * 1024 * 1024) {
         this.$toast.error("Yüklediğiniz resim 2 MB boyutunu geçmemeli!");
       } else {
         /*  debugger; */

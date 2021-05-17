@@ -7,7 +7,7 @@
           <div class="row justify-content-end mt-4">
             <div class="col-lg-10 pt-4 mt-4 text-right">
               <h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">
-                Hizmet-{{ service.title }}
+                {{ service.title }}
               </h1>
             </div>
           </div>
@@ -40,41 +40,7 @@
           </div>
           <div class="col-lg-9">
             <h2 class="mb-2">{{ service.title }}</h2>
-              
-            <img
-              class="img-fluid float-right ml-5 mb-4 mt-4"
-              width="150px"
-              height="150px"
-              :src="`storage/${service.images[1]}`"
-              alt=""
-            />
-             <p class="lead pb-4">
-                  Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
-                  mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                  auctor a ornare odio. Sed non mauris vitae erat consequat. Lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                  elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                  Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                  ornare.
-                </p>
-
-            <p class="lead mb-4 mt-4" v-html="service.content"></p>
-
-            <div class="row">
-              <div class="col-lg-5">
-                <p class="pb-4">
-                  Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
-                  mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                  auctor a ornare odio. Sed non mauris vitae erat consequat. Lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
-                  elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                  Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                  ornare.
-                </p>
-              </div>
-              <div class="col-lg-7">
+                <div class="col-lg-12">
                 <div
                   class="owl-carousel nav-inside show-nav-hover dots-inside mb-5"
                   data-plugin-options="{'items': 1, 'loop': true, 'autoplay': true, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'nav': true, 'dots': true, 'animateOut': 'fadeOut'}"
@@ -84,18 +50,28 @@
                   </div>
                 </div>
               </div>
+            
+          
+
+            <p class="lead mb-4 mt-4" v-html="service.content"></p>
+
+            <div class="row">
+              <div class="col-lg-5">
+                <p class="pb-4">
+                  <img
+              class="img-fluid float-right ml-5 mb-4 mt-4"
+              width="350px"
+              height="300px"
+              :src="`storage/${service.images[1]}`"
+              alt=""
+            />
+                </p>
+              </div>
+            
             </div>
 
-            <p>
-              Gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-              bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Gravida nibh
-              vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-              nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
-              amet nibh vulputate cursus a sit amet mauris.
-            </p>
 
-            <h4 class="mt-4 mb-3">Our Process</h4>
+            <h4 class="mt-4 mb-3">Başlıklar</h4>
 
             <ul class="list list-icons list-primary mt-4 mb-4">
               <li

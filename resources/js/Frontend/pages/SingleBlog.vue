@@ -6,7 +6,7 @@
         <div class="row justify-content-end mt-4">
           <div class="col-lg-10 pt-4 mt-4 text-right">
             <h1 class="text-uppercase font-weight-light mt-4 pt-3 text-color-primary">
-              Blog-{{ getBlog.title }}
+              {{ getBlog.title }}
             </h1>
           </div>
         </div>
