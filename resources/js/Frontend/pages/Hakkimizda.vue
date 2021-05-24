@@ -138,9 +138,8 @@
                     <li
                       v-for="(item, i) in getFrontendHistory"
                       :key="i"
-                      class="pt-2 pb-2 appear-animation"
-                      data-appear-animation="fadeInUp"
-                      data-appear-animation-delay="0"
+                      class="pt-2 pb-2"
+                      
                     >
                       <strong class="text-color-primary text-4"
                         >{{ item.year }} -
