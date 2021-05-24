@@ -34,7 +34,7 @@
                   height="50px"
                   :src="
                     getServices[i].images[0]
-                      ? `http://127.0.0.1:8000/storage/${getServices[i].images[0]}`
+                      ? `/storage/${getServices[i].images[0]}`
                       : null
                   "
                   :alt="service.title"
@@ -155,7 +155,7 @@ export default {
       $("#exampleModal").modal("show");
       this.service = service;
       this.images = this.service.images.map(
-        (item) => "http://127.0.0.1:8000/storage/" + item
+        (item) => "/storage/" + item
       );
       this.showImage = true;
       this.name = true;

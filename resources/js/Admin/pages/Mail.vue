@@ -197,7 +197,7 @@ export default {
     updateMail(payload) {
       this.isLoading = true;
       const formData1 = new FormData();
-      debugger;
+      /* debugger; */
       formData1.append("email", payload.mail.email);
       formData1.append("ad_soyad", payload.mail.ad_soyad);
       formData1.append("konu", payload.mail.konu);

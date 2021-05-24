@@ -124,9 +124,7 @@ export default {
       return this.name ? "Comment Güncelle" : "Comment Ekle";
     },
   },
-  created(){
-    console.log(this.comment)
-  }
+ 
 };
 </script>
 

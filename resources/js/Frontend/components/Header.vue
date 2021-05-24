@@ -13,7 +13,7 @@
                 <router-link :to="{ name: 'frontend' }">
                   <img
                     class="logo-default"
-                    alt="Porto"
+                    alt="MB WDev"
                     width="324"
                     height="212"
                     :src="'/storage/' + getSetting.logo1"
@@ -22,7 +22,7 @@
                 <router-link :to="{ name: 'frontend' }">
                   <img
                     class="logo-small"
-                    alt="Porto"
+                    alt="MB WDev"
                     width="131"
                     height="48"
                     :src="'/storage/' + getSetting.logo2"
@@ -41,20 +41,21 @@
                     <ul class="nav nav-pills" id="mainNav">
                       <li>
                         <router-link
-                          exact
-                          class="nav-link active"
+                          active-class="active"
+                          class="nav-link"
                           :to="{ name: 'frontend' }"
                         >
                           Anasayfa
                         </router-link>
                       </li>
                       <li>
-                        <router-link class="nav-link" :to="{ name: 'hakkimizda' }">
+                        <router-link active-class="active" class="nav-link" :to="{ name: 'hakkimizda' }">
                           Hakkımızda
                         </router-link>
                       </li>
                       <li class="dropdown">
                         <router-link
+                          active-class="active"
                           class="nav-link dropdown-toggle"
                           :to="{ name: 'hizmet' }"
                         >
@@ -63,6 +64,7 @@
                         <ul class="dropdown-menu">
                           <li v-for="service in getServices" :key="service.id">
                             <router-link
+                              active-class="active"
                               :to="{
                                 name: 'singleService',
                                 params: { slugService: service.slug, service: service },
@@ -74,18 +76,18 @@
                         </ul>
                       </li>
                       <li>
-                        <router-link :to="{ name: 'projelerimiz' }" class="nav-link">
+                        <router-link :to="{ name: 'projelerimiz' }" active-class="active" class="nav-link">
                           Projelerimiz
                         </router-link>
                       </li>
                       <li>
-                        <router-link :to="{ name: 'haber' }" class="nav-link">
+                        <router-link :to="{ name: 'haber' }" active-class="active" class="nav-link">
                           Blog
                         </router-link>
                         
                       </li>
                       <li>
-                        <router-link :to="{ name: 'bizeulasin' }" class="nav-link">
+                        <router-link :to="{ name: 'bizeulasin' }" active-class="active" class="nav-link">
                           Bize Ulaşın
                         </router-link>
                       </li>
@@ -99,6 +101,7 @@
                         <ul class="dropdown-menu">
                           <li v-if="!auth">
                             <router-link
+                              active-class="active"
                               class="dropdown-item"
                               :to="{
                                 name: 'auth',
@@ -109,6 +112,7 @@
                           </li>
                           <li v-if="!auth">
                             <router-link
+                              active-class="active"
                               class="dropdown-item"
                               :to="{
                                 name: 'auth-register',
@@ -127,6 +131,7 @@
                           </li>
                             <li v-if="auth">
                             <router-link
+                            active-class="active"
                               :to="{ name: 'profile', params: { user: getUser.id } }"
                               class="dropdown-item"
                               >Profilim</router-link

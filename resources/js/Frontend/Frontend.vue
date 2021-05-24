@@ -52,10 +52,20 @@ export default {
     return {};
   },
 
-  mounted() {
+  beforeCreate() {
+    
+   
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");
     document.body.appendChild(jQueryAppearA);
+
+     var jQueryAppearE = document.createElement("script");
+    jQueryAppearE.setAttribute("src", "frontend/vendor/popper/umd/popper.min.js");
+    document.body.appendChild(jQueryAppearE);
+
+    var jQueryAppearF = document.createElement("script");
+    jQueryAppearF.setAttribute("src", "frontend/vendor/bootstrap/js/bootstrap.min.js");
+    document.body.appendChild(jQueryAppearF);
 
     var jQueryAppearB = document.createElement("script");
     jQueryAppearB.setAttribute(
@@ -78,13 +88,6 @@ export default {
     );
     document.body.appendChild(jQueryAppearD);
 
-    var jQueryAppearE = document.createElement("script");
-    jQueryAppearE.setAttribute("src", "frontend/vendor/popper/umd/popper.min.js");
-    document.body.appendChild(jQueryAppearE);
-
-    var jQueryAppearF = document.createElement("script");
-    jQueryAppearF.setAttribute("src", "frontend/vendor/bootstrap/js/bootstrap.min.js");
-    document.body.appendChild(jQueryAppearF);
 
     var jQueryAppearG = document.createElement("script");
     jQueryAppearG.setAttribute(

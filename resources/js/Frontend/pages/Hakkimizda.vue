@@ -123,7 +123,7 @@
                     data-appear-animation="fadeInUp"
                     data-appear-animation-delay="0"
                     width="200"
-                    src="img/demos/construction/office/office-1.jpg"
+                    src="storage/initialImage/webdesign.jpg"
                     alt=""
                   />
                   <p class="mt-4" v-html="getFrontend.history_content"></p>
@@ -418,12 +418,12 @@ export default {
       "getFrontendSoftware",
     ]),
   },
-  async beforeCreate() {
+  async created() {
     this.$store.dispatch("getFrontSoftware");
     this.$store.dispatch("getFrontendAbout");
   },
   /*  props: ["blogId"], */
-  mounted() {
+  beforeCreate() {
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "frontend/vendor/jquery/jquery.min.js");
     document.body.appendChild(jQueryAppearA);

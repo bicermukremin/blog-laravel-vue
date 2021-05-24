@@ -18,9 +18,8 @@
           :key="'row' + row + column"
         >
           <div
-            class="feature-box feature-box-style-2 custom-feature-box mb-4 appear-animation"
-            data-appear-animation="fadeInUp"
-            data-appear-animation-delay="300"
+            class="feature-box feature-box-style-2 custom-feature-box mb-4"
+           
           >
             <div class="feature-box-icon w-auto">
               <img

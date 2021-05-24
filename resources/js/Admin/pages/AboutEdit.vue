@@ -403,7 +403,7 @@
                     <img
                       class="mr-3 mb-2 image"
                       :id="'image' + indexSoft(row, column)"
-                      :src="`http://127.0.0.1:8000/storage/${image}`"
+                      :src="`/storage/${image}`"
                       width="150px"
                       height="150px"
                       @mouseover="shadow1"
@@ -533,7 +533,7 @@ export default {
         },
       },
       dropzoneOptions1: {
-        url: "http://127.0.0.1:8000/api/about",
+        url: "/api/about",
         thumbnailWidth: 150,
         headers: { "Content-Type": "multipart/form-data" },
         headers: {
@@ -552,7 +552,7 @@ export default {
           "<i class='fa fa-cloud-upload'></i>Resim seçmek için tıklayınız ya da resmi buraya sürükleyiniz.",
       },
       dropzoneOptions2: {
-        url: "http://127.0.0.1:8000/api/yazilim",
+        url: "/api/yazilim",
         thumbnailWidth: 150,
         headers: { "Content-Type": "multipart/form-data" },
         headers: {
@@ -584,7 +584,7 @@ export default {
         this.about = response.data;
         this.aboutImages = JSON.parse(response.data.images);
         this.items1 = this.aboutImages.map(
-          (item) => "http://127.0.0.1:8000/storage/" + item
+          (item) => "/storage/" + item
         );
         this.aboutCount = JSON.parse(response.data.images).length;
 
@@ -725,14 +725,14 @@ export default {
       this.isloading = true;
       if (this.$route.params.aboutEdit) {
         this.progress = 100;
-          debugger
+          /* debugger */
         this.about = this.$route.params.aboutEdit;
         this.aboutImages = JSON.parse(this.about.images);
         this.historyItems = JSON.parse(this.about.history_items);
 
         this.aboutCount = JSON.parse(this.about.images).length;
         this.items1 = this.aboutImages.map(
-          (item) => "http://127.0.0.1:8000/storage/" + item
+          (item) => "/storage/" + item
         );
 
         await axios
@@ -741,7 +741,7 @@ export default {
             this.softImages = JSON.parse(res.data.data[0]);
             this.softImageCount = JSON.parse(res.data.data[0]).length;
             this.items2 = this.softImages.map(
-              (item) => "http://127.0.0.1:8000/storage/" + item
+              (item) => "/storage/" + item
             );
             this.softId = 1;
           })
@@ -763,7 +763,7 @@ export default {
             this.softImages = JSON.parse(res.data.data[0]);
             this.softImageCount = JSON.parse(res.data.data[0]).length;
             this.items2 = this.softImages.map(
-              (item) => "http://127.0.0.1:8000/storage/" + item
+              (item) => "/storage/" + item
             );
             this.softId = res.data.data[0].id;
           })
@@ -784,14 +784,14 @@ export default {
         .then((res) => {
           this.aboutImages = JSON.parse(res.data.data.images);
           this.items1 = this.aboutImages.map(
-            (item) => "http://127.0.0.1:8000/storage/" + item
+            (item) => "/storage/" + item
           );
           this.aboutCount = JSON.parse(res.data.data.images).length;
           this.$toast.success("Resim başarılı bir şekilde silinmiştir.");
           this.deleting = false;
         })
         .catch((err) => {
-          console.log(err.res.data.errors);
+          
           this.$toast.danger("Resim silinemedi.");
         });
     },

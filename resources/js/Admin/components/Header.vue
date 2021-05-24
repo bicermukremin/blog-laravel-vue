@@ -139,7 +139,7 @@
                   <a href="#" class="clearfix">
                     <figure class="image">
                       <img
-                        src="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
+                        src="/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
                         alt="Joseph Doe Junior"
                         class="rounded-circle"
                         width="50px"
@@ -154,7 +154,7 @@
                   <a href="#" class="clearfix">
                     <figure class="image">
                       <img
-                        src="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
+                        src="/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
                         alt="Joseph Junior"
                         class="rounded-circle"
                         width="50px"
@@ -184,7 +184,7 @@
                   <a href="#" class="clearfix">
                     <figure class="image">
                       <img
-                        src="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
+                        src="/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
                         alt="Joe Junior"
                         class="rounded-circle"
                         width="50px"
@@ -199,7 +199,7 @@
                   <a href="#" class="clearfix">
                     <figure class="image">
                       <img
-                        src="http://127.0.0.1:8000/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
+                        src="/storage/photos/THo5Uj6j9NjDXhkWOrShONhWdAWEDLLEHxQ3AcqR.png"
                         alt="Joseph Junior"
                         class="rounded-circle"
                         width="50px"

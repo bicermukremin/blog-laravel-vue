@@ -168,7 +168,7 @@ export default {
           this.deleting = false;
           this.errorAlert = true;
           this.$toast.error("Mesajınız gönderilemedi");
-          console.log(e.res.data.data.errors);
+          
         });
     },
   },

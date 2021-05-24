@@ -95,6 +95,7 @@ export default {
 
     var jQueryAppearA = document.createElement("script");
     jQueryAppearA.setAttribute("src", "admin/vendor/jquery/jquery.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearA);
 
     var jQueryAppearC = document.createElement("script");
@@ -102,10 +103,12 @@ export default {
       "src",
       "admin/vendor/jquery-browser-mobile/jquery.browser.mobile.js"
     );
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearC);
 
     var jQueryAppearD = document.createElement("script");
     jQueryAppearD.setAttribute("src", "admin/vendor/jquery-cookie/jquery.cookie.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearD);
 
     /*    var jQueryAppearB = document.createElement("script");
@@ -114,10 +117,12 @@ export default {
 
     var jQueryAppearE = document.createElement("script");
     jQueryAppearE.setAttribute("src", "admin/vendor/popper/umd/popper.min.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearE);
 
     var jQueryAppearF = document.createElement("script");
     jQueryAppearF.setAttribute("src", "admin/vendor/bootstrap/js/bootstrap.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearF);
 
     var jQueryAppearG = document.createElement("script");
@@ -125,6 +130,7 @@ export default {
       "src",
       "admin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"
     );
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearG);
 
     /*     var jQueryAppearH = document.createElement("script");
@@ -133,6 +139,7 @@ export default {
 
     var jQueryAppearI = document.createElement("script");
     jQueryAppearI.setAttribute("src", "admin/vendor/nanoscroller/nanoscroller.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearI);
 
     var jQueryAppearK = document.createElement("script");
@@ -140,6 +147,7 @@ export default {
       "src",
       "admin/vendor/magnific-popup/jquery.magnific-popup.js"
     );
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearK);
 
     var jQueryAppearL = document.createElement("script");
@@ -147,14 +155,17 @@ export default {
       "src",
       "admin/vendor/jquery-placeholder/jquery.placeholder.js"
     );
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearL);
 
     var jQueryAppearN = document.createElement("script");
     jQueryAppearN.setAttribute("src", "admin/js/theme.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.body.appendChild(jQueryAppearN);
 
     var jQueryAppearM = document.createElement("script");
     jQueryAppearM.setAttribute("src", "admin/vendor/modernizr/modernizr.js");
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.head.appendChild(jQueryAppearM);
 
     /*     var jQueryAppearO = document.createElement("script");
@@ -166,6 +177,7 @@ export default {
       "src",
       "admin/master/style-switcher/style.switcher.localstorage.js"
     );
+    jQueryAppearA.setAttribute("type", "text/javascript");
     document.head.appendChild(jQueryAppearP);
 
     // Maintain Scroll Position

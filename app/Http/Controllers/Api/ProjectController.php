@@ -7,9 +7,11 @@ use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProjectRequest;
+
 use App\Http\Resources\ProjectResource;
 use App\Http\Resources\ServiceResource;
 use App\Http\Requests\ProjectUpdateRequest;
+
 
 class ProjectController extends Controller
 {
@@ -61,12 +63,14 @@ class ProjectController extends Controller
 
        
 
-       if($request->image) {
+       if($request->file('image')) {
+        
+        $fileName=$request->file('image')->store('photos','public');
 
-         $fileName=$request->file('image')->store('photos','public');
-
-        $input['image'] = $fileName;
+        $input['image'] =$fileName;
+        
        }
+
        $project=Project::create($input);
 
        

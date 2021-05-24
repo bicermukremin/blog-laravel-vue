@@ -78,7 +78,7 @@ const actions = {
         await axios
             .post("/api/blogs", payload)
             .then(res => {
-                debugger
+                /* debugger */
                 const blog = res.data;
                 commit("deleteErrors", null);
                 commit("addBlog", blog);

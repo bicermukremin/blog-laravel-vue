@@ -33,7 +33,7 @@
               <router-link
                 :to="{ name: 'ayarlar' }"
                 class="nav-link"
-                href="extra-ajax-made-easy.html"
+                
               >
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Ayarlar</span>
@@ -43,7 +43,7 @@
               <router-link
                 :to="{ name: 'services' }"
                 class="nav-link"
-                href="extra-ajax-made-easy.html"
+               
               >
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Hizmetlerimiz</span>
@@ -53,7 +53,7 @@
               <router-link
                 :to="{ name: 'slider' }"
                 class="nav-link"
-                href="extra-ajax-made-easy.html"
+               
               >
                 <i class="bx bx-loader-circle my-serve" aria-hidden="true"></i>
                 <span>Slaytlar</span>
@@ -213,7 +213,7 @@ export default {
   },
   methods: {
     toFrontPage() {
-      window.location.href = "http://127.0.0.1:8000";
+      window.location.href = "http://mukreminbicer.com/";
     },
   },
 };

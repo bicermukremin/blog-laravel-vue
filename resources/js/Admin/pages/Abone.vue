@@ -189,7 +189,7 @@ export default {
     updateAbone(payload) {
       this.isLoading = true;
       const formData1 = new FormData();
-      debugger;
+      /* debugger; */
       formData1.append("email", payload.abone.email);
       formData1.append("id", payload.abone.id);
 

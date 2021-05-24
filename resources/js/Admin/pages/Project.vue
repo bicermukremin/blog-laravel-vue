@@ -32,7 +32,7 @@
                 <img
                   width="50px"
                   height="50px"
-                  :src="`http://127.0.0.1:8000/storage/${project.image}`"
+                  :src="`/storage/${project.image}`"
                   :alt="project.company_name"
                 />
               </td>

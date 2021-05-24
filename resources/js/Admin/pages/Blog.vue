@@ -189,7 +189,7 @@ export default {
 
     createBlog(payload) {
       this.isLoading = true;
-      debugger;
+     /*  debugger; */
 
       const formData = new FormData();
       formData.append("image", payload.image);

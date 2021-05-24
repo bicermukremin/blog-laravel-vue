@@ -25,11 +25,13 @@
                     class="testimonial testimonial-style-2 testimonial-with-quotes mb-0"
                   > 
                   <br><br><br>
+                  <div class="renk">
                     <blockquote>
                       <p>
                         {{ banner.content }}
                       </p>
                     </blockquote>
+                    </div> 
                   </div>
                 </div>
               </div>
@@ -58,6 +60,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.renk{
+  background-color: #fff !important;
+  border-radius: 25px !important;
+}
 
 </style>
 

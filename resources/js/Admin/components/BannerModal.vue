@@ -51,7 +51,7 @@
               :src="
                 bannerImage
                   ? bannerImage
-                  : `http://127.0.0.1:8000/storage/${banner.image}`
+                  : `/storage/${banner.image}`
               "
               v-show="showPreview || showImage"
               class="img-fluid"

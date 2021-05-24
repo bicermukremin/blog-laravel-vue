@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\About;
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use App\Http\Requests\AboutRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\AboutResource;
 
@@ -30,10 +28,11 @@ class AboutController extends Controller
     }
     public function showFrontend()
     {
+        
         $about=About::where('active',1)->firstOrFail();
+      
         $about['images']=json_decode($about->images);
         $about['history_items']=json_decode($about->history_items);
-    
         return new AboutResource($about);
     }
 

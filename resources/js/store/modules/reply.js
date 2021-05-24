@@ -110,7 +110,7 @@ const actions = {
             .then(res => {
                 const blogUpdate = res.data;
 
-                debugger;
+                /* debugger; */
                 const index = rootState.blog.blogs.findIndex(
                     blog => blog.id === blogUpdate.id
                 );

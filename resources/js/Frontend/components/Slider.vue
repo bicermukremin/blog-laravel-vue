@@ -12,10 +12,9 @@
         style="background-size: cover; background-position: center"
       >
         <div
-          class="position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct appear-animation"
-          data-appear-animation="fadeInLeftShorter"
-          data-appear-animation-delay="500"
-          data-plugin-options="{'minWindowWidth': 0}"
+          class="position-absolute bottom-10 w-100pct w-sm-75pct w-lg-50pct"
+         
+          
           style="right: -50px"
         >
           <div class="bg-primary custom-skew-1 mb-5" style="height: 70px"></div>
@@ -24,10 +23,9 @@
           <div class="row align-items-end h-100">
             <div class="col-10 col-sm-8 col-lg-5 ml-auto">
               <h1
-                class="text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3 appear-animation"
-                data-appear-animation="fadeInLeftShorter"
-                data-appear-animation-delay="850"
-                data-plugin-options="{'minWindowWidth': 0}"
+                class="text-color-light font-weight-light mb-0 text-5 text-md-6 position-relative bottom-7 mb-5 pb-3"
+              
+               
               >
                 {{ slider.title }}
               </h1>

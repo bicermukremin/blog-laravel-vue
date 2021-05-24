@@ -5,12 +5,12 @@
     <div class="right-wrapper text-right">
       <ol class="breadcrumbs">
         <li>
-          <a href="index.html">
+          <a href="#">
             <i class="bx bx-home-alt"></i>
           </a>
         </li>
-        <li><span>Pages</span></li>
-        <li><span>Blank Page</span></li>
+        <li><span>Sayfa</span></li>
+        <li><span>Anasayfa</span></li>
       </ol>
 
       <a class="sidebar-right-toggle" data-open="sidebar-right"

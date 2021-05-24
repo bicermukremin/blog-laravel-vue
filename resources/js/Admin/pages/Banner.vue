@@ -31,7 +31,7 @@
                 <img
                   width="50px"
                   height="50px"
-                  :src="`http://127.0.0.1:8000/storage/${banner.image}`"
+                  :src="`/storage/${banner.image}`"
                 />
               </td>
               <td>{{ banner.content }}</td>

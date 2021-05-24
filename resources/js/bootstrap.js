@@ -21,7 +21,7 @@ try {
 
 window.axios = require('axios');
 axios.defaults.withCredentials = true;
-axios.baseURL = "http://127.0.0.1:8000";
+axios.baseURL = "http://mukreminbicer.com";
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

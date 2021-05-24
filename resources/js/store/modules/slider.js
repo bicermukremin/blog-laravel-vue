@@ -77,7 +77,7 @@ const actions = {
                 headers: { "Content-Type": "multipart/form-data" }
             })
             .then(res => {
-                const sliderUpdate = res.data.data;
+                const sliderUpdate = res.data;
                 /* debugger; */
                 const index = state.sliders.findIndex(
                     slider => slider.id === sliderUpdate.id
